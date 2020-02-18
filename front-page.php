@@ -23,7 +23,7 @@ $blog_tagline = get_bloginfo( 'description' );
 			<div class="lid"></div>
 		</div>
 		<div class="eye-background">
-			<img src="/images/logo-background.svg">
+			<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background.svg">
 		</div>
 	</div>
 		<h1 class="page-title"><?php echo $blog_title; ?></h1>

@@ -31,6 +31,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="/wp-content/themes/makeaspectacle/js/makeaspectaclescripts"></script> 
+<script type="text/javascript" src="/wp-content/themes/makeaspectacle/js/makeaspectaclescripts.js"></script> 
 </body>
 </html>
