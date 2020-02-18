@@ -398,9 +398,9 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: moret, serif;
   font-style: normal;
   font-weight: 600;
+  font-family: moret, serif;
 }
 
 p {
