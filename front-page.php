@@ -16,10 +16,20 @@ $blog_tagline = get_bloginfo( 'description' );
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+<div class="above-fold">
+	<div class="eye-wrapper">
+		<div class="eye">
+			<div class="pupil"></div>
+			<div class="lid"></div>
+		</div>
+		<div class="eye-background">
+			<img src="/images/logo-background.svg">
+		</div>
+	</div>
 		<h1 class="page-title"><?php echo $blog_title; ?></h1>
 		<h2 class="page-subtitle"><?php echo $blog_tagline; ?></h2>
-
+		<p class="page-offering">We specialise in creating websites for people in the creative industries.</p>
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
