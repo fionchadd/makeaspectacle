@@ -65,7 +65,7 @@ jQuery(window).load(function() {
       var leye = new Eye('.eye'),
           eyes = [leye], // array of eyes to move
           eyeCount = eyes.length,
-          wrapper = document.getElementsByClassName('wrapper')[0], // boundary container
+          wrapper = document.getElementsByClassName('eye-wrapper')[0], // boundary container
           R = 0, //todo: capitalized vars typically constants
           THETA = 0,
           wrapperWidth = wrapper.offsetWidth,
