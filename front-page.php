@@ -17,8 +17,8 @@ $blog_tagline = get_bloginfo( 'description' );
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<h1 class="page-title screen-reader-text"><?php echo $$blog_title ?></h1>
-		<h2 class="page-subtitle screen-reader-text"><?php echo $$blog_tagline ?></h2>
+		<h1 class="page-title screen-reader-text"><?php echo $blog_title ?></h1>
+		<h2 class="page-subtitle screen-reader-text"><?php echo $blog_tagline ?></h2>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
