@@ -3,6 +3,7 @@
  * The header for our theme
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * testing deployment
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
@@ -18,6 +19,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
 	<link rel="stylesheet" href="https://use.typekit.net/ogh2zvl.css">
 </head>
 
