@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-
+	<link rel="stylesheet" href="https://use.typekit.net/ogh2zvl.css">
 </head>
 
 <body <?php body_class(); ?>>
