@@ -390,7 +390,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: roc-grotesk, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -398,10 +398,16 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  font-family: moret, serif;
+  font-style: normal;
+  font-weight: 600;
 }
 
 p {
   margin-bottom: 1.5em;
+  font-family: roc-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 dfn, cite, em, i {
