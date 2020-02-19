@@ -218,3 +218,11 @@ jQuery(window).load(function() {
       });
 
 });   
+
+
+jQuery(document).ready(function () {
+    jQuery(".project a").hover(
+    function () {
+        jQuery(this).parent().toggleClass("hover");
+    });
+});
