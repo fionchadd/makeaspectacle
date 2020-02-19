@@ -37,7 +37,7 @@ $page_tagline = get_field( 'homepage_tagline');
 <div class="projects">
 <?php if( have_rows('projects') ): 
 		while( have_rows('projects') ): the_row(); 
-		if ( get_field( 'project_details' ) ) : 
+		if ( get_sub_field( 'project_details' ) ) : 
 			$details = get_sub_field('project_details'); 
 				$name = $details['text'];
 				$link = $details['url'];
