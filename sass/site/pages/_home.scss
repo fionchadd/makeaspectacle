@@ -109,15 +109,24 @@ transform: rotate(45deg);
     font-size: 65px;
     line-height: 76px;
     margin: 0;
+    text-transform: uppercase;
     a {
-      color: rgba(15, 15, 15, 1);
+
       transition: all ease .7s;
+      text-decoration: none;
+      background: #ffffff; /* Old browsers */
+      background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #0f0f0f 50%, #0f0f0f 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 50%,#0f0f0f 50%,#0f0f0f 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#0f0f0f 50%,#0f0f0f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0f0f0f',GradientType=1 ); /* IE6-9 */
+background-size: 200%;
+background-position: right;
+-webkit-background-clip: text;   
     }
     a:hover {
-      color: rgba(15, 15, 15, 1);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color:  rgba(15, 15, 15, 1);
-    -webkit-text-fill-color:  rgba(15, 15, 15, 0);
+      background-position: right;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #0f0f0f;
     font-style: oblique;
     }
   }
