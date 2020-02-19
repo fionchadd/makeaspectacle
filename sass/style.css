@@ -1100,7 +1100,7 @@ transform: rotate(45deg);
 ## General page styling
 --------------------------------------------------------------*/
 body {
-  cursor: url(/images/mouse-icon.svg), auto;
+  cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto;
 }
 
 /*--------------------------------------------------------------
