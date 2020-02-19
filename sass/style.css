@@ -1045,6 +1045,12 @@ transform: rotate(45deg);
   font-style: oblique;
 }
 
+.projects .project-image {
+  border: 1px solid #d6d6d6;
+  border-top: none;
+  border-radius: 2px 2px 0 0;
+}
+
 /*--------------------------------------------------------------
 ## General page styling
 --------------------------------------------------------------*/
