@@ -52,6 +52,7 @@ transform: rotate(45deg);
     max-height: 35px;
     height: 100%;
     margin: 0 auto;
+    overflow: hidden;
   }
   
   .eye {
@@ -63,7 +64,7 @@ transform: rotate(45deg);
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    overflow: hidden;
+    overflow: visible;
   }
   
   .eye-background {
