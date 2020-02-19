@@ -1035,6 +1035,8 @@ transform: rotate(45deg);
   z-index: 3;
   position: relative;
   display: block;
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s;
 }
 
 .projects a {
@@ -1050,17 +1052,27 @@ transform: rotate(45deg);
   font-style: oblique;
 }
 
+.projects a:hover .project-image img {
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+}
+
 .projects .project-image {
   max-width: 500px;
   position: absolute;
   right: -125%;
   top: -150%;
   z-index: 0;
+  overflow: hidden;
 }
 
 .projects .project-image img {
   display: block;
   width: 100%;
+  -webkit-transform: translatex(-100%);
+          transform: translatex(-100%);
+  -webkit-transition: all ease-out .4s .3s;
+  transition: all ease-out .4s .3s;
 }
 
 .projects .project-image .screenshot {

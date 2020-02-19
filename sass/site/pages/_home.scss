@@ -127,6 +127,7 @@ background-clip: text;
 z-index: 3;
 position: relative;
 display: block;
+transition: all ease-out .4s;
   }
     a {
       display: inline-block;
@@ -139,6 +140,9 @@ display: block;
       background-position: left;
     font-style: oblique;
       }
+      .project-image img {
+        transform: translatex(0);
+      }
     }
   
   .project-image {
@@ -147,9 +151,12 @@ display: block;
     right: -125%;
     top: -150%;
     z-index: 0;
+    overflow: hidden;
     img {
       display: block;
       width: 100%;
+      transform: translatex(-100%);
+      transition: all ease-out .4s .3s;
     }
     .screenshot {
       border: 2px solid #d6d6d6;
