@@ -49,6 +49,46 @@ transform: rotate(45deg);
 }
 --*/
 
+.eye-wrapper {
+  position: relative;
+  width: 51px;
+  height: 36px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.eye-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+    width: 50px;
+  height: 35px;
+}
+
+.eye {
+  position: absolute;
+  width: 35px;
+  left: 7.5px;
+  height: 35px;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: visible;
+}
+
+.pupil {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-transition: all .05s linear;
+  transition: all .05s linear;
+  -webkit-transform: translateY(50px) translateX(50px);
+          transform: translateY(50px) translateX(50px);
+}
+
 .lid {
   left: -7.5px;
   width: 50px;
@@ -60,54 +100,6 @@ transform: rotate(45deg);
     height: 35px;
     display: block;
 }
-.eye-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-      width: 50px;
-    height: 35px;
-  }
   
-  .eye-wrapper {
-    position: relative;
-    max-width: 50px;
-    min-width: 50px;
-    max-height: 35px;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .eye {
-    position: absolute;
-    width: 35px;
-    left: 7.5px;
-    height: 35px;
-    border-radius: 50%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    overflow: visible;
-  }
-  
-  .eye-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-      width: 50px;
-    height: 35px;
-  }
-  
-  .pupil {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: black;
-    border-radius: 50%;
-    -webkit-transition: all .05s linear;
-    transition: all .05s linear;
-    -webkit-transform: translateY(50px) translateX(50px);
-            transform: translateY(50px) translateX(50px);
-  }
   
   
