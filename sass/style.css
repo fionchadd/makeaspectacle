@@ -1011,6 +1011,11 @@ transform: rotate(45deg);
   min-height: 100vh;
 }
 
+.projects .project {
+  position: relative;
+  z-index: 0;
+}
+
 .projects h4 {
   font-size: 65px;
   line-height: 76px;
