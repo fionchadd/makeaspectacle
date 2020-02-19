@@ -1075,10 +1075,9 @@ transform: rotate(45deg);
   max-width: 250px;
   position: absolute;
   right: -235px;
-  top: -100%;
+  top: -50%;
   z-index: 0;
   overflow: hidden;
-  margin-top: 40px;
 }
 
 .projects .project-image img {
