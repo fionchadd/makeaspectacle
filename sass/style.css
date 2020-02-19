@@ -399,8 +399,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-family: moret, serif;
+}
+
+h1.oblique, h2.oblique, h3.oblique, h4.oblique, h5.oblique, h6.oblique {
+  font-style: oblique;
 }
 
 p {
@@ -906,6 +910,19 @@ a:hover, a:active {
           flex-direction: column;
 }
 
+/*--
+.lid {
+  width: 50px;
+  height: 50px;
+  left: -7.5px;
+  top: 0;
+position: absolute;
+content: " ";
+background: #000;
+transform: rotate(45deg);
+
+}
+--*/
 .eye-background {
   position: absolute;
   top: 0;
