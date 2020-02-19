@@ -122,6 +122,7 @@ transform: rotate(45deg);
 background-size: 200%;
 background-position: right;
 -webkit-background-clip: text;   
+background-clip: text;
     }
     a:hover {
       background-position: right;
