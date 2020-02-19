@@ -1017,8 +1017,8 @@ transform: rotate(45deg);
 }
 
 .projects h4 a {
-  -webkit-transition: all ease .7s;
-  transition: all ease .7s;
+  -webkit-transition: all ease-in-out .4s;
+  transition: all ease-in-out .4s;
   text-decoration: none;
   background: #ffffff;
   /* Old browsers */
@@ -1029,16 +1029,17 @@ transform: rotate(45deg);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0f0f0f',GradientType=1 );
   /* IE6-9 */
-  background-size: 200%;
+  background-size: 201%;
   background-position: right;
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0f0f0f;
 }
 
 .projects h4 a:hover {
-  background-position: right;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #0f0f0f;
+  background-position: left;
   font-style: oblique;
 }
 
