@@ -151,7 +151,7 @@ transition: all ease-out .4s;
       }
       .project-image img {
         transform: translatex(0);
-        animation-delay: 0;
+        transition-delay: 0;
       }
     }
   
@@ -167,7 +167,7 @@ transition: all ease-out .4s;
       width: 100%;
       transform: translatex(-100%);
       transition: all ease-out .4s;
-      animation-delay: .3s;
+      transition-delay: .3s;
     }
     .screenshot {
       border: 2px solid #d6d6d6;
