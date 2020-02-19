@@ -146,12 +146,13 @@ transition: all ease-out .4s;
     }
   
   .project-image {
-    max-width: 500px;
+    max-width: 250px;
     position: absolute;
-    right: -125%;
-    top: -150%;
+    right: -205px;
+    top: -100%;
     z-index: 0;
     overflow: hidden;
+    margin-top: 40px;
     img {
       display: block;
       width: 100%;

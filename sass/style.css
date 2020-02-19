@@ -1058,12 +1058,13 @@ transform: rotate(45deg);
 }
 
 .projects .project-image {
-  max-width: 500px;
+  max-width: 250px;
   position: absolute;
-  right: -125%;
-  top: -150%;
+  right: -205px;
+  top: -100%;
   z-index: 0;
   overflow: hidden;
+  margin-top: 40px;
 }
 
 .projects .project-image img {
