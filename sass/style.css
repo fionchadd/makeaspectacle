@@ -1016,12 +1016,6 @@ transform: rotate(45deg);
   line-height: 76px;
   margin: 0;
   text-transform: uppercase;
-}
-
-.projects h4 a {
-  -webkit-transition: all ease-out .4s;
-  transition: all ease-out .4s;
-  text-decoration: none;
   background: #ffffff;
   /* Old browsers */
   /* FF3.6-15 */
@@ -1038,15 +1032,30 @@ transform: rotate(45deg);
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #0f0f0f;
+  z-index: 3;
+  position: relative;
+  display: block;
 }
 
-.projects h4 a:hover {
+.projects a {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s;
+  text-decoration: none;
+}
+
+.projects a:hover h4 {
   background-position: left;
   font-style: oblique;
 }
 
 .projects .project-image {
   max-width: 500px;
+  position: absolute;
+  right: -125%;
+  top: -150%;
+  z-index: 0;
 }
 
 .projects .project-image img {
@@ -1055,7 +1064,7 @@ transform: rotate(45deg);
 }
 
 .projects .project-image .screenshot {
-  border: 1px solid #d6d6d6;
+  border: 2px solid #d6d6d6;
   border-top: none;
 }
 

@@ -56,7 +56,12 @@ $page_tagline = get_field( 'homepage_tagline');
 			$fullimage = $image['sizes'][ $size ];
 		endif;
 ?>
-<div class="project"><h4 class="project-name"><a target="<?php echo $target; ?>" href="<?php echo $link; ?>"><?php echo $name; ?></a></h4><div class="project-image"><img class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg"><img class="screenshot" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div></div>
+<div class="project">
+	<a target="<?php echo $target; ?>" href="<?php echo $link; ?>">
+	<h4 class="project-name"><?php echo $name; ?></h4>
+	<div class="project-image"><img class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg"><img class="screenshot" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+	</a>
+</div>
 <?php endwhile; else : endif; ?>
 </div>
 		</main><!-- #main -->
