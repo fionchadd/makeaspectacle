@@ -1005,6 +1005,30 @@ transform: rotate(45deg);
   display: block;
 }
 
+.projects {
+  text-align: center;
+}
+
+.projects h4 {
+  font-size: 65px;
+  line-height: 76px;
+  margin: 0;
+}
+
+.projects h4 a {
+  color: #0f0f0f;
+  -webkit-transition: all ease .7s;
+  transition: all ease .7s;
+}
+
+.projects h4 a:hover {
+  color: #0f0f0f;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0f0f0f;
+  -webkit-text-fill-color: rgba(15, 15, 15, 0);
+  font-style: oblique;
+}
+
 /*--------------------------------------------------------------
 ## General page styling
 --------------------------------------------------------------*/

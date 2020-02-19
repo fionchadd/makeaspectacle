@@ -102,5 +102,25 @@ transform: rotate(45deg);
     display: block;
 }
   
+
+.projects {
+  text-align: center;
+  h4 {
+    font-size: 65px;
+    line-height: 76px;
+    margin: 0;
+    a {
+      color: rgba(15, 15, 15, 1);
+      transition: all ease .7s;
+    }
+    a:hover {
+      color: rgba(15, 15, 15, 1);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:  rgba(15, 15, 15, 1);
+    -webkit-text-fill-color:  rgba(15, 15, 15, 0);
+    font-style: oblique;
+    }
+  }
+}
   
   
