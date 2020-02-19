@@ -128,7 +128,7 @@ jQuery(window).load(function() {
       /**
       * add eye
       * -----------------------------
-      */
+
       function addEye() {  
         var newEye = document.createElement('div'),
             newPupil = document.createElement('div'),
@@ -157,7 +157,7 @@ jQuery(window).load(function() {
         eyes.push(eyeObj);
       }
       
-      
+    */
       /** 
       * blinking
       * -----------------------------
