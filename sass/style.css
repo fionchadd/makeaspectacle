@@ -1017,8 +1017,8 @@ transform: rotate(45deg);
 }
 
 .projects h4 a {
-  -webkit-transition: all ease-in-out .4s;
-  transition: all ease-in-out .4s;
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s;
   text-decoration: none;
   background: #ffffff;
   /* Old browsers */
@@ -1034,7 +1034,7 @@ transform: rotate(45deg);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #0f0f0f;
 }
 

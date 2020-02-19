@@ -112,7 +112,7 @@ transform: rotate(45deg);
     text-transform: uppercase;
     a {
 
-      transition: all ease-in-out .4s;
+      transition: all ease-out .4s;
       text-decoration: none;
       background: #ffffff; /* Old browsers */
       background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #0f0f0f 50%, #0f0f0f 100%); /* FF3.6-15 */
@@ -124,7 +124,7 @@ background-position: right;
 -webkit-background-clip: text;   
 background-clip: text;
 -webkit-text-fill-color: transparent;
--webkit-text-stroke-width: 1px;
+-webkit-text-stroke-width: 1.5px;
 -webkit-text-stroke-color: #0f0f0f;
     }
     a:hover {
