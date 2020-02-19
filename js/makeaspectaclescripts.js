@@ -50,10 +50,10 @@ jQuery(window).load(function() {
       Eye.prototype.blink = function() {
         if (this.bLidUp) {
           this.bLidUp = false;
-          this.lid.style.transform = 'translateY(80%)';
+          this.lid.style.transform = 'translateY(0%)';
         } else {
           this.bLidUp = true;
-          this.lid.style.transform = 'translateY(0%)';
+          this.lid.style.transform = 'translateY(-100%)';
         }
       }
       

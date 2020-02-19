@@ -25,6 +25,18 @@ transform: rotate(45deg);
 
 }
 --*/
+
+.lid {
+  left: -7.5px;
+}
+
+.lid-inner {
+  width: 50px;
+    height: 35px;
+    content: " ";
+    display: block;
+    background: url(/images/logo-eyelid.svg);
+}
 .eye-background {
     position: absolute;
     top: 0;
@@ -43,18 +55,15 @@ transform: rotate(45deg);
   }
   
   .eye {
-      -webkit-clip-path: url(#my-clip-path);
-    clip-path: url(#my-clip-path);
     position: absolute;
     width: 35px;
     left: 7.5px;
     height: 35px;
-    background-color: white;
     border-radius: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    overflow: visible;
+    overflow: hidden;
   }
   
   .eye-background {
