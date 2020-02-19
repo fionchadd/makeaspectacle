@@ -1075,7 +1075,7 @@ transform: rotate(45deg);
   max-width: 250px;
   position: absolute;
   right: -235px;
-  top: -50%;
+  top: calc(-50% - 5px);
   z-index: 0;
   overflow: hidden;
 }
@@ -1099,6 +1099,10 @@ transform: rotate(45deg);
 /*--------------------------------------------------------------
 ## General page styling
 --------------------------------------------------------------*/
+body {
+  cursor: url(images/mouse-icon.svg), auto;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

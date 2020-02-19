@@ -159,7 +159,7 @@ transition: all ease-out .4s;
     max-width: 250px;
     position: absolute;
     right: -235px;
-    top: -50%;
+    top: calc(-50% - 5px);
     z-index: 0;
     overflow: hidden;
     img {
