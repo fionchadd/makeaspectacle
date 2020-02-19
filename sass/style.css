@@ -1046,9 +1046,17 @@ transform: rotate(45deg);
 }
 
 .projects .project-image {
+  max-width: 500px;
+}
+
+.projects .project-image img {
+  display: block;
+  width: 100%;
+}
+
+.projects .project-image .screenshot {
   border: 1px solid #d6d6d6;
   border-top: none;
-  border-radius: 2px 2px 0 0;
 }
 
 /*--------------------------------------------------------------

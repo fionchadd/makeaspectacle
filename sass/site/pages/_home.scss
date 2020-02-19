@@ -135,10 +135,17 @@ background-clip: text;
     }
   }
   .project-image {
-    border: 1px solid #d6d6d6;
-    border-top: none;
-    border-radius: 2px 2px 0 0;
-  }
+    max-width: 500px;
+    img {
+      display: block;
+      width: 100%;
+    }
+    .screenshot {
+      border: 1px solid #d6d6d6;
+      border-top: none;
+    }
+}
+
 }
   
   
