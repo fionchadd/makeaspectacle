@@ -136,11 +136,11 @@ z-index: 3;
 position: relative;
 display: block;
 transition: all ease-out .4s;
+transition-delay: .3s;
   }
     a {
       display: inline-block;
       position: relative;
-      transition: all ease-out .4s;
       text-decoration: none;
     }
   
@@ -156,7 +156,7 @@ transition: all ease-out .4s;
       width: 100%;
       transform: translatex(-100%);
       transition: all ease-out .4s;
-      transition-delay: .3s;
+      transition-delay: 0s;
     }
     .screenshot {
       border: 2px solid #d6d6d6;
@@ -167,11 +167,11 @@ a:hover {
   h4 {
   background-position: left;
 font-style: oblique;
-transition-delay: .3s;
+transition-delay: 0s;
   }
   .project-image img {
     transform: translatex(0);
-    transition-delay: 0;
+    transition-delay: .3s;
   }
 }
 }
