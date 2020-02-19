@@ -1050,17 +1050,21 @@ transform: rotate(45deg);
 .projects a:hover h4 {
   background-position: left;
   font-style: oblique;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .projects a:hover .project-image img {
   -webkit-transform: translatex(0);
           transform: translatex(0);
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
 }
 
 .projects .project-image {
   max-width: 250px;
   position: absolute;
-  right: -205px;
+  right: -235px;
   top: -100%;
   z-index: 0;
   overflow: hidden;
@@ -1072,8 +1076,10 @@ transform: rotate(45deg);
   width: 100%;
   -webkit-transform: translatex(-100%);
           transform: translatex(-100%);
-  -webkit-transition: all ease-out .4s .3s;
-  transition: all ease-out .4s .3s;
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .projects .project-image .screenshot {

@@ -139,16 +139,18 @@ transition: all ease-out .4s;
       h4 {
       background-position: left;
     font-style: oblique;
+    animation-delay: .3s;
       }
       .project-image img {
         transform: translatex(0);
+        animation-delay: 0;
       }
     }
   
   .project-image {
     max-width: 250px;
     position: absolute;
-    right: -205px;
+    right: -235px;
     top: -100%;
     z-index: 0;
     overflow: hidden;
@@ -157,7 +159,8 @@ transition: all ease-out .4s;
       display: block;
       width: 100%;
       transform: translatex(-100%);
-      transition: all ease-out .4s .3s;
+      transition: all ease-out .4s;
+      animation-delay: .3s;
     }
     .screenshot {
       border: 2px solid #d6d6d6;
