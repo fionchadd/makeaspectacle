@@ -64,8 +64,8 @@ jQuery(window).load(function() {
       */
      var heye = new Eye('.header-eye.eye'),
      eye = new Eye('.homepage-eye.eye'),
-     aeye = new Eye('.about-eye.eye'),
-     eyes = [heye, eye, aeye], // array of eyes to move
+     // aeye = new Eye('.about-eye.eye'),
+     eyes = [heye, eye], // array of eyes to move
           eyeCount = eyes.length,
           wrapper = document.getElementsByClassName('eye-wrapper')[0], // boundary container
           R = 0, //todo: capitalized vars typically constants
