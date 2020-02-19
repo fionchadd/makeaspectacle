@@ -20,7 +20,7 @@ $blog_tagline = get_bloginfo( 'description' );
 	<div class="eye-wrapper">
 		<div class="eye">
 			<div class="pupil"></div>
-			<div class="lid"><div class="lid-inner"></div></div>
+			<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid.svg"></div></div>
 		</div>
 		<div class="eye-background">
 			<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background.svg">

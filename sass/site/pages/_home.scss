@@ -28,14 +28,14 @@ transform: rotate(45deg);
 
 .lid {
   left: -7.5px;
+  width: 50px;
+  position: absolute;
 }
 
 .lid-inner {
   width: 50px;
     height: 35px;
-    content: " ";
     display: block;
-    background: url(/images/logo-eyelid.svg);
 }
 .eye-background {
     position: absolute;
