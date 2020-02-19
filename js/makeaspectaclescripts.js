@@ -206,8 +206,8 @@ jQuery(window).load(function() {
       
       document.addEventListener('mousemove', updateEyes, false);
       
-      /* click action */
-      document.addEventListener('click', addEye);
+      /* click action 
+      document.addEventListener('click', addEye); */
       
       /* return eyes to neutral position */
       document.addEventListener('mouseleave', returnToNeutral, false);
