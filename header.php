@@ -30,15 +30,6 @@
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
 <a class="menu-link work" href="/#work">work</a> 
-<div class="eye-wrapper">
-		<div class="eye header-eye">
-			<div class="pupil"></div>
-			<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid.svg"></div></div>
-		</div>
-		<div class="eye-background">
-			<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background.svg">
-		</div>
-</div>
 <a class="menu-link about" href="#about">about</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

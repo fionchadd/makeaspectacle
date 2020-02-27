@@ -63,9 +63,9 @@ jQuery(window).load(function() {
       * -----------------------------
       */
      var heye = new Eye('.header-eye.eye'),
-     eye = new Eye('.homepage-eye.eye'),
-     // aeye = new Eye('.about-eye.eye'),
-     eyes = [heye, eye], // array of eyes to move
+    // heye = new Eye('.homepage-eye.eye'),
+     aeye = new Eye('.about-eye.eye'),
+     eyes = [aeye, eye], // array of eyes to move
           eyeCount = eyes.length,
           wrapper = document.getElementsByClassName('eye-wrapper')[0], // boundary container
           R = 0, //todo: capitalized vars typically constants
@@ -198,7 +198,7 @@ jQuery(window).load(function() {
       }
       
       /* check blink logic every 800 ms */
-      setInterval(blinkLogic, 3500);
+      setInterval(blinkLogic, 5200);
       
       
       /**
