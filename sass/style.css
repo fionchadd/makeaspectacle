@@ -1178,6 +1178,10 @@ transform: rotate(45deg);
   color: #fff;
   padding: 45px;
   z-index: 999;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .about-section .about-title {
@@ -1217,7 +1221,9 @@ transform: rotate(45deg);
 }
 
 .about-section .close {
-  text-align: right;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 
 /*--------------------------------------------------------------

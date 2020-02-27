@@ -19,6 +19,7 @@
 ?>
 <div class="about-section">
 	<div class="close"><img src="/wp-content/themes/makeaspectacle/sass/images/about-close.svg"></div>
+	<div class="about-content">
 	<?php 	while( have_rows('about_section', 14) ): the_row(); 
 
 	$title = get_sub_field( 'title');
@@ -41,6 +42,7 @@
 			<div class="about-arrow"><img src="/wp-content/themes/makeaspectacle/sass/images/about-arrow.svg"></div>
 			<a class="email-address" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 			<?php endwhile; ?>
+		 </div>	
 </div>
 <?php endif; ?>
 	<footer id="colophon" class="site-footer">

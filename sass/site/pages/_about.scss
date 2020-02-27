@@ -19,6 +19,9 @@ transition: all 0.5s ease;
   color: #fff;
   padding: 45px;
   z-index: 999;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
   .about-title {
     font-size: 37px;
     line-height: 43px;
@@ -50,6 +53,8 @@ transition: all 0.5s ease;
     line-height: 25px;
   }
   .close {
-    text-align: right;
+    position: absolute;
+    top: 40px;
+    right: 40px;
   }
 }
