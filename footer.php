@@ -16,6 +16,8 @@
 ?>
 <div class="about">
 	<?php 	while( have_rows('about_section', 14) ): the_row(); 
+	$blog_title = get_bloginfo( 'name' ); 
+	$blog_tagline = get_bloginfo( 'description' ); 
 	$title = get_sub_field( 'title');
 	$email = get_sub_field( 'email_address');
 	$description = get_sub_field( 'description');
