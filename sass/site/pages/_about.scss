@@ -1,9 +1,11 @@
 .about-section.open {
 transform: translateX(0);
+opacity: 1;
 transition: all 0.5s ease;
 }
 
 .about-section {
+  opacity: 0;
   position: fixed;
   transform: translatex(101%);
   transition: all 0.5s ease;
