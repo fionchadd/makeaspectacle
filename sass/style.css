@@ -1171,8 +1171,8 @@ transform: rotate(45deg);
   right: 0;
   top: 0;
   background: #0f0f0f;
-  width: 30%;
-  min-width: 400px;
+  width: 34%;
+  min-width: 420px;
   max-width: 450px;
   min-height: 100vh;
   color: #fff;
@@ -1182,6 +1182,13 @@ transform: rotate(45deg);
       justify-content: space-around;
   margin-top: auto;
   margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-section .about-content {
+  margin: auto;
 }
 
 .about-section .about-title {
@@ -1215,6 +1222,11 @@ transform: rotate(45deg);
   text-decoration: none;
 }
 
+.about-section .about-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .about-section p {
   font-size: 15px;
   line-height: 25px;
@@ -1224,6 +1236,15 @@ transform: rotate(45deg);
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+.about-section .about-subtitle.final {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about-section .email-address {
+  margin-top: 10px;
 }
 
 /*--------------------------------------------------------------
