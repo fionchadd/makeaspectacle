@@ -1097,6 +1097,44 @@ transform: rotate(45deg);
 }
 
 /*--------------------------------------------------------------
+## About section
+--------------------------------------------------------------*/
+.about {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #0f0f0f;
+  width: 30%;
+  min-width: 400px;
+  max-width: 450px;
+  height: 100vh;
+  color: #fff;
+  padding: 45px;
+}
+
+.about .about-title {
+  font-size: 37px;
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about .about-subtitle, .about a.email-address {
+  font-family: roc-grotesk, sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.about p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/*--------------------------------------------------------------
 ## General page styling
 --------------------------------------------------------------*/
 body {

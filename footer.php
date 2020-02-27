@@ -18,6 +18,7 @@
 		 if( have_rows('about_section', 14) ): 
 ?>
 <div class="about">
+	<div class="close"><img src="/wp-content/themes/makeaspectacle/sass/images/about-close.svg"></div>
 	<?php 	while( have_rows('about_section', 14) ): the_row(); 
 
 	$title = get_sub_field( 'title');
