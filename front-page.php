@@ -64,31 +64,6 @@ $page_tagline = get_field( 'homepage_tagline');
 </div>
 <?php endwhile; else : endif; ?>
 </div>
-<?php if( have_rows('about_section') ): 
-?>
-<div class="about">
-	<?php 		while( have_rows('about_section') ): the_row(); 
-	$title = get_sub_field( 'title');
-	$email = get_sub_field( 'email_address');
-	$description = get_sub_field( 'description');
-	?>
-		<div class="eye-wrapper">
-			<div class="eye about-eye">
-				<div class="pupil"></div>
-				<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid.svg"></div></div>
-			</div>
-			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background.svg">
-			</div>
-		</div>
-			<h3 class="about-title"><?php echo $blog_title; ?></h3>
-			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
-			<p class="about-text"><?php echo $description; ?></p>
-			<h4 class="about-subtitle"><?php echo $title; ?></h4>
-			<a class="email-address" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
-			<?php endwhile; ?>
-</div>
-<?php endif; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
