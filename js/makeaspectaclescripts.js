@@ -223,8 +223,21 @@ jQuery(window).load(function() {
 
 
 jQuery(document).ready(function () {
+    // project section hover state
     jQuery(".project a").hover(
     function () {
         jQuery(this).parent().toggleClass("hover");
     });
+    // open nav section when clicked
+    jQuery('.menu-link.about').on('click', function () {
+  
+        jQuery('.about').toggleClass('open');
+        jQuery('body').toggleClass('aboutisopen');
+      });
+      jQuery('.menu-link.about').on('click', function () {
+  
+        jQuery('.about').toggleClass('open');
+        jQuery('body').toggleClass('aboutisopen');
+      });
+
 });

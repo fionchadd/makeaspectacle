@@ -3,6 +3,8 @@ p {
 	font-family: $font__main;
 	font-style: normal;
 	font-weight: 400;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 dfn, cite, em, i {

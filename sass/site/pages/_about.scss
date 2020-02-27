@@ -6,14 +6,19 @@
   width: 30%;
   min-width: 400px;
   max-width: 450px;
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
   padding: 45px;
-
+  z-index: 999;
   .about-title {
     font-size: 37px;
     line-height: 43px;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .about-arrow {
     text-align: center;
   }
   .about-subtitle, a.email-address {
@@ -25,8 +30,14 @@
     text-align: center;
     color: #fff;
   }
+  a.email-address {
+    text-decoration: none;
+  }
   p {
     font-size: 15px;
     line-height: 25px;
+  }
+  .close {
+    text-align: right;
   }
 }

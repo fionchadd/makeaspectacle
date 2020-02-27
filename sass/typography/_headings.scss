@@ -3,6 +3,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 	font-weight: 300;
 	font-family: $font__header;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
 	&.oblique {
 		font-style: oblique;

@@ -8,6 +8,8 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 @import "headings";

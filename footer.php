@@ -38,6 +38,7 @@
 			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
 			<p class="about-text"><?php echo $description; ?></p>
 			<h4 class="about-subtitle"><?php echo $title; ?></h4>
+			<div class="about-arrow"><img src="/wp-content/themes/makeaspectacle/sass/images/about-arrow.svg"></div>
 			<a class="email-address" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 			<?php endwhile; ?>
 </div>

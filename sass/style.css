@@ -394,6 +394,8 @@ textarea {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -401,6 +403,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 300;
   font-family: moret, serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1.oblique, h2.oblique, h3.oblique, h4.oblique, h5.oblique, h6.oblique {
@@ -412,6 +416,8 @@ p {
   font-family: roc-grotesk, sans-serif;
   font-style: normal;
   font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 dfn, cite, em, i {
@@ -1107,15 +1113,22 @@ transform: rotate(45deg);
   width: 30%;
   min-width: 400px;
   max-width: 450px;
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
   padding: 45px;
+  z-index: 999;
 }
 
 .about .about-title {
   font-size: 37px;
   line-height: 43px;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about .about-arrow {
   text-align: center;
 }
 
@@ -1129,9 +1142,17 @@ transform: rotate(45deg);
   color: #fff;
 }
 
+.about a.email-address {
+  text-decoration: none;
+}
+
 .about p {
   font-size: 15px;
   line-height: 25px;
+}
+
+.about .close {
+  text-align: right;
 }
 
 /*--------------------------------------------------------------
