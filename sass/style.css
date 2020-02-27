@@ -1187,6 +1187,10 @@ transform: rotate(45deg);
   margin-bottom: 15px;
 }
 
+.about-section .pupil {
+  background-color: white;
+}
+
 .about-section .about-arrow {
   text-align: center;
 }
