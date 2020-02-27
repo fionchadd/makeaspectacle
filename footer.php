@@ -12,10 +12,10 @@
 ?>
 
 	</div><!-- #content -->
-	<?php if( have_rows('about_section', 8) ): 
+	<?php if( have_rows('about_section', 14) ): 
 ?>
 <div class="about">
-	<?php 	while( have_rows('about_section', 8) ): the_row(); 
+	<?php 	while( have_rows('about_section', 14) ): the_row(); 
 	$title = get_sub_field( 'title');
 	$email = get_sub_field( 'email_address');
 	$description = get_sub_field( 'description');
