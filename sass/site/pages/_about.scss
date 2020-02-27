@@ -1,9 +1,12 @@
 .about-section.open {
-animation: slide-in-right .5s both;
+transform: translateX(0);
+transition: all 0.5s ease;
 }
 
 .about-section {
   position: fixed;
+  transform: translatex(101%);
+  transition: all 0.5s ease;
   right: 0;
   top: 0;
   background: #0f0f0f;

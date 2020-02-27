@@ -1154,12 +1154,18 @@ transform: rotate(45deg);
 ## About section
 --------------------------------------------------------------*/
 .about-section.open {
-  -webkit-animation: slide-in-right .5s both;
-          animation: slide-in-right .5s both;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .about-section {
   position: fixed;
+  -webkit-transform: translatex(101%);
+          transform: translatex(101%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   right: 0;
   top: 0;
   background: #0f0f0f;

@@ -234,7 +234,7 @@ jQuery(document).ready(function () {
         jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
       });
-      jQuery('.about-close').on('click', function () {
+      jQuery('.about-section .close').on('click', function () {
   
         jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
