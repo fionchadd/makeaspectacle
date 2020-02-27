@@ -62,7 +62,7 @@ jQuery(window).load(function() {
       * pupil-mouse tracking and draw
       * -----------------------------
       */
-     var heye = new Eye('.header-eye.eye'),
+     var eye = new Eye('.homepage-eye.eye'),
     // heye = new Eye('.homepage-eye.eye'),
      aeye = new Eye('.about-eye.eye'),
      eyes = [aeye, eye], // array of eyes to move
