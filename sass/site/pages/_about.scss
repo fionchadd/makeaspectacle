@@ -1,4 +1,8 @@
-.about {
+.about-section.open {
+animation: slide-in-right .5s both;
+}
+
+.about-section {
   position: fixed;
   right: 0;
   top: 0;

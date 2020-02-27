@@ -231,12 +231,12 @@ jQuery(document).ready(function () {
     // open nav section when clicked
     jQuery('.menu-link.about').on('click', function () {
   
-        jQuery('.about').toggleClass('open');
+        jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
       });
-      jQuery('.menu-link.about').on('click', function () {
+      jQuery('.about-close').on('click', function () {
   
-        jQuery('.about').toggleClass('open');
+        jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
       });
 
