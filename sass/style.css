@@ -714,6 +714,7 @@ a:hover, a:active {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 3px;
+  color: #0f0f0f;
 }
 
 .main-navigation .menu-link.work {

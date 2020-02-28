@@ -13,6 +13,7 @@
 		font-size: 15px;
 		line-height: 25px;
 		letter-spacing: 3px;
+		color: #0f0f0f;
 	}
 	.menu-link.work {
 		align-self: flex-start;
@@ -25,11 +26,6 @@
 		margin-right: 35px;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
 }
 
 .menu-toggle {
