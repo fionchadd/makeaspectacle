@@ -1044,8 +1044,8 @@ transform: rotate(45deg);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: #0f0f0f;
   z-index: 3;
   position: relative;
   display: block;
@@ -1095,7 +1095,7 @@ transform: rotate(45deg);
   font-style: oblique;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
-  -webkit-text-stroke-color: #0f0f0f;
+  -webkit-text-stroke-width: 1.5px;
 }
 
 .projects a:hover .project-image img {
