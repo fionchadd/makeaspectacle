@@ -945,6 +945,7 @@ a:hover, a:active {
       -ms-grid-row-align: center;
       align-self: center;
   margin: auto;
+  text-align: center;
 }
 
 /*--
@@ -960,20 +961,6 @@ transform: rotate(45deg);
 
 }
 --*/
-#stickThis {
-  margin: auto;
-  width: 400px;
-}
-
-#stickThis.stick {
-  position: fixed;
-  top: 40px;
-  margin: auto;
-  margin-top: 0;
-  z-index: 9999;
-  left: calc(50% - 200px);
-}
-
 .eye-wrapper {
   position: relative;
   width: 51px;
