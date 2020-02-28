@@ -1,5 +1,4 @@
 jQuery(document).ready(function () {
-    jQuery('body').addClass('ready');
     /* eye */
     var config = {
         returnSpeed: 0.4
@@ -221,7 +220,7 @@ jQuery(document).ready(function () {
         wrapperHeight = wrapper.offsetHeight;
       });
 
-});   
+ 
 
 
 
@@ -242,3 +241,4 @@ jQuery(document).ready(function () {
         jQuery('body').toggleClass('aboutisopen');
       });
 
+    });  
