@@ -47,7 +47,7 @@
 <?php endif; ?>
 	<footer id="colophon" class="site-footer">
 	<div class="eye-wrapper">
-			<div class="eye about-eye">
+			<div class="eye footer-eye">
 				<div class="pupil"></div>
 				<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid-white.svg"></div></div>
 			</div>

@@ -5,7 +5,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  .about-subtitle, a.email-address {
+  .about-subtitle, a.email-address, .get-in-touch {
     font-family: roc-grotesk, sans-serif;
     font-size: 15px;
     letter-spacing: 3px;
@@ -26,8 +26,7 @@
     margin-bottom: 15px;
   }
   .about-subtitle {
-    max-width: 300px;
-    margin: auto;
+margin-bottom: 60px;
   }
   .get-in-touch img {
     margin-left: 15px;

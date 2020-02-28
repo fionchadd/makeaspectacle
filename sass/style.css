@@ -705,6 +705,7 @@ a:hover, a:active {
   width: 100%;
   position: fixed;
   margin-top: 35px;
+  z-index: 9;
 }
 
 .main-navigation a {
@@ -862,7 +863,7 @@ a:hover, a:active {
 
 .post,
 .page {
-  margin: 0 0 1.5em;
+  margin: 0 0 0;
 }
 
 .updated:not(.published) {
@@ -1238,7 +1239,7 @@ transform: rotate(45deg);
   text-transform: uppercase;
 }
 
-#colophon .about-subtitle, #colophon a.email-address {
+#colophon .about-subtitle, #colophon a.email-address, #colophon .get-in-touch {
   font-family: roc-grotesk, sans-serif;
   font-size: 15px;
   letter-spacing: 3px;
@@ -1262,8 +1263,7 @@ transform: rotate(45deg);
 }
 
 #colophon .about-subtitle {
-  max-width: 300px;
-  margin: auto;
+  margin-bottom: 60px;
 }
 
 #colophon .get-in-touch img {
@@ -1276,6 +1276,10 @@ transform: rotate(45deg);
 --------------------------------------------------------------*/
 body {
   cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto;
+}
+
+.post, .page {
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
