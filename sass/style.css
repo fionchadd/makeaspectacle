@@ -731,15 +731,6 @@ a:hover, a:active {
   margin-right: 35px;
 }
 
-.main-navigation #stick-here {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: auto;
-  width: 51px;
-  height: 36px;
-}
-
 .menu-toggle {
   display: none;
 }
@@ -975,6 +966,15 @@ transform: rotate(45deg);
   top: 0;
   z-index: 9999;
   border-radius: 0 0 10px 10px;
+}
+
+#stick-here {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+  width: 51px;
+  height: 36px;
 }
 
 .eye-wrapper {
