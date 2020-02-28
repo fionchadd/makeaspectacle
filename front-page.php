@@ -20,7 +20,8 @@ $page_tagline = get_field( 'homepage_tagline');
 <div class="above-fold">
 	<div class="central-content">
 	<div id="stick-here"></div>
-		<div id="stickThis" class="eye-wrapper homepage-eye-wrapper">
+	<div id="stickThis">
+		<div class="eye-wrapper homepage-eye-wrapper">
 			<div class="eye homepage-eye">
 				<div class="pupil"></div>
 				<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid.svg"></div></div>
@@ -29,6 +30,7 @@ $page_tagline = get_field( 'homepage_tagline');
 				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background.svg">
 			</div>
 		</div>
+	</div>
 			<h1 class="page-title"><?php echo $blog_title; ?></h1>
 			<h2 class="page-subtitle"><?php echo $blog_tagline; ?></h2>
 	</div>
