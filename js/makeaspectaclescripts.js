@@ -247,7 +247,7 @@ jQuery(document).ready(function () {
         var top = jQuery('#stick-here').offset().top;
         if (window_top > top) {
             jQuery('#stickThis').addClass('stick');
-            jQuery('#stick-here').height($('#stickThis').outerHeight());
+            jQuery('#stick-here').height(jQuery('#stickThis').outerHeight());
         } else {
             jQuery('#stickThis').removeClass('stick');
             jQuery('#stick-here').height(0);
