@@ -1,4 +1,4 @@
-jQuery(window).load(function() {
+jQuery(document).ready(function () {
     var config = {
         returnSpeed: 0.4
       };
@@ -175,13 +175,13 @@ jQuery(window).load(function() {
         // fast double blink
         else if (r<0.6) {
           blinkEyes();
-          setTimeout(blinkEyes, 120);
+          setTimeout(blinkEyes, 300);
         } 
         
         // slow double blink
         else if (r < 0.8) {
           blinkEyes();
-          setTimeout(blinkEyes, 500 + Math.random()*400);
+          setTimeout(blinkEyes, 1000 + Math.random()*400);
         }
       }
       

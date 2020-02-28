@@ -34,6 +34,10 @@ transition: all 0.5s ease;
     margin-top: 15px;
     margin-bottom: 15px;
   }
+  .about-subtitle {
+    max-width: 300px;
+    margin: auto;
+  }
   .pupil {
     background-color: white;
   }
@@ -69,7 +73,8 @@ transition: all 0.5s ease;
     margin-top: 0;
     margin-bottom: 10px;
   }
-  .email-address {
+  a.email-address {
     margin-top: 10px;
+    display: block;
   }
 }

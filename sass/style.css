@@ -1200,6 +1200,11 @@ transform: rotate(45deg);
   margin-bottom: 15px;
 }
 
+.about-section .about-subtitle {
+  max-width: 300px;
+  margin: auto;
+}
+
 .about-section .pupil {
   background-color: white;
 }
@@ -1243,8 +1248,9 @@ transform: rotate(45deg);
   margin-bottom: 10px;
 }
 
-.about-section .email-address {
+.about-section a.email-address {
   margin-top: 10px;
+  display: block;
 }
 
 /*--------------------------------------------------------------
