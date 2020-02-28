@@ -259,7 +259,7 @@ new ScrollMagic.Scene({
     triggerElement: slide,
     offset: 0,
   })
-  .setPin(slides[i], {pushFollowers: false})
+  .setPin(slide, {pushFollowers: false})
   .addTo(controller);
 
 
