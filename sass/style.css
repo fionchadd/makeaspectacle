@@ -961,6 +961,10 @@ transform: rotate(45deg);
 
 }
 --*/
+#stickthis {
+  padding-top: 40px;
+}
+
 .eye-wrapper {
   position: relative;
   width: 51px;
@@ -1131,6 +1135,10 @@ transform: rotate(45deg);
   transition: all 0.5s ease;
 }
 
+.about-eye .pupil {
+  background-color: white;
+}
+
 .about-section {
   opacity: 0;
   position: fixed;
@@ -1175,10 +1183,6 @@ transform: rotate(45deg);
   margin: auto;
 }
 
-.about-section .pupil {
-  background-color: white;
-}
-
 .about-section .about-arrow {
   text-align: center;
 }
@@ -1221,6 +1225,50 @@ transform: rotate(45deg);
 .about-section a.email-address {
   margin-top: 10px;
   display: block;
+}
+
+/*--------------------------------------------------------------
+## About section
+--------------------------------------------------------------*/
+#colophon {
+  background: #0F0F0F;
+  padding: 80px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#colophon .about-subtitle, #colophon a.email-address {
+  font-family: roc-grotesk, sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+#colophon a.email-address {
+  text-decoration: none;
+}
+
+#colophon .about-title {
+  font-size: 37px;
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#colophon .about-subtitle {
+  max-width: 300px;
+  margin: auto;
+}
+
+#colophon .get-in-touch img {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /*--------------------------------------------------------------
