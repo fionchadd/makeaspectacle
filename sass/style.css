@@ -961,15 +961,16 @@ transform: rotate(45deg);
 }
 --*/
 #stickThis {
-  top: 0;
-  padding-top: 40px;
-  z-index: 9999;
   margin: auto;
-  left: calc(50% - 25.5px);
+  width: 400px;
 }
 
 #stickThis.stick {
   position: fixed;
+  top: 40px;
+  margin: auto;
+  margin-top: 0;
+  z-index: 9999;
 }
 
 .eye-wrapper {
