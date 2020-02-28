@@ -1,4 +1,6 @@
 jQuery(document).ready(function () {
+    jQuery('body').addClass('ready');
+    /* eye */
     var config = {
         returnSpeed: 0.4
       };
@@ -222,7 +224,7 @@ jQuery(document).ready(function () {
 });   
 
 
-jQuery(document).ready(function () {
+
     // project section hover state
     jQuery(".project a").hover(
     function () {
@@ -240,4 +242,3 @@ jQuery(document).ready(function () {
         jQuery('body').toggleClass('aboutisopen');
       });
 
-});
