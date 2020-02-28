@@ -129,7 +129,7 @@ background-position: right;
 background-clip: text;
 -webkit-text-fill-color: transparent;
 -webkit-text-stroke-width: 1.5px;
--webkit-text-stroke-color: #0f0f0f; 
+-webkit-text-stroke-color: #fff; 
 z-index: 3;
 position: relative;
 display: block;
@@ -170,6 +170,7 @@ a:hover {
   background-position: left;
 font-style: oblique;
 transition-delay: 0s;
+-webkit-text-stroke-color: #0f0f0f; 
   }
   .project-image img {
     transform: translatex(0);
