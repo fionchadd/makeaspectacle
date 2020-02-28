@@ -1051,6 +1051,8 @@ transform: rotate(45deg);
   left: -7.5px;
   width: 50px;
   position: absolute;
+  -webkit-transform: translateY(-101%);
+          transform: translateY(-101%);
 }
 
 .lid-inner {

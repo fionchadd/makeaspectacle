@@ -52,10 +52,10 @@ jQuery(document).ready(function () {
       Eye.prototype.blink = function() {
         if (this.bLidUp) {
           this.bLidUp = false;
-          this.lid.style.transform = 'translateY(-100%)';
+          this.lid.style.transform = 'translateY(0%)';
         } else {
           this.bLidUp = true;
-          this.lid.style.transform = 'translateY(0%)';
+          this.lid.style.transform = 'translateY(-101%)';
         }
       }
       
