@@ -252,11 +252,11 @@ jQuery(document).ready(function () {
         }
       });
       // get all slides
-var slides = document.querySelectorAll("#stickThis");
+var slide = document.querySelectorAll("#stickThis");
 var width = window.innerWidth;
 var height = window.innerHeight;
 new ScrollMagic.Scene({
-    triggerElement: slides[i],
+    triggerElement: slide,
     offset: 0,
   })
   .setPin(slides[i], {pushFollowers: false})
