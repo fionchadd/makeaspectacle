@@ -63,7 +63,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<!--  <script src="/wp-content/themes/makeaspectacle/js/jquery.ScrollMagic.min.js"></script> scrollmagic for platform parallax --> 
- <!--  <script src="/wp-content/themes/makeaspectacle/js/debug.addIndicators.min.js"></script>indicators for scrollmagic --> 
+<script src="/wp-content/themes/makeaspectacle/js/jquery.waypoints.min.js"></script> <!--  waypoints --> 
+ <script src="/wp-content/themes/makeaspectacle/js/inview.min.js"></script>  <!-- inview --> 
 </body>
 </html>
