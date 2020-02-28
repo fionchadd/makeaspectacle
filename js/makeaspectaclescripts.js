@@ -262,5 +262,13 @@ new ScrollMagic.Scene({
   .setPin(slide, {pushFollowers: false})
   .addTo(controller);
 
+  new ScrollMagic.Scene({
+	triggerElement: "#stickThis", 
+	triggerHook: "onLeave",
+})
+						.setPin(".homepage-eye-wrapper")
+//						.addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
+						.addTo(controller);
+
 
     });  
