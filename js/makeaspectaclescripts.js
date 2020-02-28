@@ -242,15 +242,20 @@ jQuery(document).ready(function () {
       });
 
 
-      jQuery(window).scroll(function(e){ 
-        var $el = $('.homepage-eye-wrapper'); 
-        var isPositionFixed = ($el.css('position') == 'fixed');
-        if ($(this).scrollTop() > 200 && !isPositionFixed){ 
-          $el.css({'position': 'fixed', 'top': '0px'}); 
+      function sticktothetop() {
+        var window_top = jQuery(window).scrollTop();
+        var top = jQuery('#stick-here').offset().top;
+        if (window_top > top) {
+            jQuery('#stickThis').addClass('stick');
+            jQuery('#stick-here').height($('#stickThis').outerHeight());
+        } else {
+            jQuery('#stickThis').removeClass('stick');
+            jQuery('#stick-here').height(0);
         }
-        if ($(this).scrollTop() < 200 && isPositionFixed){
-          $el.css({'position': 'static', 'top': '0px'}); 
-        } 
-      });    
+    }
+    jQuery(function() {
+        jQuery(window).scroll(sticktothetop);
+        sticktothetop();
+    });
 
     });  
