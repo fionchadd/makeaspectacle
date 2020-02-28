@@ -1073,6 +1073,10 @@ transform: rotate(45deg);
   margin-bottom: 5px;
 }
 
+.projects .project-image {
+  opacity: 0;
+}
+
 .projects .project.hover {
   z-index: 1;
 }
@@ -1120,6 +1124,7 @@ transform: rotate(45deg);
   top: calc(-50% - 5px);
   z-index: 0;
   overflow: hidden;
+  opacity: 1;
 }
 
 .projects .project-image img {
