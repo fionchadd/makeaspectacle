@@ -19,7 +19,6 @@ $page_tagline = get_field( 'homepage_tagline');
 		<main id="main" class="site-main">
 <div class="above-fold">
 	<div class="central-content">
-	<div id="stick-here"></div>
 	<div id="stickThis">
 		<div class="eye-wrapper homepage-eye-wrapper">
 			<div class="eye homepage-eye">

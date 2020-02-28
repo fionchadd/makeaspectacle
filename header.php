@@ -30,6 +30,7 @@
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
 <a class="menu-link work" href="/#work">work</a> 
+<div id="stick-here"></div>
 <a class="menu-link about" href="#about">about</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
