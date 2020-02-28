@@ -242,20 +242,25 @@ jQuery(document).ready(function () {
       });
 
 
-      function sticktothetop() {
-        var window_top = jQuery(window).scrollTop();
-        var top = jQuery('#stick-here').offset().top;
-        if (window_top > top) {
-            jQuery('#stickThis').addClass('stick');
-            jQuery('#stick-here').height(jQuery('#stickThis').outerHeight());
-        } else {
-            jQuery('#stickThis').removeClass('stick');
-            jQuery('#stick-here').height(0);
+    var controller = new ScrollMagic.Controller({
+
+        globalSceneOptions: {
+          triggerHook: 'onLeave',
+          duration: "0" // this works just fine with duration 0 as well
+          // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+          // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
         }
-    }
-    jQuery(function() {
-        jQuery(window).scroll(sticktothetop);
-        sticktothetop();
-    });
+      });
+      // get all slides
+var slides = document.querySelectorAll("#stickThis");
+var width = window.innerWidth;
+var height = window.innerHeight;
+new ScrollMagic.Scene({
+    triggerElement: slides[i],
+    offset: 0,
+  })
+  .setPin(slides[i], {pushFollowers: false})
+  .addTo(controller);
+
 
     });  
