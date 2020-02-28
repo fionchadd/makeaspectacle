@@ -113,12 +113,6 @@ transform: rotate(45deg);
     z-index: 0;
     margin-bottom: 5px;
   }
-  .project-image {
-    opacity: 0;
-  }
-  .project.hover {
-    z-index: 1;
-  }
   h4 {
     font-size: 65px;
     line-height: 76px;
@@ -147,6 +141,7 @@ transition-delay: .15s;
       position: relative;
       text-decoration: none;
     }
+    
   
   .project-image {
     max-width: 250px;
@@ -155,7 +150,6 @@ transition-delay: .15s;
     top: calc(-50% - 5px);
     z-index: 0;
     overflow: hidden;
-    opacity: 1;
     img {
       display: block;
       width: 100%;
@@ -167,6 +161,9 @@ transition-delay: .15s;
       border: 2px solid #d6d6d6;
       border-top: none;
     }
+}
+.project.hover {
+  z-index: 1;
 }
 a:hover {
   h4 {
