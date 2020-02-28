@@ -50,21 +50,21 @@ transform: rotate(45deg);
 }
 --*/
 
-#stickThis.stick {
-  margin-top: 0;
-  position: fixed;
+#stickThis {
   top: 0;
+  padding-top: 40px;
   z-index: 9999;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  margin: auto;
+  left: calc(50% - 25.5px);
+
 }
 
-#stick-here {
-  align-self: center;
-  margin: auto;
-  width: 51px;
-  height: 36px;
+#stickThis.stick {
+  position: fixed;
 }
+
+
+
 
 .eye-wrapper {
   position: relative;
