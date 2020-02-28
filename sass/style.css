@@ -1254,12 +1254,12 @@ transform: rotate(45deg);
 }
 
 #colophon .about-title {
-  font-size: 37px;
-  line-height: 43px;
+  font-size: 65px;
+  line-height: 76px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #colophon .about-subtitle {
