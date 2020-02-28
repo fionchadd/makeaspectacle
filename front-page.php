@@ -19,7 +19,7 @@ $page_tagline = get_field( 'homepage_tagline');
 		<main id="main" class="site-main">
 <div class="above-fold">
 	<div class="central-content">
-		<div class="eye-wrapper">
+		<div class="eye-wrapper homepage-eye-wrapper">
 			<div class="eye homepage-eye">
 				<div class="pupil"></div>
 				<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid.svg"></div></div>
