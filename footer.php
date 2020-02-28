@@ -46,18 +46,19 @@
 </div>
 <?php endif; ?>
 	<footer id="colophon" class="site-footer">
+	<div class="eye-wrapper">
+			<div class="eye about-eye">
+				<div class="pupil"></div>
+				<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid-white.svg"></div></div>
+			</div>
+			<div class="eye-background">
+				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background-white-01.svg">
+			</div>
+		</div>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'makeaspectacle' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'makeaspectacle' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'makeaspectacle' ), 'makeaspectacle', '<a href="http://makeaspectacle.co.uk">Make A Spectacle</a>' );
-				?>
+		<h3 class="about-title"><?php echo $blog_title; ?></h3>
+			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
+			<div class="get-in-touch"><span>get in touch</span><img src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
