@@ -252,10 +252,11 @@ var height = window.innerHeight;
 
   new ScrollMagic.Scene({
 	triggerElement: "#stickThis", 
-    triggerHook: 40,
+    triggerHook: "onLeave",
+    offest: 40,
     reverse: true,
 })
-						.setPin(".homepage-eye-wrapper")
+						.setPin("#stickThis")
 //						.addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 						.addTo(controller);
 
