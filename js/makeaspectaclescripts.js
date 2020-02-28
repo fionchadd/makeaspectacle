@@ -175,13 +175,13 @@ jQuery(document).ready(function () {
         // fast double blink
         else if (r<0.6) {
           blinkEyes();
-          setTimeout(blinkEyes, 300);
+          setTimeout(blinkEyes, 120);
         } 
         
         // slow double blink
         else if (r < 0.8) {
           blinkEyes();
-          setTimeout(blinkEyes, 1000 + Math.random()*400);
+          setTimeout(blinkEyes, 500 + Math.random()*400);
         }
       }
       
