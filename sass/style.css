@@ -1101,10 +1101,10 @@ transform: rotate(45deg);
   z-index: 3;
   position: relative;
   display: block;
-  -webkit-transition: all ease-out .3s;
-  transition: all ease-out .3s;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  -webkit-transition: all ease-out .2s;
+  transition: all ease-out .2s;
+  -webkit-transition-delay: .15s;
+          transition-delay: .15s;
 }
 
 .projects a {
@@ -1127,8 +1127,8 @@ transform: rotate(45deg);
   width: 100%;
   -webkit-transform: translatex(-100%);
           transform: translatex(-100%);
-  -webkit-transition: all ease-out .3s;
-  transition: all ease-out .3s;
+  -webkit-transition: all ease-out .2s;
+  transition: all ease-out .2s;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
@@ -1148,8 +1148,8 @@ transform: rotate(45deg);
 .projects a:hover .project-image img {
   -webkit-transform: translatex(0);
           transform: translatex(0);
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  -webkit-transition-delay: .15s;
+          transition-delay: .15s;
 }
 
 /*--------------------------------------------------------------
