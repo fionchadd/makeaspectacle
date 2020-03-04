@@ -102,9 +102,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 var tl = new TimelineMax();
 
 
-gsap.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1.5, opacity: 0});
-gsap.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1.5, opacity: 0, delay: 0.2});
-gsap.fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0, delay: 0.5});
+
 
 new ScrollMagic.Scene({
       
@@ -113,6 +111,9 @@ new ScrollMagic.Scene({
     offest: -40,
     reverse: true,
 })
+
+scene.setTween(".above-fold .page-title", 0.5, {opacity: 0})
+
 .setTween(tl)
 .addTo(controller);
                     });  
