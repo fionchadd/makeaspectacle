@@ -100,12 +100,11 @@ var height = window.innerHeight;
 
 
                         var fadeout_tween = TweenMax
-                        .fromTo('.central-content', 1, { yPercent:100 , opacity:1 }, { yPercent:0 , opacity:0 , ease:Power1.easeInOut  });
+                        .fromTo('.central-content', 1, { opacity:1 }, { opacity:0 , ease:Power1.easeInOut  });
                         
                         var scene = new ScrollMagic.Scene({
                           triggerElement: ".above-fold",
                           trigerHook:"onLeave",
-                          duration: "50%"
                         })  
                         .setTween(fadeout_tween)
                         .addTo(controller);
