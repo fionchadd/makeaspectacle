@@ -101,9 +101,9 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
 var timeline = new TimelineMax();
 
-var tween1 = fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1.5, opacity: 0});
-var tween2 = fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1.5, opacity: 0});
-var tween3 = fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0});
+var tween1 = tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1.5, opacity: 0});
+var tween2 = tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1.5, opacity: 0});
+var tween3 = tl.fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0});
 
 var scene2 = new ScrollMagic.Scene({
     offset: 150,
