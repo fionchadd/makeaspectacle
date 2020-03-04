@@ -27,12 +27,11 @@
 	$description = get_sub_field( 'description');
 	?>
 		<div class="eye-wrapper">
-			<div class="eye about-eye">
-				<div class="pupil"></div>
-				<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid-white.svg"></div></div>
+			<div class="eye about-eye" id="eye2">
+				<div class="pupil" id="pupil2"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background-white-01.svg">
+				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-white-w-background.svg"">
 			</div>
 		</div>
 			<h3 class="about-title"><?php echo $blog_title; ?></h3>
@@ -47,12 +46,11 @@
 <?php endif; ?>
 	<footer id="colophon" class="site-footer">
 	<div class="eye-wrapper">
-			<div class="eye footer-eye">
-				<div class="pupil"></div>
-				<div class="lid"><div class="lid-inner"><img src="/wp-content/themes/makeaspectacle/sass/images/logo-eyelid-white.svg"></div></div>
+			<div class="eye footer-eye" id="eye3">
+				<div class="pupil" id="pupil3"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-background-white-01.svg">
+				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-white-w-background.svg">
 			</div>
 		</div>
 		<div class="site-info">

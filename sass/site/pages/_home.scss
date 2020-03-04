@@ -65,6 +65,7 @@ transform: rotate(45deg);
   height: 36px;
   margin: 0 auto;
   overflow: hidden;
+  display: block;
 }
 
 .eye-background {
@@ -76,29 +77,25 @@ transform: rotate(45deg);
 }
 
 .eye {
-  position: absolute;
-  width: 35px;
-  left: 7.5px;
-  height: 35px;
-  border-radius: 50%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  overflow: visible;
+  position: relative;
+  width: 46px;
+  margin: 1px 2px;
+  height: 33px;
+  border-radius: 55%;
+  overflow: hidden;
 }
 
 .pupil {
-  position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background-color: black;
   border-radius: 50%;
-  -webkit-transition: all .05s linear;
-  transition: all .05s linear;
-  -webkit-transform: translateY(50px) translateX(50px);
-          transform: translateY(50px) translateX(50px);
+    margin: auto;
+    display: block;
+    position: absolute;
 }
 
+/*--
 .lid {
   left: -7.5px;
   width: 50px;
@@ -111,6 +108,7 @@ transform: rotate(45deg);
     height: 35px;
     display: block;
 }
+--*/
   
 
 #work {

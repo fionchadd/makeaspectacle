@@ -972,6 +972,7 @@ transform: rotate(45deg);
   height: 36px;
   margin: 0 auto;
   overflow: hidden;
+  display: block;
 }
 
 .eye-background {
@@ -983,43 +984,38 @@ transform: rotate(45deg);
 }
 
 .eye {
-  position: absolute;
-  width: 35px;
-  left: 7.5px;
-  height: 35px;
-  border-radius: 50%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  overflow: visible;
+  position: relative;
+  width: 46px;
+  margin: 1px 2px;
+  height: 33px;
+  border-radius: 55%;
+  overflow: hidden;
 }
 
 .pupil {
-  position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background-color: black;
   border-radius: 50%;
-  -webkit-transition: all .05s linear;
-  transition: all .05s linear;
-  -webkit-transform: translateY(50px) translateX(50px);
-  transform: translateY(50px) translateX(50px);
+  margin: auto;
+  display: block;
+  position: absolute;
 }
 
+/*--
 .lid {
   left: -7.5px;
   width: 50px;
   position: absolute;
-  -webkit-transform: translateY(-101%);
-          transform: translateY(-101%);
+    transform: translateY(-101%);
 }
 
 .lid-inner {
   width: 50px;
-  height: 35px;
-  display: block;
+    height: 35px;
+    display: block;
 }
-
+--*/
 #work {
   text-align: center;
   padding: 80px 0;
@@ -1269,6 +1265,10 @@ transform: rotate(45deg);
 #colophon .get-in-touch img {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+#colophon .footer-eye .pupil {
+  background: white;
 }
 
 /*--------------------------------------------------------------
