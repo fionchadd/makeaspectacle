@@ -418,6 +418,9 @@ p {
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 25px;
 }
 
 dfn, cite, em, i {
@@ -1322,6 +1325,22 @@ a:hover, a:active {
 
 #colophon .footer-eye .pupil {
   background: white;
+}
+
+/*--------------------------------------------------------------
+## About section
+--------------------------------------------------------------*/
+.error404 .site-content {
+  padding: 40px;
+  padding-top: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.error404 p {
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 25px;
 }
 
 /*--------------------------------------------------------------
