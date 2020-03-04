@@ -66,6 +66,6 @@
  <script src="/wp-content/themes/makeaspectacle/js/inview.min.js"></script>  <!-- inview --> 
  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script> <!-- scrollmagic for scrolling effects --> 
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> <!-- indicators for scrollmagic --> 
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.js"></script> <!-- tweenmax for scrollmagic --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script> <!-- GSAP for scrollmagic --> 
 </body>
 </html>
