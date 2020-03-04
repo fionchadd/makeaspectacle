@@ -583,6 +583,32 @@ table {
   }
 }
 
+@-webkit-keyframes fade-and-rise {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-and-rise {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -924,6 +950,18 @@ a:hover, a:active {
   font-size: 65px;
   line-height: 76px;
   text-transform: uppercase;
+  -webkit-animation: fade-and-rise .45s ease both;
+          animation: fade-and-rise .45s ease both;
+}
+
+.above-fold h2 {
+  -webkit-animation: fade-and-rise .45s ease both .15s;
+          animation: fade-and-rise .45s ease both .15s;
+}
+
+.above-fold p {
+  -webkit-animation: fade-and-rise .45s ease both .3s;
+          animation: fade-and-rise .45s ease both .3s;
 }
 
 .above-fold h2, .above-fold p {
