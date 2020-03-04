@@ -100,7 +100,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
 var scene2 = new ScrollMagic.Scene({
       
-    offset: 10%,
+    offset: 150,
     reverse: true,
 })
 .setTween(TweenMax.fromTo(".above-fold .page-title", 0.9, {opacity: 1}, {opacity: 0}))
