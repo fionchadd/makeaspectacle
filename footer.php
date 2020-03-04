@@ -31,7 +31,7 @@
 				<div class="pupil" id="pupil2"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-white-w-background.svg"">
+				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
 			</div>
 		</div>
 			<h3 class="about-title"><?php echo $blog_title; ?></h3>
@@ -50,7 +50,7 @@
 				<div class="pupil" id="pupil3"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-white-w-background.svg">
+				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
 			</div>
 		</div>
 		<div class="site-info">
