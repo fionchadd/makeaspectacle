@@ -98,14 +98,35 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 // .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
 
+
+
+var timeline = new TimelineMax();
+
+var tween1 = TweenMax.fromTo(".above-fold .page-title", .9, {
+    opacity: 1,
+    top: 0
+});
+var tween2 = TweenMax.fromTo(".above-fold .page-subtitle", .9, {
+    opacity: 1,
+    top: 0
+});
+var tween3 = TweenMax.fromTo(".above-fold .page-offering", .9, {
+    opacity: 1,
+    top: 0
+});
+
 var scene2 = new ScrollMagic.Scene({
-      
     offset: 150,
     reverse: true,
-})
-.setTween(TweenMax.fromTo(".above-fold .page-title", 0.9, {opacity: 1}, {opacity: 0}))
-.setTween(TweenMax.fromTo(".above-fold .page-subtitle", 0.9, {opacity: 1}, {opacity: 0}))
-.setTween(TweenMax.fromTo(".above-fold .page-offering", 0.9, {opacity: 1}, {opacity: 0}))
+});
 
-.addTo(controller);
+//.addTo(controller);
+//controller.addScene([
+//  scene4
+//]);
+
+timeline.add(tween1).add(tween2).add(tween3);
+scene.setTween(timeline)
+scene.addTo(controller);
+
                     });  
