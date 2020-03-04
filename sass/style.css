@@ -964,7 +964,7 @@ transform: rotate(45deg);
 }
 --*/
 #stickThis {
-  padding-top: 40px;
+  padding-top: 30px;
   z-index: 99;
 }
 
