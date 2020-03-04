@@ -101,9 +101,16 @@ tl.to (".above-fold .page-offering", 10, {opacity:0}, 0);
     reverse: true,
 })
 .setPin("#stickThis")
+// .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
+.addTo(controller);
+new ScrollMagic.Scene({
+      
+	triggerElement: "#stickThis", 
+    triggerHook: "onLeave",
+    offest: 40,
+    reverse: true,
+})
 .setTween(tl)
 // .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
-
-
                     });  
