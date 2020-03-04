@@ -103,14 +103,14 @@ tl.to (".above-fold .page-offering", .5, {opacity:0}, 0);
 .setPin("#stickThis")
 // .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
+
 new ScrollMagic.Scene({
       
 	triggerElement: ".above-fold", 
     triggerHook: "onLeave",
-    offest: 40,
+    offest: -40,
     reverse: true,
 })
 .setTween(tl)
-// .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
                     });  
