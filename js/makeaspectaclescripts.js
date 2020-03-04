@@ -111,7 +111,7 @@ new ScrollMagic.Scene({
     reverse: true,
 })
 
-scene.setTween(".above-fold .page-title", 0.5, {opacity: 0})
+.setTween(".above-fold .page-title", 0.5, {opacity: 0})
 
 .addTo(controller);
                     });  
