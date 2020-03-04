@@ -106,7 +106,7 @@ tl.to (".above-fold .page-offering", .5, {opacity:0}, 0);
 
 new ScrollMagic.Scene({
       
-	triggerElement: ".above-fold", 
+	triggerElement: ".central-content", 
     triggerHook: "onLeave",
     offest: -40,
     reverse: true,
