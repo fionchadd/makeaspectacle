@@ -88,11 +88,6 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
       var width = window.innerWidth;
       var height = window.innerHeight;
 
-      var tl = new TimelineMax();
-tl.to (".above-fold .page-title", .5, {opacity:0}, 0);
-tl.to (".above-fold .page-subtitle", .5, {opacity:0}, 0);
-tl.to (".above-fold .page-offering", .5, {opacity:0}, 0);
-
   new ScrollMagic.Scene({
       
 	triggerElement: "#stickThis", 
@@ -103,6 +98,13 @@ tl.to (".above-fold .page-offering", .5, {opacity:0}, 0);
 .setPin("#stickThis")
 // .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
+
+var tl = new TimelineMax();
+
+
+gsap.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1.5, opacity: 0});
+gsap.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1.5, opacity: 0, delay: 0.2});
+gsap.fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0, delay: 0.5});
 
 new ScrollMagic.Scene({
       
