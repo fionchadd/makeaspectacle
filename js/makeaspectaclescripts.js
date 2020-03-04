@@ -26,8 +26,8 @@ var DrawEye = function(eye, pupil, speed, interval){
 };
 
 var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
-var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
-  var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
+
+var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
 
 
@@ -46,7 +46,35 @@ var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
   
         jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
-        var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
+    /* eye */
+
+    var DrawEye = function(eye, pupil, speed, interval){
+        var mouseX = 0, mouseY = 0;
+        var pupilX = 0, pupilY = 0;
+        var eyeX = $(eye).width() - $(pupil).width();
+        var eyeY = $(eye).height() - $(pupil).height();
+        var offset = $(eye).offset();
+        
+        $(window).mousemove(function(evt){
+          mouseX = Math.min(evt.pageX - offset.left, eyeX);
+          mouseY = Math.min(evt.pageY - offset.top, eyeY);
+          if (mouseX < 0) mouseX = 0;
+          if (mouseX > 50) mouseX = 50;
+          if (mouseY < 0) mouseY = 0;
+          if (mouseY > 50) mouseY = 50;
+        });
+        
+        var follower = $(pupil);
+        var loop = setInterval(function(){
+          pupilX += (mouseX - pupilX) / speed;
+          pupilY += (mouseY - pupilY) / speed;
+          follower.css({left:pupilX, top:pupilY});
+        }, interval);
+      };
+      
+
+      var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
+
       });
       jQuery('.about-section .close').on('click', function () {
   
