@@ -950,18 +950,18 @@ a:hover, a:active {
   font-size: 65px;
   line-height: 76px;
   text-transform: uppercase;
-  -webkit-animation: fade-and-rise .9s ease both;
-          animation: fade-and-rise .9s ease both;
+  -webkit-animation: fade-and-rise .9s ease backwards;
+          animation: fade-and-rise .9s ease backwards;
 }
 
 .above-fold h2 {
-  -webkit-animation: fade-and-rise .9s ease both .3s;
-          animation: fade-and-rise .9s ease both .3s;
+  -webkit-animation: fade-and-rise .9s ease backwards .3s;
+          animation: fade-and-rise .9s ease backwards .3s;
 }
 
 .above-fold p {
-  -webkit-animation: fade-and-rise .9s ease both .6s;
-          animation: fade-and-rise .9s ease both .6s;
+  -webkit-animation: fade-and-rise .9s ease backwards .6s;
+          animation: fade-and-rise .9s ease backwards .6s;
 }
 
 .above-fold h2, .above-fold p {
