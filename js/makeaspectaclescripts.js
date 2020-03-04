@@ -84,27 +84,26 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
       });
       // get all slides
-var slide = document.querySelectorAll("#stickThis");
-var width = window.innerWidth;
-var height = window.innerHeight;
+      var slide = document.querySelectorAll("#stickThis");
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      var tl = new TimelineMax();
+tl.to (".above-fold .page-title", 1, {opacity:0}, 0);
+tl.to (".above-fold .page-subtitle", 5, {opacity:0}, 0);
+tl.to (".above-fold .page-offering", 10, {opacity:0}, 0);
 
   new ScrollMagic.Scene({
+      
 	triggerElement: "#stickThis", 
     triggerHook: "onLeave",
     offest: 40,
     reverse: true,
 })
-						.setPin("#stickThis")
-//						.addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
-						.addTo(controller);
+.setPin("#stickThis")
+.setTween(tl)
+// .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
+.addTo(controller);
 
-
-
-                        $(window).scroll(function(){
-                            $(".above-fold .page-title").css("opacity", 1 - $(window).scrollTop() / 350);
-                            $(".above-fold .page-subtitle").css("opacity", 1 - $(window).scrollTop() / 450);
-                            $(".above-fold .page-offering").css("opacity", 1 - $(window).scrollTop() / 550);
-                            $(".projects .project").css("opacity", 0 + $(this).scrollTop() / 450);
-                          });
 
                     });  
