@@ -704,7 +704,8 @@ a:hover, a:active {
   float: none;
   width: 100%;
   position: fixed;
-  margin-top: 35px;
+  padding: 35px;
+  background: #fff;
   z-index: 9;
 }
 
@@ -722,14 +723,14 @@ a:hover, a:active {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: auto;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .main-navigation .menu-link.about {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: auto;
-  margin-right: 35px;
+  margin-right: 0;
 }
 
 .menu-toggle {
@@ -964,6 +965,7 @@ transform: rotate(45deg);
 --*/
 #stickThis {
   padding-top: 40px;
+  z-index: 99;
 }
 
 .eye-wrapper {

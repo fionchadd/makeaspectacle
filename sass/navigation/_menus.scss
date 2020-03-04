@@ -4,7 +4,8 @@
 	float: none;
 	width: 100%;
 	position: fixed;
-	margin-top: 35px;
+padding: 35px;
+background: #fff;
 	z-index: 9;
 
 	a {
@@ -19,12 +20,12 @@
 	.menu-link.work {
 		align-self: flex-start;
 		margin: auto;
-		margin-left: 35px;
+		margin-left: 0;
 	}
 	.menu-link.about {
 		align-self: flex-end;
 		margin: auto;
-		margin-right: 35px;
+		margin-right: 0;
 	}
 
 }
