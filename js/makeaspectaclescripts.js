@@ -99,7 +99,6 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 // .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
 
-var tl = new TimelineMax();
 
 
 
@@ -114,6 +113,5 @@ new ScrollMagic.Scene({
 
 scene.setTween(".above-fold .page-title", 0.5, {opacity: 0})
 
-.setTween(tl)
 .addTo(controller);
                     });  
