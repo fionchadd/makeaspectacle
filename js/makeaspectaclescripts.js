@@ -99,14 +99,9 @@ var height = window.innerHeight;
 						.addTo(controller);
 
 
-                        var fadeout_tween = TweenMax
-                        .fromTo('.central-content', 1, { opacity:1 }, { opacity:0 , ease:Power1.easeInOut  });
-                        
-                        var scene = new ScrollMagic.Scene({
-                          triggerElement: ".above-fold",
-                          trigerHook:"onLeave",
-                        })  
-                        .setTween(fadeout_tween)
-                        .addTo(controller);
+
+                        $(window).scroll(function(){
+                            $(".above-fold").css("opacity", 1 - $(window).scrollTop() / 250);
+                          });
 
                     });  
