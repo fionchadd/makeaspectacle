@@ -26,14 +26,14 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p>We couldn't find that page. Maybe try a search? Or take a look at our work <a href="http://new.makeaspectacle.co.uk/#work">here</a></p>
+					<p>We couldn't find that page. Maybe try a search? </p>
 
 					<?php
 					get_search_form();
 
 					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
-
+<p>Or take a look at our work <a href="http://new.makeaspectacle.co.uk/#work">here</a></p>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
