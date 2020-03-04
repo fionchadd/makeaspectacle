@@ -46,6 +46,9 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
   
         jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
+
+
+            setTimeout(function(){      
     /* eye */
 
     var DrawEye = function(eye, pupil, speed, interval){
@@ -74,6 +77,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
       
 
       var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
+    }, 600); 
 
       });
       jQuery('.about-section .close').on('click', function () {
