@@ -92,7 +92,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
       
 	triggerElement: "#stickThis", 
     triggerHook: "onLeave",
-    offest: 40,
+    offset: 40,
     reverse: true,
 })
 .setPin("#stickThis")
@@ -103,7 +103,7 @@ var scene2 = new ScrollMagic.Scene({
       
 	triggerElement: ".central-content", 
     triggerHook: "onLeave",
-    offest: -40,
+    offset: -40,
     reverse: true,
 })
 .setTween(TweenMax.fromTo(".above-fold .page-title", 0.2, {opacity: 1}, {opacity: 0}))
