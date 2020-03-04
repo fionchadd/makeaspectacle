@@ -64,10 +64,10 @@
 <?php wp_footer(); ?>
 <script src="/wp-content/themes/makeaspectacle/js/jquery.waypoints.min.js"></script> <!--  waypoints --> 
  <script src="/wp-content/themes/makeaspectacle/js/inview.min.js"></script>  <!-- inview --> 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
 
 </body>
 </html>

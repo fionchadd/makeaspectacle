@@ -15,13 +15,13 @@
       font-size: 65px;
       line-height: 76px;
       text-transform: uppercase;
-      animation: fade-and-rise .45s ease both;
+      animation: fade-and-rise .9s ease both;
     }
     h2 {
-      animation: fade-and-rise .45s ease both .15s;
+      animation: fade-and-rise .9s ease both .3s;
     }
     p {
-      animation: fade-and-rise .45s ease both .3s;
+      animation: fade-and-rise .9s ease both .6s;
     }
     h2, p {
       font-family: $font__main;
