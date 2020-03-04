@@ -110,6 +110,7 @@ var scene2 = new ScrollMagic.Scene({
     reverse: true,
 });
 
-scene.addTo(controller);
+
+scene2.addTo(controller);
 
                     });  

@@ -14,8 +14,8 @@ get_header();
 		<main id="main" class="site-main">
 			<section class="error-404 not-found">
 			<div class="eye-wrapper error-eye-wrapper">
-			<div class="eye error-eye" id="eye4">
-				<div class="pupil" id="pupil4"></div>
+			<div class="eye error-eye" id="eye1">
+				<div class="pupil" id="pupil1"></div>
 			</div>
 			<div class="eye-background">
 				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-dark-w-background.svg">
