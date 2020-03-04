@@ -101,7 +101,11 @@ var height = window.innerHeight;
 
 
                         $(window).scroll(function(){
-                            $(".above-fold").css("opacity", 1 - $(window).scrollTop() / 250);
+                            $(".above-fold .page-title").css("opacity", 1 - $(window).scrollTop() / 350);
+                            $(".above-fold .page-subtitle").css("opacity", 1 - $(window).scrollTop() / 450);
+                            $(".above-fold .page-offering").css("opacity", 1 - $(window).scrollTop() / 450);
+                            $(".projects .project").css("opacity", 0 + $(window).scrollTop() / 250);
+                            
                           });
 
                     });  
