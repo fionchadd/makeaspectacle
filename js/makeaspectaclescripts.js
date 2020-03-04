@@ -110,12 +110,8 @@ var scene2 = new ScrollMagic.Scene({
     reverse: true,
 });
 
-//.addTo(controller);
-//controller.addScene([
-//  scene4
-//]);
 
-tl.add(tween1).add(tween2).add(tween3);
+
 scene.setTween(tl)
 scene.addTo(controller);
 

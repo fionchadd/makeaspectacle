@@ -12,7 +12,11 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-		<div class="eye-wrapper error-eye-wrapper">
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title">Oh no!</h1>
+				</header><!-- .page-header -->
+				<div class="eye-wrapper error-eye-wrapper">
 			<div class="eye error-eye" id="eye4">
 				<div class="pupil" id="pupil4"></div>
 			</div>
@@ -20,11 +24,6 @@ get_header();
 				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-dark-w-background.svg">
 			</div>
 		</div>
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title">Oh no!</h1>
-				</header><!-- .page-header -->
-
 				<div class="page-content">
 					<p>We couldn't find that page. Maybe try a search? </p>
 
