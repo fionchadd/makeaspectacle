@@ -98,12 +98,12 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 .addTo(controller);
 
 
+var tl = new TimelineMax();
+tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1.5, opacity: 0});
+tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1.5, opacity: 0});
+tl.fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0});
 
-var timeline = new TimelineMax();
 
-var tween1 = tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1.5, opacity: 0});
-var tween2 = tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1.5, opacity: 0});
-var tween3 = tl.fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0});
 
 var scene2 = new ScrollMagic.Scene({
     offset: 150,
@@ -115,8 +115,8 @@ var scene2 = new ScrollMagic.Scene({
 //  scene4
 //]);
 
-timeline.add(tween1).add(tween2).add(tween3);
-scene.setTween(timeline)
+tl.add(tween1).add(tween2).add(tween3);
+scene.setTween(tl)
 scene.addTo(controller);
 
                     });  
