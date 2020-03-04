@@ -108,9 +108,9 @@ tl.fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0
 var scene2 = new ScrollMagic.Scene({
     offset: 150,
     reverse: true,
-});
+})
 
-
-scene2.addTo(controller);
+.setTween(tl)
+.addTo(controller);
 
                     });  
