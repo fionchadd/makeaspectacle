@@ -4,6 +4,13 @@
     padding-top: 80px;
     text-align: center;
     text-transform: uppercase;
+    min-height: calc(100vh - 454px);
+    display: flex;
+
+      #primary {
+        margin: auto;
+    align-self: center;
+      }
   }
   p {
     font-size: 15px;

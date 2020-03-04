@@ -27,7 +27,6 @@ var DrawEye = function(eye, pupil, speed, interval){
 
 var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
 var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
-var eye4 = new DrawEye("#eye4", "#pupil4", 4, 30);
 
     // project section hover state
     jQuery(".project a").hover(

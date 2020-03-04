@@ -1335,6 +1335,17 @@ a:hover, a:active {
   padding-top: 80px;
   text-align: center;
   text-transform: uppercase;
+  min-height: calc(100vh - 454px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.error404 .site-content #primary {
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .error404 p {
