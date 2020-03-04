@@ -88,7 +88,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
       var width = window.innerWidth;
       var height = window.innerHeight;
 
-  new ScrollMagic.Scene({
+ var scene1 = new ScrollMagic.Scene({
       
 	triggerElement: "#stickThis", 
     triggerHook: "onLeave",
@@ -99,19 +99,14 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 // .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
 
-
-
-
-
-new ScrollMagic.Scene({
+var scene2 = new ScrollMagic.Scene({
       
 	triggerElement: ".central-content", 
     triggerHook: "onLeave",
     offest: -40,
     reverse: true,
 })
-
-.setTween(".above-fold .page-title", 0.5, {opacity: 0})
+.setTween(TweenMax.fromTo(".above-fold .page-title", 0.2, {opacity: 1}, {opacity: 0}))
 
 .addTo(controller);
                     });  
