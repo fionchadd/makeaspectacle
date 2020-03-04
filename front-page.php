@@ -17,7 +17,7 @@ $page_tagline = get_field( 'homepage_tagline');
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-<div class="above-fold">
+<div id="fade-in-trigger" class="above-fold">
 	<div class="central-content">
 	<div id="stickThis">
 		<div class="eye-wrapper homepage-eye-wrapper">
@@ -35,8 +35,8 @@ $page_tagline = get_field( 'homepage_tagline');
 		<p class="page-offering"><?php echo $page_tagline; ?></p>
 </div>
 
-<div id="work">
-	<div class="projects">
+<div id="fade-out-trigger">
+	<div id="work" class="projects">
 <?php if( have_rows('projects') ): 
 		while( have_rows('projects') ): the_row(); 
 		if ( get_sub_field( 'project_details' ) ) : 

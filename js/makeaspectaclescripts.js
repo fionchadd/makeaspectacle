@@ -29,19 +29,12 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
 
 var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
-
-
-
- 
-
-
-
     // project section hover state
     jQuery(".project a").hover(
     function () {
         jQuery(this).parent().toggleClass("hover");
     });
-    // open nav section when clicked
+    // open about section when clicked
     jQuery('.menu-link.about').on('click', function () {
   
         jQuery('.about-section').toggleClass('open');
@@ -49,7 +42,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
 
             setTimeout(function(){      
-    /* eye */
+    /* setting position for about eye once the panel is open */
 
     var DrawEye = function(eye, pupil, speed, interval){
         var mouseX = 0, mouseY = 0;
@@ -106,4 +99,15 @@ var height = window.innerHeight;
 						.addTo(controller);
 
 
-    });  
+                        var fadeout_tween = TweenMax
+                        .fromTo('.central-content', 1, { yPercent:100 , opacity:1 }, { yPercent:0 , opacity:0 , ease:Power1.easeInOut  });
+                        
+                        var scene = new ScrollMagic.Scene({
+                          triggerElement: ".above-fold",
+                          trigerHook:"onLeave",
+                          duration: "50%"
+                        })  
+                        .setTween(fadeout_tween)
+                        .addTo(controller);
+
+                    });  
