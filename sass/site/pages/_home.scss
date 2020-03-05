@@ -41,6 +41,15 @@
       margin: auto;
       text-align: center;
     }
+    .page-title.active {
+      animation: fade-out-and-rise .9s ease;
+    }
+    .page-subtitle.active {
+      animation: fade-out-and-rise .9s ease .3s; 
+    }
+    .page-bottom.active {
+      animation: fade-out-and-rise-large 1.2s ease;
+    }
 }
 
 

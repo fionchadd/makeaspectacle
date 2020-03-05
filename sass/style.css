@@ -637,6 +637,32 @@ table {
   }
 }
 
+@-webkit-keyframes fade-out-and-rise-large {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-and-rise-large {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -1014,6 +1040,21 @@ a:hover, a:active {
       align-self: center;
   margin: auto;
   text-align: center;
+}
+
+.above-fold .page-title.active {
+  -webkit-animation: fade-out-and-rise .9s ease;
+          animation: fade-out-and-rise .9s ease;
+}
+
+.above-fold .page-subtitle.active {
+  -webkit-animation: fade-out-and-rise .9s ease .3s;
+          animation: fade-out-and-rise .9s ease .3s;
+}
+
+.above-fold .page-bottom.active {
+  -webkit-animation: fade-out-and-rise-large 1.2s ease;
+          animation: fade-out-and-rise-large 1.2s ease;
 }
 
 #stickThis {
