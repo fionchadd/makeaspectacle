@@ -162,7 +162,6 @@ $('.project').each(function(){
     triggerHook: 0.9
     })
     .setClassToggle(this, 'active')
-    .removeClassToggle(false)
     .addTo(controller);
    });
 
