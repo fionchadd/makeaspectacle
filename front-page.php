@@ -32,7 +32,7 @@ $page_tagline = get_field( 'homepage_tagline');
 			<h1 class="page-title"><?php echo $blog_title; ?></h1>
 			<h2 class="page-subtitle"><?php echo $blog_tagline; ?></h2>
 	</div>
-		<p class="page-offering"><?php echo $page_tagline; ?></p>
+		<div class="page-bottom"><p class="page-offering"><?php echo $page_tagline; ?></p></div>
 </div>
 
 <div id="work">

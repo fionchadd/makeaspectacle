@@ -83,7 +83,6 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
       });
       // get all slides
-      var slide = document.querySelectorAll("#stickThis");
       var width = window.innerWidth;
       var height = window.innerHeight;
 
@@ -94,14 +93,13 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
     reverse: true,
 })
 .setPin("#stickThis")
-// .addIndicators({name: "1 (duration: 360)"}) // add indicators (requires plugin)
 .addTo(controller);
 
 
 var tl = new TimelineMax();
 tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1, opacity: 0});
 tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1, opacity: 0});
-tl.fromTo(".above-fold .page-offering", {opacity: 1, transform: "translate(0px, 0px)"}, {duration: 1, opacity: 0, transform: "translate(0px, -300px)"});
+tl.fromTo(".above-fold .page-bottom", {opacity: 1, transform: "translate(0px, 0px)"}, {duration: 1, opacity: 0, transform: "translate(0px, -300px)"});
 
 
 
