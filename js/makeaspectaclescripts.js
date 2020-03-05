@@ -112,6 +112,52 @@ var scene2 = new ScrollMagic.Scene({
 .setTween(tl)
 .addTo(controller);
 */
+var tl1 = new TimelineMax();
+tl1.fromTo(".above-fold .page-title", {y: 0, opacity: 1}, {y: -50, opacity: 0, ease: Linear.easeNone});
+
+var tl2 = new TimelineMax();
+tl2.fromTo(".above-fold .page-subtitle", {y: 0, opacity: 1}, {y: -70, opacity: 0, ease: Linear.easeNone});
+
+var tl3 = new TimelineMax();
+tl3.fromTo(".above-fold .page-bottom", {y: 0, opacity: 1}, {y: -150, opacity: 0, ease: Linear.easeNone});
+
+new ScrollMagic.Scene({
+    triggerElement: ".above-fold", 
+    triggerHook: "onLeave",
+    reverse: true,
+    offset: 100,
+    duration: 450,
+})
+
+.setTween(tl1)
+.addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: ".above-fold", 
+    triggerHook: "onLeave",
+    reverse: true,
+    offset: 80,
+    duration: 450,
+})
+
+.setTween(tl2)
+.addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: ".above-fold", 
+    triggerHook: "onLeave",
+    reverse: true,
+    offset: 50,
+    duration: 450,
+})
+
+.setTween(tl3)
+.addTo(controller);
+
+
+
+});  
+/*
 new ScrollMagic.Scene({
     triggerElement: ".above-fold", 
     triggerHook: "onLeave",
@@ -139,4 +185,5 @@ new ScrollMagic.Scene({
 .setClassToggle(".page-bottom", "active") // add class toggle
 .addTo(controller);
 
-                    });  
+
+*/
