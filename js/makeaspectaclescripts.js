@@ -119,7 +119,7 @@ var tl2 = new TimelineMax();
 tl2.fromTo(".above-fold .page-subtitle", {y: 0, opacity: 1}, {y: -70, opacity: 0, ease: Linear.easeNone});
 
 var tl3 = new TimelineMax();
-tl3.fromTo(".above-fold .page-bottom", {y: 0, opacity: 1}, {y: -150, opacity: 0, ease: Linear.easeNone});
+tl3.fromTo(".above-fold .page-bottom", {y: 0, opacity: 1}, {y: -250, opacity: 0, ease: Linear.easeNone});
 
 new ScrollMagic.Scene({
     triggerElement: ".above-fold", 
