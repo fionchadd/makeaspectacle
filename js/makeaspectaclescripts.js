@@ -95,7 +95,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 .setPin("#stickThis")
 .addTo(controller);
 
-
+/*
 var tl = new TimelineMax();
 tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1, opacity: 0});
 tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1, opacity: 0});
@@ -104,12 +104,23 @@ tl.fromTo(".above-fold .page-bottom", {opacity: 1, transform: "translate(0px, 0p
 
 
 var scene2 = new ScrollMagic.Scene({
-    triggerElement: ".above-fold .page-title", 
-    offset: 150,
+    triggerElement: ".above-fold", 
+    triggerHook: "onLeave",
     reverse: true,
 })
 
 .setTween(tl)
+.addTo(controller);
+*/
+var scene2 = new ScrollMagic.Scene({
+    triggerElement: ".above-fold", 
+    triggerHook: "onLeave",
+    reverse: true,
+})
+.setClassToggle(".page-title", "active") // add class toggle
+.setClassToggle(".page-subtitle", "active") // add class toggle
+.setClassToggle(".page-bottom", "active") // add class toggle
+
 .addTo(controller);
 
                     });  
