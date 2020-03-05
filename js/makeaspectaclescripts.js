@@ -148,7 +148,7 @@ new ScrollMagic.Scene({
     triggerHook: "onLeave",
     reverse: true,
     offset: 50,
-    duration: 350,
+    duration: 450,
 })
 
 .setTween(tl3)
