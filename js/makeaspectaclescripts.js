@@ -126,7 +126,7 @@ new ScrollMagic.Scene({
     triggerHook: "onLeave",
     reverse: true,
     offset: 100,
-    duration: 450,
+    duration: 350,
 })
 
 .setTween(tl1)
@@ -137,7 +137,7 @@ new ScrollMagic.Scene({
     triggerHook: "onLeave",
     reverse: true,
     offset: 80,
-    duration: 450,
+    duration: 350,
 })
 
 .setTween(tl2)
@@ -148,7 +148,7 @@ new ScrollMagic.Scene({
     triggerHook: "onLeave",
     reverse: true,
     offset: 50,
-    duration: 450,
+    duration: 350,
 })
 
 .setTween(tl3)
