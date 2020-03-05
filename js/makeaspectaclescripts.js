@@ -106,8 +106,8 @@ tl.fromTo(".above-fold .page-offering", {opacity: 1, transform: "translate(0px, 
 
 
 var scene2 = new ScrollMagic.Scene({
-    triggerElement: "#stickThis", 
-    offset: 50,
+    triggerElement: ".above-fold .page-title", 
+    offset: 150,
     reverse: true,
 })
 
