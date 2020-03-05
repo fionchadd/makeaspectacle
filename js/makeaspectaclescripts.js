@@ -159,7 +159,7 @@ $('.project').each(function(){
     // Create a scene for each project
     var myScene = new ScrollMagic.Scene({
     triggerElement: this,
-    triggerHook: 0.65
+    triggerHook: 0.7
     })
     .setClassToggle(this, 'active')
     .addTo(controller);
