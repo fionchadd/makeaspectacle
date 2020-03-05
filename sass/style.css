@@ -1138,7 +1138,7 @@ a:hover, a:active {
   margin-bottom: 5px;
 }
 
-#work .projects.active .project {
+#work .project.active {
   -webkit-animation: fade-and-rise .5s ease backwards;
           animation: fade-and-rise .5s ease backwards;
 }
