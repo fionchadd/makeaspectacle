@@ -155,23 +155,13 @@ new ScrollMagic.Scene({
 .setTween(tl3)
 .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: ".project", 
-    triggerHook: "onEnter",
-    offset: 350,
-})
-.setClassToggle(this, "active") // add class toggle
-.addTo(controller);
-
-
-
 $('.project').each(function(){
     // Create a scene for each project
     var myScene = new ScrollMagic.Scene({
     triggerElement: this,
     triggerHook: 0.8
     })
-    .setClassToggle(this, 'fade-in')
+    .setClassToggle(this, 'active')
     .addTo(controller);
    });
 
