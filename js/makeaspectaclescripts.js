@@ -112,15 +112,31 @@ var scene2 = new ScrollMagic.Scene({
 .setTween(tl)
 .addTo(controller);
 */
-var scene2 = new ScrollMagic.Scene({
+new ScrollMagic.Scene({
     triggerElement: ".above-fold", 
     triggerHook: "onLeave",
     reverse: true,
+    offset: 100,
 })
 .setClassToggle(".page-title", "active") // add class toggle
-.setClassToggle(".page-subtitle", "active") // add class toggle
-.setClassToggle(".page-bottom", "active") // add class toggle
+.addTo(controller);
 
+new ScrollMagic.Scene({
+    triggerElement: ".above-fold", 
+    triggerHook: "onLeave",
+    reverse: true,
+    offset: 100,
+})
+.setClassToggle(".page-subtitle", "active") // add class toggle
+.addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: ".above-fold", 
+    triggerHook: "onLeave",
+    reverse: true,
+    offset: 100,
+})
+.setClassToggle(".page-bottom", "active") // add class toggle
 .addTo(controller);
 
                     });  
