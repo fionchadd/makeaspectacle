@@ -122,7 +122,7 @@ new ScrollMagic.Scene({
 .addTo(controller);
 
 new ScrollMagic.Scene({
-    triggerElement: ".above-fold", 
+    triggerElement: ".page-title", 
     triggerHook: "onLeave",
     reverse: true,
     offset: 100,
@@ -131,7 +131,7 @@ new ScrollMagic.Scene({
 .addTo(controller);
 
 new ScrollMagic.Scene({
-    triggerElement: ".above-fold", 
+    triggerElement: ".page-subtitle", 
     triggerHook: "onLeave",
     reverse: true,
     offset: 100,
