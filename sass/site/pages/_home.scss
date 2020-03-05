@@ -125,6 +125,9 @@
     align-self: center;
     margin: auto;
   }
+  .projects.active .project {
+    animation: fade-and-rise .5s ease backwards;
+  }
   .project {
     position: relative;
     z-index: 0;
