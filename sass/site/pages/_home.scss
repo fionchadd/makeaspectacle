@@ -130,6 +130,7 @@
     position: relative;
     z-index: 0;
     margin-bottom: 5px;
+    opacity: 0;
   }
   .project.active {
     animation: fade-and-rise .6s ease backwards;
