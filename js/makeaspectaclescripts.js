@@ -121,8 +121,6 @@ tl2.fromTo(".above-fold .page-subtitle", {y: 0, opacity: 1}, {y: -70, opacity: 0
 var tl3 = new TimelineMax();
 tl3.fromTo(".above-fold .page-bottom", {y: 0, opacity: 1}, {y: -250, opacity: 0, ease: Linear.easeNone});
 
-var tl4 = new TimelineMax();
-tl4.fromTo(".project", {y: 0, opacity: 1}, {y: -50, opacity: 0, ease: Linear.easeNone});
 
 new ScrollMagic.Scene({
     triggerElement: ".above-fold", 
@@ -160,21 +158,11 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
     triggerElement: ".page-bottom", 
     triggerHook: "onLeave",
-    offset: 100,
+    offset: 200,
 })
 .setClassToggle(".projects", "active") // add class toggle
 .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: ".project", 
-    triggerHook: "onLeave",
-    reverse: true,
-    offset: 150,
-    duration: 250,
-})
-
-.setTween(tl4)
-.addTo(controller);
 
 });  
 /*

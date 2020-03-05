@@ -1132,15 +1132,16 @@ a:hover, a:active {
   margin: auto;
 }
 
-#work .projects.active .project {
-  -webkit-animation: fade-and-rise .5s ease backwards;
-          animation: fade-and-rise .5s ease backwards;
-}
-
 #work .project {
   position: relative;
   z-index: 0;
   margin-bottom: 5px;
+  opacity: 0;
+}
+
+#work .projects.active .project {
+  -webkit-animation: fade-and-rise .5s ease backwards;
+          animation: fade-and-rise .5s ease backwards;
 }
 
 #work h4 {
