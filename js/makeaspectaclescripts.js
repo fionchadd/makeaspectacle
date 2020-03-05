@@ -156,9 +156,9 @@ new ScrollMagic.Scene({
 .addTo(controller);
 
 new ScrollMagic.Scene({
-    triggerElement: ".page-bottom", 
-    triggerHook: "onLeave",
-    offset: -100,
+    triggerElement: "#work", 
+    triggerHook: "onEnter",
+    offset: -200,
 })
 .setClassToggle(".projects", "active") // add class toggle
 .addTo(controller);
