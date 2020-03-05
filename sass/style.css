@@ -1139,8 +1139,8 @@ a:hover, a:active {
 }
 
 #work .project.active {
-  -webkit-animation: fade-and-rise .5s ease backwards;
-          animation: fade-and-rise .5s ease backwards;
+  -webkit-animation: fade-and-rise .6s ease backwards;
+          animation: fade-and-rise .6s ease backwards;
 }
 
 #work h4 {

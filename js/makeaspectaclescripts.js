@@ -158,7 +158,7 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
     triggerElement: ".project", 
     triggerHook: "onEnter",
-    offset: 400,
+    offset: 350,
 })
 .setClassToggle(this, "active") // add class toggle
 .addTo(controller);
