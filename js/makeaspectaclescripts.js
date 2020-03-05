@@ -99,13 +99,14 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
 
 
 var tl = new TimelineMax();
-tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1.5, opacity: 0});
-tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1.5, opacity: 0});
-tl.fromTo(".above-fold .page-offering", {opacity: 1}, {duration: 1.5, opacity: 0});
+tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1, opacity: 0});
+tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1, opacity: 0});
+tl.fromTo(".above-fold .page-offering", {opacity: 1, transform: "translatey(0)"}, {duration: 1, opacity: 0, transform: "translatey(-100px)"});
 
 
 
 var scene2 = new ScrollMagic.Scene({
+    triggerElement: "#stickThis", 
     offset: 150,
     reverse: true,
 })
