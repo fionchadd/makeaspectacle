@@ -1139,16 +1139,16 @@ a:hover, a:active {
   opacity: 0;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
 }
 
 #work .project.active {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
 }
 
 #work h4 {
@@ -1175,10 +1175,10 @@ a:hover, a:active {
   z-index: 3;
   position: relative;
   display: block;
-  -webkit-transition: all ease-out .2s;
-  transition: all ease-out .2s;
-  -webkit-transition-delay: .15s;
-          transition-delay: .15s;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 #work a {
@@ -1201,8 +1201,8 @@ a:hover, a:active {
   width: 100%;
   -webkit-transform: translatex(-100%);
           transform: translatex(-100%);
-  -webkit-transition: all ease-out .2s;
-  transition: all ease-out .2s;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
@@ -1226,8 +1226,8 @@ a:hover, a:active {
 #work a:hover .project-image img {
   -webkit-transform: translatex(0);
           transform: translatex(0);
-  -webkit-transition-delay: .15s;
-          transition-delay: .15s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 /*--------------------------------------------------------------
