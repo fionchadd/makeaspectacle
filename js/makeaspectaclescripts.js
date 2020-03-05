@@ -163,23 +163,17 @@ new ScrollMagic.Scene({
 .setClassToggle(this, "active") // add class toggle
 .addTo(controller);
 
-var $element = $('.project');
 
 
-scene = new ScrollMagic.Scene({
-        triggerElement: $element[0],
-        triggerHook: "onEnter",
-        offset: 350,
-      })
-      .addTo(controller);
-
-    scene.on('enter', function(){
-      $element.addClass('active-class');
-    });
-
-    scene.on('leave', function(){
-      $element.removeClass('active-class');
-    });
+$('.project').each(function(){
+    // Create a scene for each project
+    var myScene = new ScrollMagic.Scene({
+    triggerElement: this,
+    triggerHook: 0.8
+    })
+    .setClassToggle(this, 'fade-in')
+    .addTo(controller);
+   });
 
 });  
 /*
