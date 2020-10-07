@@ -144,15 +144,14 @@
     line-height: 76px;
     margin: 0;
     text-transform: uppercase;
-    background: #0f0f0f; /* Old browsers */
--webkit-text-fill-color: #0f0f0f;
+    color:  rgba(15 15 15, 1); /* Old browsers */
+-webkit-text-fill-color: rgba(15 15 15, 1);
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: #0f0f0f; 
 z-index: 3;
 position: relative;
 display: block;
-transition: all ease-out .3s;
-transition-delay: .2s;  
+transition: all ease-in-out .3s; 
   }
     a {
       display: inline-block;
@@ -185,10 +184,9 @@ transition-delay: .2s;
 }
 a:hover {
   h4 {
-    -webkit-text-fill-color: transparent;
-
+    -webkit-text-fill-color:  rgba(15 15 15, 0);
+    transition: all ease-in-out .3s; 
 font-style: oblique;
-transition-delay: 0s;
 
   }
   .project-image img {
