@@ -130,15 +130,9 @@
     position: relative;
     z-index: 0;
     margin-bottom: 5px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.9s ease;
+
   }
-  .project.active {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: all 0.9s ease;
-  }
+
   h4 {
     font-size: 65px;
     line-height: 76px;
@@ -171,8 +165,7 @@ transition: all ease-in-out .3s;
       display: block;
       width: 100%;
       opacity: 0;
-      transition: all ease-out .3s;
-      transition-delay: 0s;
+      transition: all ease-in-out .3s;
     }
     .screenshot {
       border: 2px solid #d6d6d6;
@@ -189,7 +182,10 @@ a:hover {
 font-style: oblique;
 
   }
-  .project-image img {
+}
+.project-image.visible {
+  visibility: visible;
+ img {
     opacity: 1;
     
   }

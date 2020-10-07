@@ -155,15 +155,33 @@ new ScrollMagic.Scene({
 .setTween(tl3)
 .addTo(controller);
 
-$('.project').each(function(){
-    // Create a scene for each project
-    var myScene = new ScrollMagic.Scene({
-    triggerElement: this,
-    triggerHook: 0.7
+if ($('#work')[0]) {
+  function fade_scroll_animation() {
+    var $anim_scroll = $("#work"),
+    anim_time = 1,
+    anim_stagger = 0.3,
+    easing =  'ease',
+    elem_y = 50;
+    var animationClass = 'project active';
+    var tl = new TimelineLite();
+    $anim_scroll.each(function(index, element) {
+        var $this = $(this),
+            $anim = $this.find(".project");
+            tl.staggerFromTo($anim, anim_time, { y: elem_y, autoAlpha:0, ease: easing},{className: '+=' + animationClass, y: 0, autoAlpha:1, ease: easing}, anim_stagger, index * 0.2);
+  
+    });
+  }
+  if  (window.innerWidth > 980 && navigator.userAgent.match(/iPad/i) == null) {
+    var scene2 = new ScrollMagic.Scene({
+    triggerElement: '#work',
+    triggerHook: "onEnter",
+    offset: 100,
     })
-    .setClassToggle(this, 'active')
+    .setTween(fade_scroll_animation)
     .addTo(controller);
-   });
+    scene2.setClassToggle('#work', 'active');
+    }
+    } 
 
 // move project images to follow mouse
  
