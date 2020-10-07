@@ -1156,20 +1156,9 @@ a:hover, a:active {
   line-height: 76px;
   margin: 0;
   text-transform: uppercase;
-  background: #ffffff;
+  background: #0f0f0f;
   /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(50%, #ffffff), color-stop(50%, #0f0f0f), to(#0f0f0f));
-  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #0f0f0f 50%, #0f0f0f 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0f0f0f',GradientType=1 );
-  /* IE6-9 */
-  background-size: 201%;
-  background-position: right;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #0f0f0f;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #0f0f0f;
   z-index: 3;
@@ -1188,19 +1177,19 @@ a:hover, a:active {
 }
 
 #work .project-image {
-  max-width: 250px;
   position: absolute;
-  right: -235px;
-  top: calc(-50% - 5px);
-  z-index: 0;
-  overflow: hidden;
+  z-index: -1;
+  visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  max-width: 250px;
 }
 
 #work .project-image img {
   display: block;
   width: 100%;
-  -webkit-transform: translatex(-100%);
-          transform: translatex(-100%);
+  opacity: 0;
   -webkit-transition: all ease-out .3s;
   transition: all ease-out .3s;
   -webkit-transition-delay: 0s;
@@ -1217,17 +1206,14 @@ a:hover, a:active {
 }
 
 #work a:hover h4 {
-  background-position: left;
+  -webkit-text-fill-color: transparent;
   font-style: oblique;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 
 #work a:hover .project-image img {
-  -webkit-transform: translatex(0);
-          transform: translatex(0);
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------

@@ -144,16 +144,8 @@
     line-height: 76px;
     margin: 0;
     text-transform: uppercase;
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, #0f0f0f 50%, #0f0f0f 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 50%,#0f0f0f 50%,#0f0f0f 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#0f0f0f 50%,#0f0f0f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0f0f0f',GradientType=1 ); /* IE6-9 */
-background-size: 201%;
-background-position: right;
--webkit-background-clip: text;   
-background-clip: text;
--webkit-text-fill-color: transparent;
+    background: #0f0f0f; /* Old browsers */
+-webkit-text-fill-color: #0f0f0f;
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: #0f0f0f; 
 z-index: 3;
@@ -170,16 +162,16 @@ transition-delay: .2s;
     
   
   .project-image {
-    max-width: 250px;
     position: absolute;
-    right: -235px;
-    top: calc(-50% - 5px);
-    z-index: 0;
-    overflow: hidden;
+    z-index: -1;
+    visibility: hidden;
+    transform: translateX(-50%)  translateY(-50%); 
+    pointer-events:none;
+    max-width: 250px;
     img {
       display: block;
       width: 100%;
-      transform: translatex(-100%);
+      opacity: 0;
       transition: all ease-out .3s;
       transition-delay: 0s;
     }
@@ -193,14 +185,15 @@ transition-delay: .2s;
 }
 a:hover {
   h4 {
-  background-position: left;
+    -webkit-text-fill-color: transparent;
+
 font-style: oblique;
 transition-delay: 0s;
 
   }
   .project-image img {
-    transform: translatex(0);
-    transition-delay: .2s;
+    opacity: 1;
+    
   }
 }
 }

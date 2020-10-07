@@ -26,7 +26,7 @@ var DrawEye = function(eye, pupil, speed, interval){
 };
 
 var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
-var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
+// var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30); not having eye animation on other eyes
 
     // project section hover state
     jQuery(".project a").hover(
@@ -39,9 +39,9 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
         jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
 
-
+    /* if we want about eye to move, reinitiate this
             setTimeout(function(){      
-    /* setting position for about eye once the panel is open */
+
 
     var DrawEye = function(eye, pupil, speed, interval){
         var mouseX = 0, mouseY = 0;
@@ -69,7 +69,7 @@ var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30);
       
 
       var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
-    }, 600); 
+    }, 600); */
 
       });
       jQuery('.about-section .close').on('click', function () {
@@ -165,7 +165,18 @@ $('.project').each(function(){
     .addTo(controller);
    });
 
-});  
+// move project images to follow mouse
+ 
+$('.project').mousemove(function(e){
+  $(this).find('project-image').addClass('visible');
+  $(this).find('project-image').css({
+      left:e.pageX, top:e.pageY
+    });
+}).mouseleave(function(){
+  $(this).find('project-image').removeClass('visible');
+});
+
+});  // end doc ready
 /*
 new ScrollMagic.Scene({
     triggerElement: ".above-fold", 
