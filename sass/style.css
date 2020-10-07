@@ -1149,8 +1149,8 @@ a:hover, a:active {
   -webkit-text-stroke-color: #0f0f0f;
   position: relative;
   display: block;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #work a {
@@ -1173,24 +1173,13 @@ a:hover, a:active {
   display: block;
   width: 100%;
   opacity: 0;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #work .project-image .screenshot {
   border: 2px solid #d6d6d6;
   border-top: none;
-}
-
-#work .project.hover {
-  z-index: 1;
-}
-
-#work a:hover h4 {
-  -webkit-text-fill-color: rgba(15, 15, 15, 0);
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  font-style: oblique;
 }
 
 #work .project-image.visible {
@@ -1199,6 +1188,13 @@ a:hover, a:active {
 
 #work .project-image.visible img {
   opacity: 1;
+}
+
+#work a:hover h4 {
+  -webkit-text-fill-color: rgba(15, 15, 15, 0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-style: oblique;
 }
 
 /*--------------------------------------------------------------
