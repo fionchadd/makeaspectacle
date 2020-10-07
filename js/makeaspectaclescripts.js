@@ -163,7 +163,7 @@ if ($('#work')[0]) {
     easing =  'ease',
     elem_y = 50;
     var animationClass = 'project active';
-    var tl = new TimelineLite();
+    var tl = new TimelineMax();
     $anim_scroll.each(function(index, element) {
         var $this = $(this),
             $anim = $this.find(".project");
