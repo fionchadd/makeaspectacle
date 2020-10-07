@@ -175,7 +175,7 @@ if ($('#work')[0]) {
     var scene2 = new ScrollMagic.Scene({
     triggerElement: '#work',
     triggerHook: "onEnter",
-    offset: 100,
+    offset: 250,
     reverse: true,
     })
     .setTween(fade_scroll_animation)
