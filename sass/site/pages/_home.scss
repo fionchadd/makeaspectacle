@@ -138,11 +138,10 @@
     line-height: 76px;
     margin: 0;
     text-transform: uppercase;
-    color:  rgba(15 15 15, 1); /* Old browsers */
--webkit-text-fill-color: rgba(15 15 15, 1);
+    color:  rgba(15, 15, 15, 1); 
+-webkit-text-fill-color: rgba(15, 15, 15, 1);
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: #0f0f0f; 
-z-index: 3;
 position: relative;
 display: block;
 transition: all ease-in-out .3s; 
@@ -177,7 +176,7 @@ transition: all ease-in-out .3s;
 }
 a:hover {
   h4 {
-    -webkit-text-fill-color:  rgba(15 15 15, 0);
+    -webkit-text-fill-color:  rgba(15, 15, 15, 0);
     transition: all ease-in-out .3s; 
 font-style: oblique;
 
