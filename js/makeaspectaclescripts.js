@@ -186,9 +186,12 @@ if ($('#work')[0]) {
 // move project images to follow mouse
  
 $('.project').mousemove(function(e){
+
   $(this).find('.project-image').addClass('visible');
   $(this).find('.project-image').css({
-      left:e.pageX, top:e.pageY
+
+      left:e.clientX, top:e.clientY
+      
     });
 }).mouseleave(function(){
   $(this).find('.project-image').removeClass('visible');

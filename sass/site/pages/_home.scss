@@ -159,6 +159,8 @@ transition: all .3s ease-in-out;
     visibility: hidden;
     pointer-events:none;
     max-width: 250px;
+    width: 250px;
+    height: auto;
     img {
       display: block;
       width: 100%;
