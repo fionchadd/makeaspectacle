@@ -1,6 +1,6 @@
 <?php
 /**
- * Coming Soon Template
+ * Coming Soon Page Template
  *
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -33,6 +33,7 @@ $page_tagline = get_field( 'homepage_tagline');
 			<h2 class="page-subtitle"><?php echo $blog_tagline; ?></h2>
 	</div>
 		<div class="page-bottom"><p class="page-offering"><?php echo $page_tagline; ?></p></div>
+		
 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
