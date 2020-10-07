@@ -176,6 +176,7 @@ if ($('#work')[0]) {
     triggerElement: '#work',
     triggerHook: "onEnter",
     offset: 100,
+    reverse: true,
     })
     .setTween(fade_scroll_animation)
     .addTo(controller);
