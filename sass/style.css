@@ -1345,6 +1345,8 @@ a:hover, a:active {
 
 .about-eye .pupil {
   background-color: white;
+  right: calc(50% - 9px);
+  bottom: 0;
 }
 
 .about-section {
@@ -1480,6 +1482,8 @@ a:hover, a:active {
 
 #colophon .footer-eye .pupil {
   background: white;
+  top: 2px;
+  left: 7px;
 }
 
 /*--------------------------------------------------------------
