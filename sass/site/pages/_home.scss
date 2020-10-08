@@ -177,20 +177,6 @@ display: block;
       border-top: none;
     }
 }
-.project.hovered {
-  .project-image {
-    visibility: visible;
-    z-index: 0;
-   img {
-      opacity: 1;
-    
-    }
-  }
-  h4 {
-    z-index: 2;
-  }
-
-}
 
 
 a:hover {
@@ -202,6 +188,22 @@ z-index: 2;
   }
 }
 
+}
+#work.active {
+  .project.hovered {
+    .project-image {
+      visibility: visible;
+      z-index: 0;
+     img {
+        opacity: 1;
+      
+      }
+    }
+    h4 {
+      z-index: 2;
+    }
+  
+  }
 }
   
 @-webkit-keyframes slide-right {

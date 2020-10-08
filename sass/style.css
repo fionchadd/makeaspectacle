@@ -1220,22 +1220,22 @@ a:hover, a:active {
   border-top: none;
 }
 
-#work .project.hovered .project-image {
+#work a:hover h4 {
+  -webkit-text-fill-color: white;
+  font-style: oblique;
+  z-index: 2;
+}
+
+#work.active .project.hovered .project-image {
   visibility: visible;
   z-index: 0;
 }
 
-#work .project.hovered .project-image img {
+#work.active .project.hovered .project-image img {
   opacity: 1;
 }
 
-#work .project.hovered h4 {
-  z-index: 2;
-}
-
-#work a:hover h4 {
-  -webkit-text-fill-color: white;
-  font-style: oblique;
+#work.active .project.hovered h4 {
   z-index: 2;
 }
 
