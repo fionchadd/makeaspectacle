@@ -186,7 +186,7 @@ if ($('#work')[0]) {
 
 // move project images to follow mouse
  
-$('.project').mousemove(function(e){
+$('.project-link').mousemove(function(e){
 
   $(this).find('.project-image').addClass('visible');
   $(this).find('.project-image').css({
