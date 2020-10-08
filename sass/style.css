@@ -1276,9 +1276,60 @@ a:hover, a:active {
   }
 }
 
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .get-in-touch:hover img {
   -webkit-animation: slide-right 0.5s ease-in-out infinite both;
   animation: slide-right 0.5s ease-in-out infinite both;
+}
+
+.get-in-touch.about:hover img {
+  -webkit-animation: slide-down 0.5s ease-in-out infinite both;
+  animation: slide-down 0.5s ease-in-out infinite both;
 }
 
 /*--------------------------------------------------------------
