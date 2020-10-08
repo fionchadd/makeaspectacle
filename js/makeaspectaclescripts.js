@@ -198,7 +198,7 @@ $('.project').mousemove(function(e){
  //   });
 }).mouseleave(function(){
   $(this).removeClass('hovered');
-    $(this).parent.addClass('being-hovered');
+    $(this).parent.removeClass('being-hovered');
 });
 
  
