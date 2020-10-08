@@ -155,8 +155,8 @@ display: block;
     z-index: -1;
     visibility: hidden;
     pointer-events:none;
-    max-width: 250px;
-    width: 250px;
+    max-width: 350px;
+    width: 350px;
     height: auto;
     top: 0;
     transform: translateX(-50%) translateY(-50%);
@@ -166,6 +166,9 @@ display: block;
       width: 100%;
       opacity: 0;
       transition: all .3s ease-in-out; 
+    }
+    img.browser-top {
+      margin-bottom: -1px;
     }
     .screenshot {
       border: 2px solid #d6d6d6;
