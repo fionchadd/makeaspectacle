@@ -127,7 +127,6 @@
   }
 
   .project {
-    position: relative;
     z-index: 0;
     margin-bottom: 5px;
 
@@ -147,8 +146,7 @@ display: block;
 transition: all .3s ease-in-out; 
   }
     a {
-      display: inline-block;
-      position: relative;
+      display: block;
       text-decoration: none;
     }
     
