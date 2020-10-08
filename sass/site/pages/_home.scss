@@ -197,9 +197,17 @@ z-index: 2;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  25% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
   50% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px); 
+    -webkit-transform: translateX(0);
+    transform: translateX(0); 
+  }
+  75% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);   
   }
   100% {
     -webkit-transform: translateX(0);
@@ -211,9 +219,17 @@ z-index: 2;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  25% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
   50% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px); 
+    -webkit-transform: translateX(0);
+    transform: translateX(0); 
+  }
+  75% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);   
   }
   100% {
     -webkit-transform: translateX(0);
