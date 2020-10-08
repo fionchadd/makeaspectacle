@@ -186,7 +186,7 @@ if ($('#work')[0]) {
 
     $('.project').each(function(){
       // Create a scene for each project
-      var fadeout = TweenMax.fromTo(".above-fold .page-bottom", {y: 0, opacity: 1}, {y: -250, opacity: 0, ease: Linear.easeNone});
+      var fadeout = TweenMax.fromTo(this, {opacity: 1}, {opacity: 0, ease: Linear.easeNone});
        new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: "onLeave",
