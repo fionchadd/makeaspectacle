@@ -1230,6 +1230,41 @@ a:hover, a:active {
   z-index: 2;
 }
 
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.get-in-touch:hover img {
+  -webkit-animation: slide-right 0.5s ease-in-out infinite both;
+  animation: slide-right 0.5s ease-in-out infinite both;
+}
+
 /*--------------------------------------------------------------
 ## About section
 --------------------------------------------------------------*/
