@@ -143,7 +143,6 @@
 -webkit-text-stroke-color: #0f0f0f; 
 position: relative;
 display: block;
-transition: all .3s ease-in-out; 
   }
     a {
       display: block;
@@ -184,7 +183,6 @@ transition: all .3s ease-in-out;
 a:hover {
   h4 {
     -webkit-text-fill-color:  rgba(255,255,255,1);
-    transition: all .3s ease-in-out; 
 font-style: oblique;
 
   }

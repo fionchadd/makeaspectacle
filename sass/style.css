@@ -1148,8 +1148,6 @@ a:hover, a:active {
   -webkit-text-stroke-color: #0f0f0f;
   position: relative;
   display: block;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 #work a {
@@ -1194,8 +1192,6 @@ a:hover, a:active {
 
 #work a:hover h4 {
   -webkit-text-fill-color: white;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
   font-style: oblique;
 }
 
