@@ -186,11 +186,11 @@ if ($('#work')[0]) {
     var tween2 = new TimelineMax();
     tween2.fromTo(".project", {opacity: 1}, {opacity: 0, ease: Linear.easeNone});
     new ScrollMagic.Scene({
-      triggerElement: "#work", 
+      triggerElement: ".project", 
       triggerHook: "onLeave",
       reverse: true,
       offset: 100,
-      duration: 350,
+      duration: 150,
   })
   
   .setTween(tween2)
