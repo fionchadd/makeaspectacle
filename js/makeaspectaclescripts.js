@@ -190,7 +190,7 @@ if ($('#work')[0]) {
 $('.project').mousemove(function(e){
 
   $(this).addClass('hovered');
-  $(this).parent.addClass('being-hovered');
+  $(this).parent().addClass('being-hovered');
 //  $(this).find('.project-image').css({
 
  //   left:e.pageX, top:e.pageY
@@ -198,7 +198,7 @@ $('.project').mousemove(function(e){
  //   });
 }).mouseleave(function(){
   $(this).removeClass('hovered');
-    $(this).parent.removeClass('being-hovered');
+    $(this).parent().removeClass('being-hovered');
 });
 
  
