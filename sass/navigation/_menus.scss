@@ -16,7 +16,31 @@ background: #fff;
 		line-height: 25px;
 		letter-spacing: 3px;
 		color: #0f0f0f;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 0px;
+			height: 1px;
+			margin: 0;
+			transition: all 0.3s ease-in-out;
+			opacity: 0;
+			background-color: darken(#0f0f0f,5%);
+		  }
+		  &:before {
+			left: 50%;
+		  }
+		  &:after {
+			right: 50%;
+		  }
 	}
+	&:hover {
+        &:before,
+        &:after {
+          width: 50%;
+          opacity: 1;
+        }
+      }
 	.menu-link.work {
 		align-self: flex-start;
 		margin: auto;

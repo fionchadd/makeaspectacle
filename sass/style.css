@@ -805,6 +805,32 @@ a:hover, a:active {
   color: #0f0f0f;
 }
 
+.main-navigation a:before, .main-navigation a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0px;
+  height: 1px;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  background-color: #020202;
+}
+
+.main-navigation a:before {
+  left: 50%;
+}
+
+.main-navigation a:after {
+  right: 50%;
+}
+
+.main-navigation:hover:before, .main-navigation:hover:after {
+  width: 50%;
+  opacity: 1;
+}
+
 .main-navigation .menu-link.work {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1389,14 +1415,12 @@ a:hover, a:active {
 .error404 p a:before, .error404 p a:after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   width: 0px;
-  height: 5px;
-  margin: 5px 0 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
+  height: 1px;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
   background-color: #020202;
 }

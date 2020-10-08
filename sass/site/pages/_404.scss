@@ -23,12 +23,11 @@
       &:before, &:after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: 0;
         width: 0px;
-        height: 5px;
-        margin: 5px 0 0;
-        transition: all 0.2s ease-in-out;
-        transition-duration: 0.75s;
+        height: 1px;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
         opacity: 0;
         background-color: darken(#0f0f0f,5%);
       }
