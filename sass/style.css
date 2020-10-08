@@ -1221,7 +1221,6 @@ a:hover, a:active {
 }
 
 #work a:hover h4 {
-  -webkit-text-fill-color: white;
   font-style: oblique;
   z-index: 2;
 }
@@ -1250,7 +1249,7 @@ a:hover, a:active {
 }
 
 #work.active .projects.being-hovered .project:not(.hovered) .project-link {
-  opacity: 0.6;
+  opacity: 0.5;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
