@@ -1170,6 +1170,7 @@ a:hover, a:active {
 #work .project {
   z-index: 0;
   margin-bottom: 5px;
+  position: relative;
 }
 
 #work h4 {
@@ -1196,11 +1197,11 @@ a:hover, a:active {
   z-index: -1;
   visibility: hidden;
   pointer-events: none;
-  max-width: 350px;
-  width: 350px;
+  max-width: 300px;
+  width: 300px;
   height: auto;
-  top: calc(50% - 112px);
-  right: -300px;
+  top: calc(50% - 96px);
+  right: -320px;
 }
 
 #work .project-image img {
