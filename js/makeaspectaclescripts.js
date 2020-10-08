@@ -156,29 +156,17 @@ new ScrollMagic.Scene({
 .addTo(controller);
 
 if ($('#work')[0]) {
-  function fade_scroll_animation() {
-    var $anim_scroll = $("#work"),
-    anim_time = 1,
-    anim_stagger = 0.3,
-    easing =  'ease',
-    elem_y = 50;
-    var animationClass = 'project-name active';
-    var tl = new TimelineMax();
-    $anim_scroll.each(function(index, element) {
-        var $this = $(this),
-            $anim = $this.find(".project .project-name");
-            tl.staggerFromTo($anim, anim_time, { y: elem_y, autoAlpha:0, ease: easing},{className: '+=' + animationClass, y: 0, autoAlpha:1, ease: easing}, anim_stagger, index * 0.2);
-  
-    });
-  }
+
+
+  var tween = TweenMax.staggerFromTo(".project .project-name", 1, {y: 50, autoAlpha:0, ease: easing }, {className: '+=' + 'active', y: 0, autoAlpha:1, ease: easing}, 0.3);
 
     var scene2 = new ScrollMagic.Scene({
     triggerElement: '#work',
-    triggerHook: "onEnter",
+   // triggerHook: "onEnter",
     offset: 250,
     reverse: true,
     })
-    .setTween(fade_scroll_animation)
+    .setTween(tween)
     .addTo(controller);
     scene2.setClassToggle('#work', 'active');
     
