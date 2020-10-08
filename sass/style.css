@@ -1239,6 +1239,18 @@ a:hover, a:active {
   z-index: 2;
 }
 
+#work.active .projects.being-hovered .project.hovered .project-link {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#work.active .projects.being-hovered .project:not(.hovered) .project-link {
+  opacity: 0.8;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(0);

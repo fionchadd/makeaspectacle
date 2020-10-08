@@ -205,7 +205,19 @@ z-index: 2;
     }
   
   }
+  .projects.being-hovered {
+    .project.hovered .project-link {
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+          }
+    .project:not(.hovered) .project-link {
+      opacity: 0.8;
+      transition: 0.3s ease-in-out;
+    }
+
+  }
 }
+
   
 @-webkit-keyframes slide-right {
   0% {

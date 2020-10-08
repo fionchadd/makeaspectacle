@@ -191,7 +191,7 @@ if ($('#work')[0]) {
       triggerElement: this,
       triggerHook: "onLeave",
       offset: -250,
-      duration: 250,
+      duration: 200,
       })
       .setTween(fadeouttop)
       .addTo(controller);
