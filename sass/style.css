@@ -1034,11 +1034,13 @@ a:hover, a:active {
 }
 
 .above-fold h1 {
-  font-size: 65px;
-  line-height: 76px;
+  font-size: 80px;
+  line-height: 91px;
   text-transform: uppercase;
   -webkit-animation: fade-and-rise .9s ease backwards;
           animation: fade-and-rise .9s ease backwards;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .above-fold h2 {
@@ -1171,8 +1173,8 @@ a:hover, a:active {
 }
 
 #work h4 {
-  font-size: 65px;
-  line-height: 76px;
+  font-size: 80px;
+  line-height: 91px;
   margin: 0;
   text-transform: uppercase;
   color: #0f0f0f;
@@ -1570,8 +1572,8 @@ body {
 
 @media (max-width: 767px) {
   #colophon .about-title, #work h4 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 60px;
+    line-height: 70px;
   }
   #colophon {
     padding: 40px;
@@ -1593,6 +1595,10 @@ body {
   .above-fold h1 {
     font-size: 50px;
     line-height: 60px;
+  }
+  #colophon .about-title, #work h4 {
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 

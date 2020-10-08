@@ -8,8 +8,8 @@ body {
 
 @media (max-width: 767px) {
     #colophon .about-title, #work h4 {
-      font-size: 50px;
-        line-height: 60px;
+      font-size: 60px;
+      line-height: 70px;
     }
     #colophon {
       padding: 40px;
@@ -31,6 +31,10 @@ body {
   .above-fold h1 {
     font-size: 50px;
     line-height: 60px;
+  }
+  #colophon .about-title, #work h4 {
+    font-size: 40px;
+    line-height: 50px;
   }
   
   }

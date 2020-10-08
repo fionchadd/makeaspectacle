@@ -190,11 +190,11 @@ if ($('#work')[0]) {
 $('.project-link').mousemove(function(e){
 
   $(this).find('.project-image').addClass('visible');
-  $(this).find('.project-image').css({
+//  $(this).find('.project-image').css({
 
-    left:e.pageX, top:e.pageY
+ //   left:e.pageX, top:e.pageY
       
-    });
+ //   });
 }).mouseleave(function(){
   $(this).find('.project-image').removeClass('visible');
 });
