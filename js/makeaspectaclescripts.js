@@ -158,7 +158,7 @@ new ScrollMagic.Scene({
 if ($('#work')[0]) {
 
 
-  var tween = TweenMax.staggerFromTo(".project .project-name", 1, {y: 50, autoAlpha:0, ease: easing }, {className: '+=' + 'active', y: 0, autoAlpha:1, ease: easing}, 0.3);
+  var tween = TweenMax.staggerFromTo(".project .project-name", 1, {y: 50, autoAlpha:0, ease: 'ease' }, {className: '+=' + 'active', y: 0, autoAlpha:1, ease: 'ease'}, 0.3);
 
     var scene2 = new ScrollMagic.Scene({
     triggerElement: '#work',
