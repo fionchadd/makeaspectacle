@@ -193,7 +193,7 @@ if ($('#work')[0]) {
       duration: 350,
   })
   
-  .setTween(tl2)
+  .setTween(tween2)
   .addTo(controller);
     } 
 
