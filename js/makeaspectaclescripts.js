@@ -142,7 +142,30 @@ new ScrollMagic.Scene({
 
 .setTween(tl3)
 .addTo(controller);
-}
+// get window  innerheight
+var height = window.innerHeight;
+// set height of above fold splash to fill
+  jQuery('.above-fold').css({
+    'height': height,
+  });
+
+function resize() {
+  // get inner height and width of browser window
+  var vheight = window.innerHeight;
+  // set height of above fold section to be height of brower window
+  jQuery('.above-fold').css({
+    'height': vheight,
+  });
+
+};
+
+// Resize Container on window resize
+jQuery(window).resize(function(){
+
+  resize();
+  
+}); 
+} // end if above fold
 
 // project staggered loading
 if ($('#work')[0]) {
@@ -176,33 +199,7 @@ $('.project-link').mousemove(function(e){
   $(this).find('.project-image').removeClass('visible');
 });
 
-function resize() {
-  // get inner height and width of browser window
-  var vheight = window.innerHeight;
-  var vwidth = window.innerWidth;
-  // set height of above fold section to be height of brower window
-  jQuery('.above-fold').css({
-    'height': vheight,
-  });
-  // reposition eye at center of browser window
-  if ($('#stickThis')[0]) {
-    var scene1 = new ScrollMagic.Scene({
-         
-     triggerElement: "#stickThis", 
-       triggerHook: "onLeave",
-       reverse: true,
-   })
-   .setPin("#stickThis")
-   .addTo(controller);
-         }
-};
-
-// Resize Container on window resize
-jQuery(window).resize(function(){
-
-  resize();
-  
-});  
+ 
 
 });  // end doc ready
 /*
