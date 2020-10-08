@@ -1445,34 +1445,6 @@ a:hover, a:active {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  #colophon .about-title, #work h4 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-  #colophon {
-    padding: 40px;
-  }
-}
-
-@media (max-width: 467px) {
-  .about-section {
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    padding: 25px;
-  }
-  #colophon .about-subtitle, #colophon a.email-address, #colophon .get-in-touch, .about-section .about-subtitle, .about-section a.email-address {
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    line-height: 21px;
-  }
-  .above-fold h1 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-
 /*--------------------------------------------------------------
 ## About section
 --------------------------------------------------------------*/
@@ -1594,6 +1566,34 @@ body {
 
 .post, .page {
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  #colophon .about-title, #work h4 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  #colophon {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 467px) {
+  .about-section {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 25px;
+  }
+  #colophon .about-subtitle, #colophon a.email-address, #colophon .get-in-touch, .about-section .about-subtitle, .about-section a.email-address {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 21px;
+  }
+  .above-fold h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 /*--------------------------------------------------------------
