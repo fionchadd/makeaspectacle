@@ -183,15 +183,17 @@ if ($('#work')[0]) {
     .addTo(controller);
     scene2.setClassToggle('#work', 'active');
   
+
     $('.project').each(function(){
       // Create a scene for each project
-      var myScene = new ScrollMagic.Scene({
+      var fadeout = TweenMax.fromTo(".above-fold .page-bottom", {y: 0, opacity: 1}, {y: -250, opacity: 0, ease: Linear.easeNone});
+       new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: "onLeave",
-      offset: 150,
+      offset: -150,
       reverse: true,
       })
-      .setClassToggle(this, 'fadeout')
+      .setTween(fadeout)
       .addTo(controller);
      });
  
