@@ -1226,6 +1226,10 @@ a:hover, a:active {
   z-index: 2;
 }
 
+#work.active .project.hovered {
+  z-index: 2;
+}
+
 #work.active .project.hovered .project-image {
   visibility: visible;
   z-index: 0;
