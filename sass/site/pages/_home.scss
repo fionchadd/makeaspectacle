@@ -147,8 +147,9 @@ position: relative;
 display: block;
   }
     a {
-      display: block;
+      display: inline-block;
       text-decoration: none;
+      position: relative;
     }
     
   
@@ -160,9 +161,8 @@ display: block;
     max-width: 350px;
     width: 350px;
     height: auto;
-    top: 0;
-    transform: translateX(-50%) translateY(-50%);
-    left: 0;
+    top: calc(50% - 112px);
+    right: -300px;
     img {
       display: block;
       width: 100%;
@@ -177,14 +177,21 @@ display: block;
       border-top: none;
     }
 }
-.project-image.visible {
-  visibility: visible;
-  z-index: 1;
- img {
-    opacity: 1;
-  
+.project:hover {
+  .project-image {
+    visibility: visible;
+    z-index: 0;
+   img {
+      opacity: 1;
+    
+    }
   }
+  h4 {
+    z-index: 2;
+  }
+
 }
+
 
 a:hover {
   h4 {

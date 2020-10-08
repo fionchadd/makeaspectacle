@@ -1186,8 +1186,9 @@ a:hover, a:active {
 }
 
 #work a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
+  position: relative;
 }
 
 #work .project-image {
@@ -1198,10 +1199,8 @@ a:hover, a:active {
   max-width: 350px;
   width: 350px;
   height: auto;
-  top: 0;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  left: 0;
+  top: calc(50% - 112px);
+  right: -300px;
 }
 
 #work .project-image img {
@@ -1221,13 +1220,17 @@ a:hover, a:active {
   border-top: none;
 }
 
-#work .project-image.visible {
+#work .project:hover .project-image {
   visibility: visible;
-  z-index: 1;
+  z-index: 0;
 }
 
-#work .project-image.visible img {
+#work .project:hover .project-image img {
   opacity: 1;
+}
+
+#work .project:hover h4 {
+  z-index: 2;
 }
 
 #work a:hover h4 {
