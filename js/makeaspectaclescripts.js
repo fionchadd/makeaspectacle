@@ -182,7 +182,19 @@ if ($('#work')[0]) {
     .setTween(tween)
     .addTo(controller);
     scene2.setClassToggle('#work', 'active');
-    
+  
+    var tween2 = new TimelineMax();
+    tween2.fromTo(".project .project-name", {opacity: 1}, {opacity: 0, ease: Linear.easeNone});
+    new ScrollMagic.Scene({
+      triggerElement: "#work", 
+      triggerHook: "onLeave",
+      reverse: true,
+      offset: 80,
+      duration: 350,
+  })
+  
+  .setTween(tl2)
+  .addTo(controller);
     } 
 
 // move project images to follow mouse
