@@ -177,7 +177,7 @@ display: block;
       border-top: none;
     }
 }
-.project:hover {
+.project.hovered {
   .project-image {
     visibility: visible;
     z-index: 0;

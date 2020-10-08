@@ -185,7 +185,21 @@ if ($('#work')[0]) {
     
     } 
 
+// move project images to follow mouse
+ 
+$('.project').mousemove(function(e){
 
+  $(this).addClass('hovered');
+  $(this).parent.addClass('being-hovered');
+//  $(this).find('.project-image').css({
+
+ //   left:e.pageX, top:e.pageY
+      
+ //   });
+}).mouseleave(function(){
+  $(this).removeClass('hovered');
+    $(this).parent.addClass('being-hovered');
+});
 
  
 
