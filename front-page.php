@@ -66,8 +66,6 @@ $page_tagline = get_field( 'homepage_tagline');
 </div>
 <?php endwhile; else : endif; ?>
 	</div>
-	<div class="gradient-top"></div>
-	<div class="gradient-bottom"></div>
 </div> <!-- work -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
