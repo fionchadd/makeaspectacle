@@ -284,14 +284,14 @@ z-index: 2;
 
 .get-in-touch:hover {
   img {
-    -webkit-animation: slide-right 0.5s ease-in-out infinite both;
-    animation: slide-right 0.5s ease-in-out infinite both;
+    -webkit-animation: slide-right 0.5s ease-in-out 3 both;
+    animation: slide-right 0.5s ease-in-out 3 both;
   }
 }
 
-.get-in-touch.about:hover {
+.get-in-touch-about:hover {
   img {
-    -webkit-animation: slide-down 0.5s ease-in-out infinite both;
-    animation: slide-down 0.5s ease-in-out infinite both;
+    -webkit-animation: slide-down 0.5s ease-in-out 3 both;
+    animation: slide-down 0.5s ease-in-out 3 both;
   }
 }
