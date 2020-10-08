@@ -191,7 +191,7 @@ $('.project').mousemove(function(e){
   $(this).find('.project-image').addClass('visible');
   $(this).find('.project-image').css({
 
-      left:e.clientX, top:e.clientY
+    left:e.pageX, top:e.pageY
       
     });
 }).mouseleave(function(){
