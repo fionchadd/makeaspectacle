@@ -1184,6 +1184,7 @@ a:hover, a:active {
 
 #work .project-image.visible {
   visibility: visible;
+  z-index: 1;
 }
 
 #work .project-image.visible img {
@@ -1193,6 +1194,7 @@ a:hover, a:active {
 #work a:hover h4 {
   -webkit-text-fill-color: white;
   font-style: oblique;
+  z-index: 2;
 }
 
 /*--------------------------------------------------------------
