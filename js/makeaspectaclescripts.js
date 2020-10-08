@@ -186,14 +186,22 @@ if ($('#work')[0]) {
 
     $('.project').each(function(){
       // Create a scene for each project
-      var fadeout = TweenMax.fromTo(this, {y: 0, opacity: 1, ease: 'ease'}, {y: -50, opacity: 0, ease: 'ease'});
+      var fadeouttop = TweenMax.fromTo(this, {opacity: 1, ease: 'ease'}, {opacity: 0, ease: 'ease'});
        new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: "onLeave",
       offset: -250,
       duration: 250,
       })
-      .setTween(fadeout)
+      var fadeoutbottom = TweenMax.fromTo(this, {opacity: 0, ease: 'ease'}, {opacity: 1, ease: 'ease'});
+      new ScrollMagic.Scene({
+     triggerElement: this,
+     triggerHook: "onEnter",
+     offset: -250,
+     duration: 250,
+     })
+      .setTween(fadeouttop)
+      .setTween(fadeoutbottom)
       .addTo(controller);
      });
  
