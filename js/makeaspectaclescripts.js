@@ -193,15 +193,7 @@ if ($('#work')[0]) {
       offset: -250,
       duration: 250,
       })
-      var fadeoutbottom = TweenMax.fromTo(this, {opacity: 0, ease: 'ease'}, {opacity: 1, ease: 'ease'});
-      new ScrollMagic.Scene({
-     triggerElement: this,
-     triggerHook: "onEnter",
-     offset: -250,
-     duration: 250,
-     })
       .setTween(fadeouttop)
-      .setTween(fadeoutbottom)
       .addTo(controller);
      });
  
