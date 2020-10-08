@@ -16,6 +16,7 @@ background: #fff;
 		line-height: 25px;
 		letter-spacing: 3px;
 		color: #0f0f0f;
+		position: relative;
 		&:before, &:after {
 			content: "";
 			position: absolute;
@@ -33,14 +34,15 @@ background: #fff;
 		  &:after {
 			right: 50%;
 		  }
+		  &:hover {
+			&:before,
+			&:after {
+			  width: 50%;
+			  opacity: 1;
+			}
+		  }
 	}
-	&:hover {
-        &:before,
-        &:after {
-          width: 50%;
-          opacity: 1;
-        }
-      }
+
 	.menu-link.work {
 		align-self: flex-start;
 		margin: auto;

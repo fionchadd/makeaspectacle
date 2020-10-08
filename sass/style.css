@@ -803,6 +803,7 @@ a:hover, a:active {
   line-height: 25px;
   letter-spacing: 3px;
   color: #0f0f0f;
+  position: relative;
 }
 
 .main-navigation a:before, .main-navigation a:after {
@@ -826,7 +827,7 @@ a:hover, a:active {
   right: 50%;
 }
 
-.main-navigation:hover:before, .main-navigation:hover:after {
+.main-navigation a:hover:before, .main-navigation a:hover:after {
   width: 50%;
   opacity: 1;
 }
