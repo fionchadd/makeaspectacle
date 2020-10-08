@@ -21,6 +21,7 @@
 	<?php wp_head(); ?>
 
 	<link rel="stylesheet" href="https://use.typekit.net/ogh2zvl.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
