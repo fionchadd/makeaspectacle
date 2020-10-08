@@ -1246,7 +1246,7 @@ a:hover, a:active {
 }
 
 #work.active .projects.being-hovered .project:not(.hovered) .project-link {
-  opacity: 0.8;
+  opacity: 0.6;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
