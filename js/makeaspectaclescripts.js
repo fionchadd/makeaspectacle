@@ -85,7 +85,7 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
       // get all slides
       var width = window.innerWidth;
       var height = window.innerHeight;
-
+      if ($('#stickThis')[0]) {
  var scene1 = new ScrollMagic.Scene({
       
 	triggerElement: "#stickThis", 
@@ -94,7 +94,7 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
 })
 .setPin("#stickThis")
 .addTo(controller);
-
+      }
 /*
 var tl = new TimelineMax();
 tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1, opacity: 0});
@@ -112,6 +112,7 @@ var scene2 = new ScrollMagic.Scene({
 .setTween(tl)
 .addTo(controller);
 */
+if ($('.above-fold')[0]) {
 var tl1 = new TimelineMax();
 tl1.fromTo(".above-fold .page-title", {y: 0, opacity: 1}, {y: -50, opacity: 0, ease: Linear.easeNone});
 
@@ -154,7 +155,7 @@ new ScrollMagic.Scene({
 
 .setTween(tl3)
 .addTo(controller);
-
+}
 if ($('#work')[0]) {
 
 
