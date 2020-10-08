@@ -163,7 +163,7 @@ if ($('#work')[0]) {
     var scene2 = new ScrollMagic.Scene({
     triggerElement: '#work',
    // triggerHook: "onEnter",
-    offset: 250,
+    offset: 150,
     reverse: true,
     })
     .setTween(tween)
