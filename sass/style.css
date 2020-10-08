@@ -1195,7 +1195,7 @@ a:hover, a:active {
 }
 
 #work a:hover h4 {
-  -webkit-text-fill-color: rgba(15, 15, 15, 0);
+  -webkit-text-fill-color: white;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   font-style: oblique;
