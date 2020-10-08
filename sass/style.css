@@ -1401,12 +1401,17 @@ a:hover, a:active {
   background-color: #020202;
 }
 
-.error404 p a:hover:before {
+.error404 p a:before {
   left: 50%;
 }
 
-.error404 p a:hover:after {
+.error404 p a:after {
   right: 50%;
+}
+
+.error404 p a:hover:before, .error404 p a:hover:after {
+  width: 50%;
+  opacity: 1;
 }
 
 .error404 .search-form {

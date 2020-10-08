@@ -32,12 +32,18 @@
         opacity: 0;
         background-color: darken(#0f0f0f,5%);
       }
-      &:hover {
+       
         &:before {
           left: 50%;
         }
         &:after {
           right: 50%;
+        }
+      &:hover {
+        &:before,
+        &:after {
+          width: 50%;
+          opacity: 1;
         }
       }
     }
