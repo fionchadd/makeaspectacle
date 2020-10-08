@@ -183,18 +183,18 @@ if ($('#work')[0]) {
     .addTo(controller);
     scene2.setClassToggle('#work', 'active');
   
-    var tween2 = new TimelineMax();
-    tween2.fromTo(".project", {opacity: 1}, {opacity: 0, ease: Linear.easeNone});
-    new ScrollMagic.Scene({
-      triggerElement: ".project", 
+    $('.project').each(function(){
+      // Create a scene for each project
+      var myScene = new ScrollMagic.Scene({
+      triggerElement: this,
       triggerHook: "onLeave",
+      offset: 150,
       reverse: true,
-      offset: 100,
-      duration: 150,
-  })
-  
-  .setTween(tween2)
-  .addTo(controller);
+      })
+      .setClassToggle(this, 'fadeout')
+      .addTo(controller);
+     });
+ 
     } 
 
 // move project images to follow mouse
