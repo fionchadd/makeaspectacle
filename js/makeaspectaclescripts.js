@@ -28,17 +28,6 @@ var DrawEye = function(eye, pupil, speed, interval){
 var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
 // var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30); not having eye animation on other eyes
 
-    // project section hover state
-    jQuery(".project a").hover(
-    function () {
-        jQuery(this).parent().toggleClass("hover");
-    });
-    // open about section when clicked
-    jQuery('.menu-link.about').on('click', function () {
-  
-        jQuery('.about-section').toggleClass('open');
-        jQuery('body').toggleClass('aboutisopen');
-
     /* if we want about eye to move, reinitiate this
             setTimeout(function(){      
 
@@ -71,14 +60,27 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
       var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
     }, 600); */
 
+// open about section when clicked
+          jQuery('.menu-link.about').on('click', function () {
+    
+            jQuery('.about-section').toggleClass('open');
+            jQuery('body').toggleClass('aboutisopen');
       });
+// close about section
       jQuery('.about-section .close').on('click', function () {
   
         jQuery('.about-section').toggleClass('open');
         jQuery('body').toggleClass('aboutisopen');
       });
 
+// project section hover state
+    jQuery(".project a").hover(
+      function () {
+          jQuery(this).parent().toggleClass("hover");
+      });
 
+
+// stick eye to top of browser when scrolling down
     var controller = new ScrollMagic.Controller({
 
       });
@@ -95,23 +97,8 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
 .setPin("#stickThis")
 .addTo(controller);
       }
-/*
-var tl = new TimelineMax();
-tl.fromTo(".above-fold .page-title", {opacity: 1}, {duration: 1, opacity: 0});
-tl.fromTo(".above-fold .page-subtitle", {opacity: 1}, {duration: 1, opacity: 0});
-tl.fromTo(".above-fold .page-bottom", {opacity: 1, transform: "translate(0px, 0px)"}, {duration: 1, opacity: 0, transform: "translate(0px, -300px)"});
 
-
-
-var scene2 = new ScrollMagic.Scene({
-    triggerElement: ".above-fold", 
-    triggerHook: "onLeave",
-    reverse: true,
-})
-
-.setTween(tl)
-.addTo(controller);
-*/
+// above-fold section animations      
 if ($('.above-fold')[0]) {
 var tl1 = new TimelineMax();
 tl1.fromTo(".above-fold .page-title", {y: 0, opacity: 1}, {y: -50, opacity: 0, ease: Linear.easeNone});
@@ -156,6 +143,8 @@ new ScrollMagic.Scene({
 .setTween(tl3)
 .addTo(controller);
 }
+
+// project staggered loading
 if ($('#work')[0]) {
 
 
@@ -186,6 +175,34 @@ $('.project-link').mousemove(function(e){
 }).mouseleave(function(){
   $(this).find('.project-image').removeClass('visible');
 });
+
+function resize() {
+  // get inner height and width of browser window
+  var vheight = window.innerHeight;
+  var vwidth = window.innerWidth;
+  // set height of above fold section to be height of brower window
+  jQuery('.above-fold').css({
+    'height': vheight,
+  });
+  // reposition eye at center of browser window
+  if ($('#stickThis')[0]) {
+    var scene1 = new ScrollMagic.Scene({
+         
+     triggerElement: "#stickThis", 
+       triggerHook: "onLeave",
+       reverse: true,
+   })
+   .setPin("#stickThis")
+   .addTo(controller);
+         }
+};
+
+// Resize Container on window resize
+jQuery(window).resize(function(){
+
+  resize();
+  
+});  
 
 });  // end doc ready
 /*
