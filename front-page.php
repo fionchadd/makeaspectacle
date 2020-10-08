@@ -25,7 +25,7 @@ $page_tagline = get_field( 'homepage_tagline');
 				<div class="pupil" id="pupil1"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-dark-w-background.svg">
+				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-dark-w-background.svg">
 			</div>
 		</div>
 	</div>
@@ -61,7 +61,7 @@ $page_tagline = get_field( 'homepage_tagline');
 <div class="project">
 	<a class="project-link" <?php echo $target; ?> href="<?php echo $link; ?>">
 	<h4 class="project-name"><?php echo $name; ?></h4>
-	<div class="project-image"><img class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg"><img class="screenshot" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+	<div class="project-image"><img  alt=""class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg"><img class="screenshot" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 	</a>
 </div>
 <?php endwhile; else : endif; ?>

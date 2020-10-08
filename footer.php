@@ -18,7 +18,7 @@
 		 if( have_rows('about_section', 14) ): 
 ?>
 <div class="about-section">
-	<div class="close"><img src="/wp-content/themes/makeaspectacle/sass/images/about-close.svg"></div>
+	<div class="close"><img alt="close about section" src="/wp-content/themes/makeaspectacle/sass/images/about-close.svg"></div>
 	<div class="about-content">
 	<?php 	while( have_rows('about_section', 14) ): the_row(); 
 
@@ -31,7 +31,7 @@
 				<div class="pupil" id="pupil2"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
+				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
 			</div>
 		</div>
 			<h3 class="about-title"><?php echo $blog_title; ?></h3>
@@ -39,7 +39,7 @@
 			<div class="about-text"><?php echo $description; ?></div>
 			<div class="get-in-touch-about">
 			<h4 class="about-subtitle final"><?php echo $title; ?></h4>
-			<div class="about-arrow"><img src="/wp-content/themes/makeaspectacle/sass/images/about-arrow.svg"></div>
+			<div class="about-arrow"><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/about-arrow.svg"></div>
 			<a class="email-address" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		 </div>
 			<?php endwhile; ?>
@@ -52,13 +52,13 @@
 				<div class="pupil" id="pupil3"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
+				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
 			</div>
 		</div>
 		<div class="site-info">
 		<h3 class="about-title"><?php echo $blog_title; ?></h3>
 			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
-			<div class="get-in-touch"><span>get in touch</span><img src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a>
+			<div class="get-in-touch"><span>get in touch</span><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

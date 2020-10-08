@@ -18,7 +18,7 @@ get_header();
 				<div class="pupil" id="pupil1"></div>
 			</div>
 			<div class="eye-background">
-				<img src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-dark-w-background.svg">
+				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-dark-w-background.svg">
 			</div>
 		</div>
 				<header class="page-header">
@@ -33,7 +33,7 @@ get_header();
 
 					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
-<p>Or take a look at our work <a href="http://new.makeaspectacle.co.uk/#work">here</a></p>
+<p>Or take a look at our work <a title="view our recent work" href="http://new.makeaspectacle.co.uk/#work">here</a></p>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
