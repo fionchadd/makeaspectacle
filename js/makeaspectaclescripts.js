@@ -184,12 +184,12 @@ if ($('#work')[0]) {
     scene2.setClassToggle('#work', 'active');
   
     var tween2 = new TimelineMax();
-    tween2.fromTo(".project .project-name", {opacity: 1}, {opacity: 0, ease: Linear.easeNone});
+    tween2.fromTo(".project", {opacity: 1}, {opacity: 0, ease: Linear.easeNone});
     new ScrollMagic.Scene({
       triggerElement: "#work", 
       triggerHook: "onLeave",
       reverse: true,
-      offset: 80,
+      offset: 100,
       duration: 350,
   })
   
