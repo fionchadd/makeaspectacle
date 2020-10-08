@@ -171,7 +171,7 @@ if ($('#work')[0]) {
   
     });
   }
-  if  (window.innerWidth > 980 && navigator.userAgent.match(/iPad/i) == null) {
+
     var scene2 = new ScrollMagic.Scene({
     triggerElement: '#work',
     triggerHook: "onEnter",
@@ -181,7 +181,7 @@ if ($('#work')[0]) {
     .setTween(fade_scroll_animation)
     .addTo(controller);
     scene2.setClassToggle('#work', 'active');
-    }
+    
     } 
 
 // move project images to follow mouse
