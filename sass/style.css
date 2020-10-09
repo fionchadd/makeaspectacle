@@ -1591,14 +1591,14 @@ body {
 
 div.cursor {
   position: fixed;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 100px;
-  background: #000;
+  background: #0f0f0f;
   pointer-events: none;
   mix-blend-mode: difference;
   z-index: 10000;
