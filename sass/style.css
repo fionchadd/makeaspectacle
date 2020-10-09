@@ -1624,6 +1624,14 @@ div.cursor {
   #colophon {
     padding: 40px;
   }
+  #work .project-image {
+    top: 5em;
+    left: calc(55% - 150px);
+  }
+  #work.active .project.hovered {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 @media (max-width: 467px) {
