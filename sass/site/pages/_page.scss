@@ -1,6 +1,7 @@
 body {
   //  cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto;
   cursor: none;
+  background: #fff;
     
 }
 
@@ -17,7 +18,7 @@ width: 1em;
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 100px;
-  background: #0f0f0f;
+  background: #fff;
   pointer-events: none;
 mix-blend-mode: difference;
   z-index: 10000;
