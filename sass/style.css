@@ -1636,6 +1636,7 @@ a:hover, a:active {
 body {
   cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto;
   background: #fff;
+  overflow-x: hidden;
 }
 
 body div.cursor {
