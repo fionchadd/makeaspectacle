@@ -1213,8 +1213,6 @@ a:hover, a:active {
   transition: visibility 0s ease-in-out, -webkit-transform .3s ease-in-out;
   transition: visibility 0s ease-in-out, transform .3s ease-in-out;
   transition: visibility 0s ease-in-out, transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
   -webkit-transform: translatex(-15px);
           transform: translatex(-15px);
 }

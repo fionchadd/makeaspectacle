@@ -172,7 +172,6 @@ transition: all 0.3s ease-in-out;
     top: calc(50% - 96px);
     right: -320px;
     transition: visibility 0s ease-in-out, transform .3s ease-in-out; 
-    transition: all .3s ease-in-out;
     transform: translatex(-15px);
     img {
       display: block;
