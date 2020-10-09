@@ -1259,6 +1259,12 @@ a:hover, a:active {
   transition: opacity 0.3s ease-in-out;
 }
 
+#work.active .projects.being-hovered .project.hovered {
+  opacity: 1 !important;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
 #work.active .projects.being-hovered .project:not(.hovered) .project-name, #work.active .projects.being-hovered .project:not(.hovered) .project-image {
   opacity: 0.5;
   -webkit-transition: opacity 0.3s ease-in-out;

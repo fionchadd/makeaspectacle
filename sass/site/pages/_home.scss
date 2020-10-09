@@ -212,6 +212,10 @@ transition: all 0.3s ease-in-out;
       opacity: 1;
       transition: opacity 0.3s ease-in-out;
           }
+          .project.hovered {
+            opacity: 1 !important;
+            transition: opacity 0.3s ease-in-out;
+          }
     .project:not(.hovered) .project-name, .project:not(.hovered) .project-image {
       opacity: 0.5;
       transition: opacity 0.3s ease-in-out;
