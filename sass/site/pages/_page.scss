@@ -23,6 +23,8 @@ width: 17px;
   pointer-events: none;
 mix-blend-mode: difference;
   z-index: 10000;
+  left: -20px;
+  top: -20px;
 }
 
 @media (max-width: 767px) {
