@@ -185,7 +185,7 @@ duration: animlength,
 .addTo(controller);
 
 new ScrollMagic.Scene({
-  triggerElement: ".project:last-child"
+  triggerElement: ".project:last-child",
   triggerHook: "onEnter",
   reverse: true,
 })
