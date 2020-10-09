@@ -202,6 +202,7 @@ new ScrollMagic.Scene({
   offset: 150,
   reverse: true,
  })
+ .setTween(tween)
   .addTo(controller);
   scene2.setClassToggle('#work', 'active');
   
