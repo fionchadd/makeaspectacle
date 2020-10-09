@@ -179,6 +179,7 @@ new ScrollMagic.Scene({
 triggerElement: "#work", 
 triggerHook: "onLeave",
 reverse: true,
+duration: "100%",
 })
 .setPin("#work")
 .addTo(controller);
