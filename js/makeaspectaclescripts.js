@@ -199,30 +199,30 @@ duration: animlength,
     .addTo(controller);
     scene2.setClassToggle('#work', 'active');
   
+      // fade out projects as they go off the screen
+       //    $('.project').each(function(){
 
-    $('.project').each(function(){
-      // Create a scene for each project
-      var fadeouttop = TweenMax.fromTo(this, {opacity: 1, ease: 'ease'}, {opacity: 0, ease: 'ease'});
-       new ScrollMagic.Scene({
-      triggerElement: this,
-      triggerHook: "onLeave",
-      offset: -250,
-      duration: 150,
-      })
-      .setTween(fadeouttop)
-      .addTo(controller);
-     });
+      //       var fadeouttop = TweenMax.fromTo(this, {opacity: 1, ease: 'ease'}, {opacity: 0, ease: 'ease'});
+      //        new ScrollMagic.Scene({
+      //       triggerElement: this,
+      //       triggerHook: "onLeave",
+      //       offset: -250,
+      //       duration: 150,
+      //       })
+      //       .setTween(fadeouttop)
+      //       .addTo(controller);
+      //      });
  
-    } 
+      //    } 
 
 // project section hover state
 jQuery(".project").hover(
   function () {
       jQuery(this).toggleClass("hovered");
-      $(this).parent().addClass('being-hovered');
+      $(this).parent().toggleClass('being-hovered');
   });
 
-
+} // end if work
 
 // move project images to follow mouse
  
