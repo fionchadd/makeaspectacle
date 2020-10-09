@@ -1260,13 +1260,13 @@ a:hover, a:active {
           transform: translatex(-15px);
 }
 
-#work.active .projects.being-hovered .project.hovered .project-link {
+#work.active .projects.being-hovered .project.hovered .project-name, #work.active .projects.being-hovered .project.hovered .project-image {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
-#work.active .projects.being-hovered .project:not(.hovered) .project-link {
+#work.active .projects.being-hovered .project:not(.hovered) .project-name, #work.active .projects.being-hovered .project:not(.hovered) .project-image {
   opacity: 0.5;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
