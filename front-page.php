@@ -59,7 +59,7 @@ $page_tagline = get_field( 'homepage_tagline');
 		endif;
 ?>
 <div class="project">
-	<a class="project-link" <?php if ( get_sub_field('target') ): ?>rel="noreferrer"<?php endif; ?> <?php echo $target; ?> href="<?php echo $link; ?>">
+	<a class="project-link" <?php if ( $target ): ?>rel="noreferrer"<?php endif; ?> <?php echo $target; ?> href="<?php echo $link; ?>">
 	<h4 class="project-name"><?php echo $name; ?></h4>
 	<div class="project-image"><img  alt=""class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg"><img class="screenshot" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 	</a>
