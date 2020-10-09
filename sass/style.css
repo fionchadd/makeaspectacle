@@ -1166,9 +1166,10 @@ a:hover, a:active {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: auto;
   height: 80vh;
-  overflow: scroll;
+  width: 100%;
+  overflow-y: visible;
+  overflow-x: scroll;
 }
 
 #work .project {
@@ -1256,19 +1257,19 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
 }
 
-#work.active .projects.being-hovered .project.hovered .project-name, #work.active .projects.being-hovered .project.hovered .project-image {
+#work.active #project-area.being-hovered .project.hovered .project-name, #work.active #project-area.being-hovered .project.hovered .project-image {
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-#work.active .projects.being-hovered .project.hovered {
+#work.active #project-area.being-hovered .project.hovered {
   opacity: 1 !important;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-#work.active .projects.being-hovered .project:not(.hovered) .project-name, #work.active .projects.being-hovered .project:not(.hovered) .project-image {
+#work.active #project-area.being-hovered .project:not(.hovered) .project-name, #work.active #project-area.being-hovered .project:not(.hovered) .project-image {
   opacity: 0.5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
