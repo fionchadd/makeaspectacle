@@ -1173,6 +1173,10 @@ a:hover, a:active {
   z-index: 0;
   margin-bottom: 5px;
   position: relative;
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #work h4 {
@@ -1186,10 +1190,6 @@ a:hover, a:active {
   -webkit-text-stroke-color: #0f0f0f;
   position: relative;
   display: block;
-  -webkit-transform: translatex(0);
-          transform: translatex(0);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 #work a {
@@ -1212,8 +1212,8 @@ a:hover, a:active {
   transition: visibility 0s ease-in-out 0s, -webkit-transform .3s ease-in-out .1s;
   transition: visibility 0s ease-in-out 0s, transform .3s ease-in-out .1s;
   transition: visibility 0s ease-in-out 0s, transform .3s ease-in-out .1s, -webkit-transform .3s ease-in-out .1s;
-  -webkit-transform: translatex(-15px);
-          transform: translatex(-15px);
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
 }
 
 #work .project-image img {
@@ -1235,13 +1235,17 @@ a:hover, a:active {
 
 #work.active .project.hovered {
   z-index: 2;
+  -webkit-transform: translatex(-15px);
+          transform: translatex(-15px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #work.active .project.hovered .project-image {
   visibility: visible;
   z-index: 0;
-  -webkit-transform: translatex(0);
-          transform: translatex(0);
+  -webkit-transform: translatex(30px);
+          transform: translatex(30px);
   -webkit-transition: visibility 0s ease-in-out .3s, -webkit-transform .3s ease-in-out 0s;
   transition: visibility 0s ease-in-out .3s, -webkit-transform .3s ease-in-out 0s;
   transition: visibility 0s ease-in-out .3s, transform .3s ease-in-out 0s;

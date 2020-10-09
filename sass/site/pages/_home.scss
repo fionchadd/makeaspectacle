@@ -135,6 +135,8 @@
     z-index: 0;
     margin-bottom: 5px;
     position: relative;
+    transform: translatex(0);
+transition: all 0.3s ease-in-out;
 
   }
 
@@ -149,8 +151,6 @@
 -webkit-text-stroke-color: #0f0f0f; 
 position: relative;
 display: block;
-transform: translatex(0);
-transition: all 0.3s ease-in-out;
   }
     a {
       display: inline-block;
@@ -171,7 +171,7 @@ transition: all 0.3s ease-in-out;
     top: calc(50% - 96px);
     right: -320px;
     transition: visibility 0s ease-in-out 0s, transform .3s ease-in-out .1s; 
-    transform: translatex(-15px);
+    transform: translatex(0);
     img {
       display: block;
       width: 100%;
@@ -191,10 +191,12 @@ transition: all 0.3s ease-in-out;
 #work.active {
   .project.hovered {
     z-index: 2;
+    transform: translatex(-15px);
+transition: all 0.3s ease-in-out;
     .project-image {
       visibility: visible;
       z-index: 0;
-      transform: translatex(0);
+      transform: translatex(30px);
       transition: visibility 0s ease-in-out .3s, transform .3s ease-in-out 0s; 
      img {
         opacity: 1;
