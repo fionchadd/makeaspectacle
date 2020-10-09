@@ -54,7 +54,7 @@ $page_tagline = get_field( 'homepage_tagline');
 			$alt = $image['alt'];
 		
 			// Thumbnail size attributes.
-			$size = 'large';
+			$size = 'portfolio-screenshot';
 			$fullimage = $image['sizes'][ $size ];
 		endif;
 ?>
