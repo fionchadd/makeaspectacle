@@ -1632,7 +1632,8 @@ div.cursor {
   }
   #work .project-image {
     top: 5em;
-    left: calc(55% - 150px);
+    left: calc(50% - 150px);
+    right: auto;
   }
   #work.active .project.hovered {
     -webkit-transform: translatex(0);
