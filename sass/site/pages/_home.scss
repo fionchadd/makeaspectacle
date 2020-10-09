@@ -1,6 +1,7 @@
 /*--eye styling--*/ 
 .above-fold {
     overflow: hidden;
+    background: #fff;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
@@ -118,6 +119,7 @@
   
 
 #work {
+  background: #fff;
   text-align: center;
   padding: 80px 0;
  min-height: 100vh;
