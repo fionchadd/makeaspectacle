@@ -186,7 +186,7 @@ reverse: true,
 
 new ScrollMagic.Scene({
   
-  triggerElement: "#project-area", 
+  triggerElement: ".projects", 
   triggerHook: "onLeave",
   reverse: true,
 
