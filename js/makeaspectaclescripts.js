@@ -170,7 +170,7 @@ jQuery(window).resize(function(){
 
 // project section animations
 if ($('#work')[0]) {
-
+  var animlength = $("#work").height()
   var width = window.innerWidth;
   var height = window.innerHeight;
 
@@ -179,7 +179,7 @@ new ScrollMagic.Scene({
 triggerElement: "#work", 
 triggerHook: "onLeave",
 reverse: true,
-duration: "100%",
+duration: animlength,
 })
 .setPin("#work")
 .addTo(controller);
