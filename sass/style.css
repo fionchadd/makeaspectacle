@@ -1404,7 +1404,8 @@ a:hover, a:active {
   width: 34%;
   min-width: 420px;
   max-width: 450px;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: scroll;
   color: #fff;
   padding: 45px;
   z-index: 999;
@@ -1671,7 +1672,18 @@ body.jsloaded div.cursor {
   }
   #colophon .about-title, #work h4 {
     font-size: 40px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-height: 850px) {
+  .about-section {
+    padding-top: 80px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 

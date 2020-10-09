@@ -68,7 +68,16 @@ body.jsloaded {
   }
   #colophon .about-title, #work h4 {
     font-size: 40px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px 0;
   }
   
+  }
+
+  @media (max-height: 850px) {
+    .about-section {
+      padding-top: 80px;
+      justify-content: flex-start;
+    }
   }
