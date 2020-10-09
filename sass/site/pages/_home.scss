@@ -170,8 +170,6 @@ display: block;
     height: auto;
     top: calc(50% - 96px);
     right: -320px;
-    transition: visibility 0s ease-in-out 0s, transform .3s ease-in-out .1s; 
-    transform: translatex(0);
     img {
       display: block;
       width: 100%;
@@ -196,17 +194,14 @@ transition: all 0.3s ease-in-out;
     .project-image {
       visibility: visible;
       z-index: 0;
-      transform: translatex(30px);
-      transition: visibility 0s ease-in-out .3s, transform .3s ease-in-out 0s; 
+      transition: visibility 0s ease 0.3s;
      img {
         opacity: 1;
-      
       }
     }
     h4 {
       font-style: oblique;
       z-index: 2;
-      transform: translatex(-15px);
       transition: all 0.3s ease-in-out;
     }
 
