@@ -1627,6 +1627,7 @@ body.jsloaded div.cursor {
   z-index: 10000;
   left: -20px;
   top: -20px;
+  display: block;
 }
 
 .post, .page {
