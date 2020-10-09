@@ -38,7 +38,7 @@ mix-blend-mode: difference;
       left: calc(50% - 150px);
       right: auto;
     }
-    #work.active .project.hovered {
+    #work.active .project:hover {
       transform: translatex(0);
     }
   }
