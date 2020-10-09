@@ -185,6 +185,12 @@ if ($('#work')[0]) {
 // .setPin("#work")
 // .addTo(controller);
 
+
+// TODO for framing work section
+// create bottom gradient at bottom of work section (as div)
+// create top gradient at top of page (as div)
+// when work section is active, scroll top gradient down from top so it's visible
+// when colophon scrolls into view, scroll bottom gradient down so it's invisible
 var addpadding = new TimelineMax();
 addpadding.fromTo(".bottom-gradient", {y: 0, ease: 'ease'}, {y: -80, ease: 'ease'});
 
