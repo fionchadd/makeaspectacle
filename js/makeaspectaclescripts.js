@@ -83,7 +83,7 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
     var controller = new ScrollMagic.Controller({
 
       });
-      // get all slides
+      // stick eye to top of page
       var width = window.innerWidth;
       var height = window.innerHeight;
       if ($('#stickThis')[0]) {
@@ -96,6 +96,8 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
 .setPin("#stickThis")
 .addTo(controller);
       }
+
+      
 
 // above-fold section animations      
 if ($('.above-fold')[0]) {
@@ -166,10 +168,23 @@ jQuery(window).resize(function(){
 }); 
 } // end if above fold
 
-// project staggered loading
+// project section animations
 if ($('#work')[0]) {
 
+  var width = window.innerWidth;
+  var height = window.innerHeight;
 
+new ScrollMagic.Scene({
+  
+triggerElement: "#work", 
+triggerHook: "onLeave",
+reverse: true,
+})
+.setPin("#work")
+.addTo(controller);
+  
+
+  // staggered loading
   var tween = TweenMax.staggerFromTo(".project .project-link", 1, {y: 50, autoAlpha:0, ease: 'ease' }, {className: '+=' + 'active', y: 0, autoAlpha:1, ease: 'ease'}, 0.3);
 
     var scene2 = new ScrollMagic.Scene({
@@ -190,14 +205,14 @@ if ($('#work')[0]) {
       triggerElement: this,
       triggerHook: "onLeave",
       offset: -250,
-      duration: 200,
+      duration: 150,
       })
       .setTween(fadeouttop)
       .addTo(controller);
      });
  
     } 
-    
+
 // project section hover state
 jQuery(".project").hover(
   function () {
