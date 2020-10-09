@@ -185,12 +185,15 @@ if ($('#work')[0]) {
 // .setPin("#work")
 // .addTo(controller);
 
+var addpadding = new TimelineMax();
+addpadding.fromTo("#work #project-area", {y: -80 ease: 'ease'}, {y: 0, ease: 'ease'});
+
 new ScrollMagic.Scene({
   triggerElement: "#colophon",
   triggerHook: "onEnter",
   reverse: true,
 })
-.setClassToggle("#work", "addpadding") // add class toggle
+.setTween(addpadding)
 .addTo(controller);
 
   // staggered loading
