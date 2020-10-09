@@ -187,7 +187,7 @@ display: block;
 
 }
 #work.active {
-  .project:hover {
+  .project.hovered {
     z-index: 2;
     transform: translatex(-15px);
 transition: all 0.3s ease-in-out;

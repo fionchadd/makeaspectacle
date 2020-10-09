@@ -1227,7 +1227,7 @@ a:hover, a:active {
   border-top: none;
 }
 
-#work.active .project:hover {
+#work.active .project.hovered {
   z-index: 2;
   -webkit-transform: translatex(-15px);
           transform: translatex(-15px);
@@ -1235,18 +1235,18 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
 }
 
-#work.active .project:hover .project-image {
+#work.active .project.hovered .project-image {
   visibility: visible;
   z-index: 0;
   -webkit-transition: visibility 0s ease 0.3s;
   transition: visibility 0s ease 0.3s;
 }
 
-#work.active .project:hover .project-image img {
+#work.active .project.hovered .project-image img {
   opacity: 1;
 }
 
-#work.active .project:hover h4 {
+#work.active .project.hovered h4 {
   font-style: oblique;
   z-index: 2;
   -webkit-transition: all 0.3s ease-in-out;
