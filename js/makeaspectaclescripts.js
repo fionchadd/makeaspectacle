@@ -215,30 +215,27 @@ duration: animlength,
  
       //    } 
 
-// project section hover state
-jQuery(".project").hover(
-  function () {
-      jQuery(this).toggleClass("hovered");
-      $(this).parent().toggleClass('being-hovered');
-  });
 
-} // end if work
 
-// move project images to follow mouse
+
+
+// add class when project is being hovered
  
-// $('.project').mousemove(function(e){
+ $('.project').mousemove(function(e){
 
-//  $(this).addClass('hovered');
- // $(this).parent().addClass('being-hovered');
-//  $(this).find('.project-image').css({
+  $(this).addClass('hovered');
+ $(this).parent().addClass('being-hovered');
+// $(this).find('.project-image').css({
 
  //   left:e.pageX, top:e.pageY
       
  //   });
-// }).mouseleave(function(){
-//  $(this).removeClass('hovered');
- //   $(this).parent().removeClass('being-hovered');
-// });
+ }).mouseleave(function(){
+  $(this).removeClass('hovered');
+   $(this).parent().removeClass('being-hovered');
+ });
+
+} // end if work
 
 // cursor
 var positionCursor = function(e){
