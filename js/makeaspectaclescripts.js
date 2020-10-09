@@ -186,7 +186,7 @@ if ($('#work')[0]) {
 // .addTo(controller);
 
 var addpadding = new TimelineMax();
-addpadding.fromTo("#work #project-area", {y: -80 ease: 'ease'}, {y: 0, ease: 'ease'});
+addpadding.fromTo("#work #project-area", {y: -80, ease: 'ease'}, {y: 0, ease: 'ease'});
 
 new ScrollMagic.Scene({
   triggerElement: "#colophon",
