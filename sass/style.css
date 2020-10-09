@@ -1186,6 +1186,8 @@ a:hover, a:active {
   -webkit-text-stroke-color: #0f0f0f;
   position: relative;
   display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #work a {
@@ -1204,6 +1206,8 @@ a:hover, a:active {
   height: auto;
   top: calc(50% - 96px);
   right: -320px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #work .project-image img {
@@ -1223,11 +1227,6 @@ a:hover, a:active {
   border-top: none;
 }
 
-#work a:hover h4 {
-  font-style: oblique;
-  z-index: 2;
-}
-
 #work.active .project.hovered {
   z-index: 2;
 }
@@ -1235,6 +1234,12 @@ a:hover, a:active {
 #work.active .project.hovered .project-image {
   visibility: visible;
   z-index: 0;
+  -webkit-transform: translatex(-15px);
+          transform: translatex(-15px);
+  -webkit-transition: visibility 0s ease-in-out .3s, -webkit-transform .3s ease-in-out;
+  transition: visibility 0s ease-in-out .3s, -webkit-transform .3s ease-in-out;
+  transition: visibility 0s ease-in-out .3s, transform .3s ease-in-out;
+  transition: visibility 0s ease-in-out .3s, transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 #work.active .project.hovered .project-image img {
@@ -1242,7 +1247,10 @@ a:hover, a:active {
 }
 
 #work.active .project.hovered h4 {
+  font-style: oblique;
   z-index: 2;
+  -webkit-transform: translatex(-15px) !important;
+          transform: translatex(-15px) !important;
 }
 
 #work.active .projects.being-hovered .project.hovered .project-link {
@@ -1594,8 +1602,8 @@ body {
 
 div.cursor {
   position: fixed;
-  width: 1em;
-  height: 1em;
+  width: 17px;
+  height: 17px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
