@@ -186,7 +186,7 @@ if ($('#work')[0]) {
 // .addTo(controller);
 
 new ScrollMagic.Scene({
-  triggerElement: ".project:last-child",
+  triggerElement: "#colophon",
   triggerHook: "onEnter",
   reverse: true,
 })

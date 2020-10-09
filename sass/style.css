@@ -1167,6 +1167,8 @@ a:hover, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #work:after {
@@ -1255,6 +1257,10 @@ a:hover, a:active {
 #work .project-image .screenshot {
   border: 2px solid #d6d6d6;
   border-top: none;
+}
+
+#work.addpadding {
+  padding-bottom: 80px;
 }
 
 #work.active .project.hovered {

@@ -125,6 +125,7 @@
 position: relative;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
   &:after {
     content: " ";
     width: 100%;
@@ -201,6 +202,10 @@ display: block;
       border-top: none;
     }
 }
+
+}
+#work.addpadding {
+  padding-bottom: 80px;
 
 }
 #work.active {
