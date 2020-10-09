@@ -76,11 +76,7 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
         jQuery('body').toggleClass('aboutisopen');
       });
 
-// project section hover state
-    jQuery(".project a").hover(
-      function () {
-          jQuery(this).parent().toggleClass("hover");
-      });
+
 
 
 // stick eye to top of browser when scrolling down
@@ -201,22 +197,31 @@ if ($('#work')[0]) {
      });
  
     } 
+    
+// project section hover state
+jQuery(".project").hover(
+  function () {
+      jQuery(this).toggleClass("hovered");
+      $(this).parent().addClass('being-hovered');
+  });
+
+
 
 // move project images to follow mouse
  
-$('.project').mousemove(function(e){
+// $('.project').mousemove(function(e){
 
-  $(this).addClass('hovered');
-  $(this).parent().addClass('being-hovered');
+//  $(this).addClass('hovered');
+ // $(this).parent().addClass('being-hovered');
 //  $(this).find('.project-image').css({
 
  //   left:e.pageX, top:e.pageY
       
  //   });
-}).mouseleave(function(){
-  $(this).removeClass('hovered');
-    $(this).parent().removeClass('being-hovered');
-});
+// }).mouseleave(function(){
+//  $(this).removeClass('hovered');
+ //   $(this).parent().removeClass('being-hovered');
+// });
 
 // cursor
 var positionCursor = function(e){
