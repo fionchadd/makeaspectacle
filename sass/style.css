@@ -1599,15 +1599,19 @@ a:hover, a:active {
 ## General page styling
 --------------------------------------------------------------*/
 body {
-  cursor: none;
+  cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto;
   background: #fff;
 }
 
-.post, .page {
-  margin: 0;
+body div.cursor {
+  display: none;
 }
 
-div.cursor {
+body.jsloaded {
+  cursor: none;
+}
+
+body.jsloaded div.cursor {
   position: fixed;
   width: 17px;
   height: 17px;
@@ -1623,6 +1627,10 @@ div.cursor {
   z-index: 10000;
   left: -20px;
   top: -20px;
+}
+
+.post, .page {
+  margin: 0;
 }
 
 @media (max-width: 767px) {

@@ -1,5 +1,8 @@
 jQuery(document).ready(function ($) {
-    /* eye */
+   /* use javascript to add class to body, so if javascript isn't loaded we don't get the class */
+  jQuery('body').toggleClass('jsloaded');
+ 
+  /* eye */
 
 var DrawEye = function(eye, pupil, speed, interval){
   var mouseX = 0, mouseY = 0;
