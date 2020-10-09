@@ -179,20 +179,12 @@ new ScrollMagic.Scene({
 triggerElement: "#work", 
 triggerHook: "onLeave",
 reverse: true,
-
+duration: animlength,
 })
 .setPin("#work")
 .addTo(controller);
 
-new ScrollMagic.Scene({
-  
-  triggerElement: ".projects", 
-  triggerHook: "onLeave",
-  reverse: true,
 
-  })
-  .removePin("#work")
-  .addTo(controller);  
 
   // staggered loading
   var tween = TweenMax.staggerFromTo(".project .project-link", 1, {y: 50, autoAlpha:0, ease: 'ease' }, {className: '+=' + 'active', y: 0, autoAlpha:1, ease: 'ease'}, 0.3);
