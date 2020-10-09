@@ -137,6 +137,7 @@
     position: relative;
     transform: translatex(0);
 transition: all 0.3s ease-in-out;
+padding: 0 50px;
 
   }
 
@@ -210,15 +211,15 @@ transition: all 0.3s ease-in-out;
   .projects.being-hovered {
     .project.hovered .project-name, .project.hovered .project-image {
       opacity: 1;
-      transition: opacity 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
           }
           .project.hovered {
             opacity: 1 !important;
-            transition: opacity 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
           }
     .project:not(.hovered) .project-name, .project:not(.hovered) .project-image {
       opacity: 0.5;
-      transition: opacity 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
   }
