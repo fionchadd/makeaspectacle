@@ -27,12 +27,13 @@
 	$description = get_sub_field( 'description');
 	?>
 		<div class="eye-wrapper">
-			<div class="eye about-eye" id="eye2">
+		<div class="about-eye"><img src="/wp-content/uploads/2020/10/make-a-spectacle-wordpress-development-1.svg" alt="make a spectacle logo"></div>
+		<!--	<div class="eye about-eye" id="eye2">
 				<div class="pupil" id="pupil2"></div>
 			</div>
 			<div class="eye-background">
 				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
-			</div>
+			</div> -->
 		</div>
 			<h3 class="about-title"><?php echo $blog_title; ?></h3>
 			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
@@ -47,14 +48,16 @@
 </div>
 <?php endif; ?>
 	<footer id="colophon" class="site-footer">
+		
 	<div class="eye-wrapper">
-			<div class="eye footer-eye" id="eye3">
+	<div class="footer-eye"><img src="/wp-content/uploads/2020/10/make-a-spectacle-wordpress-development-1.svg" alt="make a spectacle logo"></div>
+			<!-- <div class="eye footer-eye" id="eye3">
 				<div class="pupil" id="pupil3"></div>
 			</div>
 			<div class="eye-background">
 				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
-			</div>
-		</div>
+			</div> -->
+		</div> 
 		<div class="site-info">
 		<h3 class="about-title"><?php echo $blog_title; ?></h3>
 			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
