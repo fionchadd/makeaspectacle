@@ -1582,11 +1582,26 @@ a:hover, a:active {
 ## General page styling
 --------------------------------------------------------------*/
 body {
-  cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto;
+  cursor: none;
 }
 
 .post, .page {
   margin: 0;
+}
+
+div.cursor {
+  position: fixed;
+  width: 1.5em;
+  height: 1.5em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100px;
+  background: #000;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 10000;
 }
 
 @media (max-width: 767px) {

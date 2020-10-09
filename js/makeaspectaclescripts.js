@@ -215,6 +215,20 @@ $('.project').mousemove(function(e){
     $(this).parent().removeClass('being-hovered');
 });
 
+// cursor
+var positionCursor = function(e){
+
+    $('div.cursor').css({
+       left:  e.clientX,
+       top:   e.clientY
+    });
+};
+$(document).on( 'mousemove', positionCursor );
+// $(document).on( 'scroll', positionCursor );
+// $(document).on( 'resize', positionCursor );
+
+
+
  
 
 });  // end doc ready

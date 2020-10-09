@@ -61,6 +61,7 @@
 			<div class="get-in-touch"><span>get in touch</span><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
@@ -71,6 +72,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
 	<script src="/wp-content/themes/makeaspectacle/js/animation.gsap.js"></script>
-
+	<div class="cursor"></div>
 </body>
 </html>
