@@ -170,7 +170,7 @@ jQuery(window).resize(function(){
 
 // project section animations
 if ($('#work')[0]) {
-  var animlength = $("#work").height()
+  var animlength = $("#project-area").height()
   var width = window.innerWidth;
   var height = window.innerHeight;
 

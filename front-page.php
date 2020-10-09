@@ -37,6 +37,7 @@ $page_tagline = get_field( 'homepage_tagline');
 
 <div id="work">
 	<div class="projects">
+		<div id="project-area">
 <?php if( have_rows('projects') ): 
 		while( have_rows('projects') ): the_row(); 
 		if ( get_sub_field( 'project_details' ) ) : 
@@ -65,6 +66,7 @@ $page_tagline = get_field( 'homepage_tagline');
 	</a>
 </div>
 <?php endwhile; else : endif; ?>
+	</div>
 	</div>
 </div> <!-- work -->
 		</main><!-- #main -->
