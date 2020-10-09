@@ -101,10 +101,10 @@ var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
 // above-fold section animations      
 if ($('.above-fold')[0]) {
 var tl1 = new TimelineMax();
-tl1.fromTo(".above-fold .page-title", {y: 0, opacity: 1}, {y: -50, opacity: 0, ease: 'ease'});
+tl1.fromTo(".above-fold .page-title", {y: 0, opacity: 1}, {y: -10, opacity: 0, ease: 'ease'});
 
 var tl2 = new TimelineMax();
-tl2.fromTo(".above-fold .page-subtitle", {y: 0, opacity: 1}, {y: -70, opacity: 0, ease: 'ease'});
+tl2.fromTo(".above-fold .page-subtitle", {y: 0, opacity: 1}, {y: -20, opacity: 0, ease: 'ease'});
 
 var tl3 = new TimelineMax();
 tl3.fromTo(".above-fold .page-bottom", {y: 0, opacity: 1}, {y: -250, opacity: 0, ease: 'ease'});
