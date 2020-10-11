@@ -192,18 +192,19 @@ if ($('#work')[0]) {
 // when work section is active, scroll top gradient down from top so it's visible
 // when colophon scrolls into view, scroll bottom gradient down so it's invisible
 var topgradient = new TimelineMax();
-topgradient.fromTo(".top-gradient", {y: -80, ease: 'ease'}, {y: 0, ease: 'ease'});
+topgradient.fromTo(".top-gradient", {y: -95, ease: 'ease'}, {y: 0, ease: 'ease'});
 
-new ScrollMagic.Scene({
+var scenegradienttop = new ScrollMagic.Scene({
   triggerElement: "#work",
   triggerHook: "onEnter",
   reverse: true,
 })
 .setTween(topgradient)
 .addTo(controller);
+scenegradient.setClassToggle('.top-gradient', 'transforming');
 
 var bottomgradient = new TimelineMax();
-bottomgradient.fromTo(".bottom-gradient", {y: 0, ease: 'ease'}, {y: 80, ease: 'ease'});
+bottomgradient.fromTo(".bottom-gradient", {y: 0, ease: 'ease'}, {y: 280, ease: 'ease'});
 
 var scenegradient = new ScrollMagic.Scene({
   triggerElement: "#colophon",
