@@ -201,7 +201,7 @@ var scenegradienttop = new ScrollMagic.Scene({
 })
 .setTween(topgradient)
 .addTo(controller);
-scenegradient.setClassToggle('.top-gradient', 'transforming');
+scenegradienttop.setClassToggle('.top-gradient', 'transforming');
 
 var bottomgradient = new TimelineMax();
 bottomgradient.fromTo(".bottom-gradient", {y: 0, ease: 'ease'}, {y: 280, ease: 'ease'});
