@@ -1306,11 +1306,11 @@ a:hover, a:active {
 }
 
 .top-gradient {
-  top: 0;
+  top: 95px;
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(48%, white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to bottom, white 0%, white 48%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
   /* IE6-9 */
@@ -1320,8 +1320,8 @@ a:hover, a:active {
   bottom: 0;
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(48%, white), to(white));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 48%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
   /* IE6-9 */
