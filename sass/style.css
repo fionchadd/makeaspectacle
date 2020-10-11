@@ -1251,11 +1251,7 @@ a:hover, a:active {
   border-top: none;
 }
 
-#work.addpadding {
-  padding-bottom: 80px;
-}
-
-#work.active .project.hovered {
+#page.workactive .project.hovered {
   z-index: 2;
   -webkit-transform: translatex(-15px);
           transform: translatex(-15px);
@@ -1263,37 +1259,37 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
 }
 
-#work.active .project.hovered .project-image {
+#page.workactive .project.hovered .project-image {
   visibility: visible;
   z-index: 0;
   -webkit-transition: visibility 0s ease 0.3s;
   transition: visibility 0s ease 0.3s;
 }
 
-#work.active .project.hovered .project-image img {
+#page.workactive .project.hovered .project-image img {
   opacity: 1;
 }
 
-#work.active .project.hovered h4 {
+#page.workactive .project.hovered h4 {
   font-style: oblique;
   z-index: 2;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-#work.active #project-area.being-hovered .project.hovered .project-name, #work.active #project-area.being-hovered .project.hovered .project-image {
+#page.workactive #project-area.being-hovered .project.hovered .project-name, #page.workactive #project-area.being-hovered .project.hovered .project-image {
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-#work.active #project-area.being-hovered .project.hovered {
+#page.workactive #project-area.being-hovered .project.hovered {
   opacity: 1 !important;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-#work.active #project-area.being-hovered .project:not(.hovered) .project-name, #work.active #project-area.being-hovered .project:not(.hovered) .project-image {
+#page.workactive #project-area.being-hovered .project:not(.hovered) .project-name, #page.workactive #project-area.being-hovered .project:not(.hovered) .project-image {
   opacity: 0.5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1306,7 +1302,7 @@ a:hover, a:active {
 }
 
 .top-gradient {
-  top: 95px;
+  top: 93px;
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
