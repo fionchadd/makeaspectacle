@@ -225,7 +225,7 @@ new ScrollMagic.Scene({
  .setTween(tween)
   .addTo(controller);
   scene2.setClassToggle('#work', 'active');
-  scene2.setClassToggle(body, 'workactive');
+  scene2.setClassToggle('#page', 'workactive');
   
       // fade out projects as they go off the screen
        //    $('.project').each(function(){
