@@ -196,7 +196,7 @@ topgradient.fromTo(".top-gradient", {y: -95, ease: 'ease'}, {y: 0, ease: 'ease'}
 
 var scenegradienttop = new ScrollMagic.Scene({
   triggerElement: "#work",
-  triggerHook: "onEnter",
+  offset: 150,
   reverse: true,
 })
 .setTween(topgradient)
