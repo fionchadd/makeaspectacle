@@ -1323,7 +1323,7 @@ a:hover, a:active {
   /* IE6-9 */
 }
 
-.top-gradient {
+.top-gradient, .bottom-gradient {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1331,21 +1331,14 @@ a:hover, a:active {
   z-index: 1;
 }
 
-.workactive .top-gradient {
+.workactive .top-gradient, .workactive .bottom-gradient {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease-in-out, visibility 0s ease 0.3s;
   transition: opacity 0.3s ease-in-out, visibility 0s ease 0.3s;
 }
 
-.bottom-gradient {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0s ease 0.3s;
-  transition: opacity 0.3s ease-in-out, visibility 0s ease 0.3s;
-}
-
-.footeractive .bottom-gradient {
+.workactive.footeractive .bottom-gradient {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-in-out;
