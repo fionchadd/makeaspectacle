@@ -12,6 +12,7 @@
 ?>
 
 	</div><!-- #content -->
+	<div class="bottom-gradient"></div>
 	<?php
 		$blog_title = get_bloginfo( 'name' ); 
 		$blog_tagline = get_bloginfo( 'description' ); 

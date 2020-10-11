@@ -793,13 +793,6 @@ a:hover, a:active {
   padding: 35px;
   background: #fff;
   z-index: 9;
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(48%, white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to bottom, white 0%, white 48%, rgba(255, 255, 255, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-  /* IE6-9 */
 }
 
 .main-navigation a {
@@ -1304,6 +1297,48 @@ a:hover, a:active {
   opacity: 0.5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.top-gradient, .bottom-gradient {
+  position: fixed;
+  width: 100vw;
+  height: 15vh;
+}
+
+.top-gradient {
+  top: 0;
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(48%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, white 0%, white 48%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+.bottom-gradient {
+  bottom: 0;
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(48%, white), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 48%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+.top-gradient, .bottom-gradient {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.workactive .top-gradient, .workactive .bottom-gradient {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0s ease 0.3s;
+  transition: opacity 0.3s ease-in-out, visibility 0s ease 0.3s;
 }
 
 @-webkit-keyframes slide-right {

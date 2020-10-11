@@ -187,19 +187,30 @@ if ($('#work')[0]) {
 
 
 // TODO for framing work section
-// create bottom gradient at bottom of work section (as div)
-// create top gradient at top of page (as div)
+// create bottom gradient at bottom of page (as fixed div)
+// create top gradient at top of page (as fixed div)
 // when work section is active, scroll top gradient down from top so it's visible
 // when colophon scrolls into view, scroll bottom gradient down so it's invisible
-var addpadding = new TimelineMax();
-addpadding.fromTo(".bottom-gradient", {y: 0, ease: 'ease'}, {y: -80, ease: 'ease'});
+var topgradient = new TimelineMax();
+topgradient.fromTo(".top-gradient", {y: -80, ease: 'ease'}, {y: 0, ease: 'ease'});
+
+new ScrollMagic.Scene({
+  triggerElement: "#work",
+  triggerHook: "onEnter",
+  reverse: true,
+})
+.setTween(topgradient)
+.addTo(controller);
+
+var bottomgradient = new TimelineMax();
+bottomgradient.fromTo(".bottom-gradient", {y: 0, ease: 'ease'}, {y: 80, ease: 'ease'});
 
 new ScrollMagic.Scene({
   triggerElement: "#colophon",
   triggerHook: "onEnter",
   reverse: true,
 })
-.setTween(addpadding)
+.setTween(bottomgradient)
 .addTo(controller);
 
   // staggered loading
@@ -214,6 +225,7 @@ new ScrollMagic.Scene({
  .setTween(tween)
   .addTo(controller);
   scene2.setClassToggle('#work', 'active');
+  scene2.setClassToggle(body, 'workactive');
   
       // fade out projects as they go off the screen
        //    $('.project').each(function(){

@@ -34,5 +34,5 @@
 <a class="menu-link about" href="#about">about</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+<div class="top-gradient"></div>
 	<div id="content" class="site-content">
