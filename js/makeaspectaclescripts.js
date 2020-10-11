@@ -205,13 +205,14 @@ new ScrollMagic.Scene({
 var bottomgradient = new TimelineMax();
 bottomgradient.fromTo(".bottom-gradient", {y: 0, ease: 'ease'}, {y: 80, ease: 'ease'});
 
-new ScrollMagic.Scene({
+var scenegradient = new ScrollMagic.Scene({
   triggerElement: "#colophon",
   triggerHook: "onEnter",
   reverse: true,
 })
 .setTween(bottomgradient)
 .addTo(controller);
+scenegradient.setClassToggle('#page', 'footeractive');
 
   // staggered loading
   var tween = TweenMax.staggerFromTo(".project .project-link", 1, {y: 50, autoAlpha:0, ease: 'ease' }, {className: '+=' + 'active', y: 0, autoAlpha:1, ease: 'ease'}, 0.3);
