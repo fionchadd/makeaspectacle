@@ -31,7 +31,17 @@ body.jsloaded {
     margin: 0;
 }
 
-
+@media (max-width: 1150px) and (min-width: 768px) {
+  #work .projects {
+    width: 100%;
+  }
+  #work a {
+    display: block;
+  }
+  #work .project-image {
+    right: 50px;
+  }
+}
 
 @media (max-width: 767px) {
     #colophon .about-title, #work h4 {
@@ -48,6 +58,9 @@ body.jsloaded {
     }
     #work.active .project:hover {
       transform: translatex(0);
+    }
+    #work h4 {
+      text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
     }
   }
   
