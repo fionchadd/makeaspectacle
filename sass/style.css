@@ -1250,8 +1250,6 @@ a:hover, a:active {
 
 #page.workactive .project.hovered {
   z-index: 2;
-  -webkit-transform: translatex(-15px);
-          transform: translatex(-15px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1268,7 +1266,8 @@ a:hover, a:active {
 }
 
 #page.workactive .project.hovered h4 {
-  font-style: oblique;
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
   z-index: 2;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1715,7 +1714,7 @@ body.jsloaded div.cursor {
     display: block;
   }
   #work .project-image {
-    right: -25px;
+    right: -50px;
   }
   #work h4 {
     text-shadow: 0px 0px 5px white;
