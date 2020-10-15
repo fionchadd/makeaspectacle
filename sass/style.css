@@ -1258,8 +1258,8 @@ a:hover, a:active {
 
 #page.workactive .project.hovered .project-image img {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out .1s;
+  transition: opacity 0.3s ease-in-out .1s;
 }
 
 #page.workactive .project.hovered h4 {

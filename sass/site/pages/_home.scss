@@ -215,7 +215,7 @@ display: block;
     .project-image {
      img {
         opacity: 1;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out .1s;
       }
     }
     h4 {
