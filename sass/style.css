@@ -1241,8 +1241,8 @@ a:hover, a:active {
   display: block;
   width: 100%;
   opacity: 0;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out 0s;
+  transition: opacity .3s ease-in-out 0s;
 }
 
 #work .project-image img.browser-top {
@@ -1269,8 +1269,8 @@ a:hover, a:active {
 
 #page.workactive .project.hovered .project-image img {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out 0s;
+  transition: opacity 0.3s ease-in-out 0s;
 }
 
 #page.workactive .project.hovered h4 {
@@ -1281,22 +1281,8 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
 }
 
-#page.workactive #project-area.being-hovered .project.hovered .project-name, #page.workactive #project-area.being-hovered .project.hovered .project-image {
-  opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#page.workactive #project-area.being-hovered .project.hovered {
-  opacity: 1 !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
 #page.workactive #project-area.being-hovered .project:not(.hovered) .project-name, #page.workactive #project-area.being-hovered .project:not(.hovered) .project-image {
   opacity: 0.5;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .top-gradient, .bottom-gradient {

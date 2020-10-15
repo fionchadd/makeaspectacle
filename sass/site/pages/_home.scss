@@ -197,7 +197,7 @@ display: block;
       display: block;
       width: 100%;
       opacity: 0;
-      transition: all .3s ease-in-out; 
+      transition: opacity .3s ease-in-out 0s; 
     }
     img.browser-top {
       margin-bottom: -1px;
@@ -214,14 +214,14 @@ display: block;
   .project.hovered {
     z-index: 2;
 //    transform: translatex(-15px);
-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     .project-image {
       visibility: visible;
       z-index: 0;
       transition: visibility 0s ease 0.3s;
      img {
         opacity: 1;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out 0s;
       }
     }
     h4 {
@@ -237,19 +237,9 @@ transition: all 0.3s ease-in-out;
   
   }
   #project-area.being-hovered {
-    .project.hovered .project-name, .project.hovered .project-image {
-      opacity: 1;
-      transition: all 0.3s ease-in-out;
-          }
-          .project.hovered {
-            opacity: 1 !important;
-            transition: all 0.3s ease-in-out;
-          }
     .project:not(.hovered) .project-name, .project:not(.hovered) .project-image {
       opacity: 0.5;
-      transition: all 0.3s ease-in-out;
     }
-
   }
 }
 .top-gradient, .bottom-gradient {
