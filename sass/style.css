@@ -1730,6 +1730,8 @@ body.jsloaded div.cursor {
     top: 5em;
     left: calc(50% - 150px);
     right: auto;
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
   }
   #page.workactive .project:hover {
     -webkit-transform: translatex(0);
