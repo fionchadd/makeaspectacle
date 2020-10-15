@@ -1233,6 +1233,8 @@ a:hover, a:active {
   height: auto;
   top: calc(50% - 96px);
   right: -320px;
+  -webkit-transition: visibility 0s ease 0s;
+  transition: visibility 0s ease 0s;
 }
 
 #work .project-image img {
@@ -1267,6 +1269,8 @@ a:hover, a:active {
 
 #page.workactive .project.hovered .project-image img {
   opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #page.workactive .project.hovered h4 {

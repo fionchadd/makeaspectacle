@@ -192,6 +192,7 @@ display: block;
     height: auto;
     top: calc(50% - 96px);
     right: -320px;
+    transition: visibility 0s ease 0s;
     img {
       display: block;
       width: 100%;
@@ -220,6 +221,7 @@ transition: all 0.3s ease-in-out;
       transition: visibility 0s ease 0.3s;
      img {
         opacity: 1;
+        transition: opacity 0.3s ease-in-out;
       }
     }
     h4 {
