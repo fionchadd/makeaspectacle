@@ -184,20 +184,17 @@ display: block;
   
   .project-image {
     position: absolute;
-    z-index: -1;
-    visibility: hidden;
     pointer-events:none;
     max-width: 300px;
     width: 300px;
     height: auto;
     top: calc(50% - 96px);
     right: -320px;
-    transition: visibility 0s ease 0s;
     img {
       display: block;
       width: 100%;
       opacity: 0;
-      transition: opacity .3s ease-in-out 0s; 
+      transition: opacity .3s ease-in-out; 
     }
     img.browser-top {
       margin-bottom: -1px;
@@ -216,12 +213,9 @@ display: block;
 //    transform: translatex(-15px);
     transition: all 0.3s ease-in-out;
     .project-image {
-      visibility: visible;
-      z-index: 0;
-      transition: visibility 0s ease 0.3s;
      img {
         opacity: 1;
-        transition: opacity 0.3s ease-in-out 0s;
+        transition: opacity 0.3s ease-in-out;
       }
     }
     h4 {
