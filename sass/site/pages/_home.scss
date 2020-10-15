@@ -207,7 +207,7 @@ display: block;
 #page.workactive {
   .project.hovered {
     z-index: 2;
-    transform: translatex(-15px);
+//    transform: translatex(-15px);
 transition: all 0.3s ease-in-out;
     .project-image {
       visibility: visible;
@@ -218,7 +218,11 @@ transition: all 0.3s ease-in-out;
       }
     }
     h4 {
-      font-style: oblique;
+      -webkit-transform: skewX(-10deg);
+      -moz-transform: skewX(-10deg);
+      -o-transform: skewX(-10deg);
+      transform: skewX(-10deg);
+//      font-style: oblique;
       z-index: 2;
       transition: all 0.3s ease-in-out;
     }
