@@ -1218,9 +1218,10 @@ a:hover, a:active {
 }
 
 #work a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   position: relative;
+  padding: 0 20px;
 }
 
 #work .project-image {
@@ -1231,6 +1232,10 @@ a:hover, a:active {
   height: auto;
   top: calc(50% - 96px);
   right: -320px;
+  -webkit-transform: translatex(-15px);
+          transform: translatex(-15px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #work .project-image img {
@@ -1252,6 +1257,13 @@ a:hover, a:active {
 
 #page.workactive .project.hovered {
   z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#page.workactive .project.hovered .project-image {
+  -webkit-transform: translatex(0px);
+          transform: translatex(0px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }

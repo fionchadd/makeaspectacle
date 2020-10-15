@@ -175,9 +175,10 @@ position: relative;
 display: block;
   }
     a {
-      display: inline-block;
+      display: block;
       text-decoration: none;
       position: relative;
+      padding: 0 20px;
 
     }
     
@@ -190,6 +191,8 @@ display: block;
     height: auto;
     top: calc(50% - 96px);
     right: -320px;
+    transform: translatex(-15px);
+    transition: all 0.3s ease-in-out;
     img {
       display: block;
       width: 100%;
@@ -213,6 +216,8 @@ display: block;
 //    transform: translatex(-15px);
     transition: all 0.3s ease-in-out;
     .project-image {
+      transform: translatex(0px);
+      transition: all 0.3s ease-in-out;
      img {
         opacity: 1;
         transition: opacity 0.3s ease-in-out .1s;
