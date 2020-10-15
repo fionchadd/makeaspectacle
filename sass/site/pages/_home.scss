@@ -191,7 +191,8 @@ display: block;
     height: auto;
     top: calc(50% - 96px);
     right: -320px;
-    transform: translatex(-15px);
+    transform: translate(-15px, 0);
+    
     transition: all 0.3s ease-in-out;
     img {
       display: block;
@@ -216,8 +217,9 @@ display: block;
 //    transform: translatex(-15px);
     transition: all 0.3s ease-in-out;
     .project-image {
-      transform: translatex(0px);
+      transform: translate(0, 0);
       transition: all 0.3s ease-in-out;
+
      img {
         opacity: 1;
         transition: opacity 0.3s ease-in-out .1s;
