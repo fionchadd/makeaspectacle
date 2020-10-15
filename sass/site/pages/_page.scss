@@ -41,13 +41,10 @@ body.jsloaded {
   }
   #work .project-image {
    right: -50px;
-   transform: translatex(300px);
-   transition: all 0.5s ease-in-out;
+   transform: translatex(50px);
+
   }
-  #page.workactive   .project.hovered     .project-image {
-    transform: translatex(0px);
-    transition: all 0.5s ease-in-out; 
-  }
+
   #work h4 {
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
   }
