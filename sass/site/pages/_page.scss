@@ -35,11 +35,13 @@ body.jsloaded {
   #work .projects {
     width: 100%;
   }
+  
   #work a {
     display: block;
   }
   #work .project-image {
    right: -50px;
+   transform: translatex(300px);
   }
   #work h4 {
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);

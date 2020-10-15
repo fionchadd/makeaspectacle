@@ -1710,6 +1710,8 @@ body.jsloaded div.cursor {
   }
   #work .project-image {
     right: -50px;
+    -webkit-transform: translatex(300px);
+            transform: translatex(300px);
   }
   #work h4 {
     text-shadow: 0px 0px 5px white;
