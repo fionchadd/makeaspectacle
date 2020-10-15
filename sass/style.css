@@ -1209,6 +1209,10 @@ a:hover, a:active {
   margin: 0;
   text-transform: uppercase;
   color: #0f0f0f;
+  -webkit-transform: skewX(0deg);
+  transform: skewX(0deg);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   position: relative;
   display: block;
 }
