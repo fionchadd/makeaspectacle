@@ -17,7 +17,7 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link type="text/plain" rel="author" href="https://nghfb10.noelgallagher.com//humans.txt" />
 	<?php wp_head(); ?>
 
 	<link rel="stylesheet" href="https://use.typekit.net/ogh2zvl.css">
