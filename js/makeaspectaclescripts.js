@@ -174,23 +174,8 @@ if ($('#work')[0]) {
   var width = window.innerWidth;
   var height = window.innerHeight;
 
-   // stick work to top of screen
-// new ScrollMagic.Scene({
-  
-// triggerElement: "#work", 
-// triggerHook: "onLeave",
-// reverse: true,
-// duration: animlength,
-// })
-// .setPin("#work")
-// .addTo(controller);
 
-
-// TODO for framing work section
-// create bottom gradient at bottom of page (as fixed div)
-// create top gradient at top of page (as fixed div)
-// when work section is active, scroll top gradient down from top so it's visible
-// when colophon scrolls into view, scroll bottom gradient down so it's invisible
+  // really should redo all of this using scrolltrigger
 var topgradient = new TimelineMax();
 topgradient.fromTo(".top-gradient", {y: -95, ease: 'ease'}, {y: 0, ease: 'ease'});
 
@@ -222,7 +207,7 @@ scenegradient.setClassToggle('#page', 'footeractive');
  var scene2 = new ScrollMagic.Scene({
   triggerElement: '#work',
   offset: 150,
-  reverse: true,
+  reverse: false,
  })
  .setTween(tween)
   .addTo(controller);

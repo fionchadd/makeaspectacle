@@ -134,6 +134,8 @@ function makeaspectacle_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'makeaspectacle_scripts' );
 
+
+
 /**
  * Implement the Custom Header feature.
  */

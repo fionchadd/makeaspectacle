@@ -9,7 +9,7 @@
  *
  * @package Make_A_Spectacle
  */
-
+header("X-Clacks-Overhead: GNU Terry Pratchett");
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
