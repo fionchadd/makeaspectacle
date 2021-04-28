@@ -1720,15 +1720,23 @@ body.jsloaded div.cursor {
 }
 
 @media (max-width: 767px) {
-  #colophon .about-title, #work h4 {
+  #colophon .about-title {
     font-size: 60px;
     line-height: 70px;
+  }
+  #work h4 {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 10px;
   }
   #colophon {
     padding: 40px;
   }
+  #work .project {
+    padding: 0 20px;
+  }
   #work .project-image {
-    top: 5em;
+    top: 100%;
     left: calc(50% - 150px);
     right: auto;
     -webkit-transform: translate(0, -15px);
