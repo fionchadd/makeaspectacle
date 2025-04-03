@@ -58,7 +58,7 @@ $page_tagline = get_field( 'homepage_tagline');
 ?>
 <li class="project">
 <a class="project-link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-	<h4 class="project-name"><?php echo $link_title; ?></h4>
+	<p class="header l project-name"><?php echo $link_title; ?></p>
 	<div class="project-image"><img aria-hidden="true" alt="" class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg">
 	<?php echo wp_get_attachment_image( $image, $size,  "", ["class" => "screenshot"] ); ?>
 </div>
