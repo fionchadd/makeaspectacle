@@ -365,16 +365,31 @@ textarea {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.header, h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-style: normal;
   font-weight: 300;
   font-family: moret, serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.14em;
 }
-h1.oblique, h2.oblique, h3.oblique, h4.oblique, h5.oblique, h6.oblique {
+.header.oblique, h1.oblique, h2.oblique, h3.oblique, h4.oblique, h5.oblique, h6.oblique {
   font-style: oblique;
+}
+.header.xl, h1.xl, h2.xl, h3.xl, h4.xl, h5.xl, h6.xl {
+  font-size: clamp(3.125rem, 2.3558rem + 3.8462vw, 5rem);
+}
+.header.l, h1.l, h2.l, h3.l, h4.l, h5.l, h6.l {
+  font-size: clamp(2.5rem, 1.4744rem + 5.1282vw, 5rem);
+}
+.header.m, h1.m, h2.m, h3.m, h4.m, h5.m, h6.m {
+  font-size: clamp(2.5rem, 1.859rem + 3.2051vw, 4.0625rem);
+}
+.header.s, h1.s, h2.s, h3.s, h4.s, h5.s, h6.s {
+  font-size: clamp(1.875rem, 1.6955rem + 0.8974vw, 2.3125rem);
 }
 
 p {
@@ -430,6 +445,14 @@ mark, ins {
 
 big {
   font-size: 125%;
+}
+
+.kicker {
+  font-family: roc-grotesk, sans-serif;
+  letter-spacing: clamp(0.0938rem, 0.0553rem + 0.1923vw, 0.1875rem);
+  line-height: 1.66em;
+  text-transform: uppercase;
+  font-size: clamp(0.8125rem, 0.7612rem + 0.2564vw, 0.9375rem);
 }
 
 /*--------------------------------------------------------------
