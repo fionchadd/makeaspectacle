@@ -29,20 +29,14 @@
 	?>
 		<div class="eye-wrapper">
 		<div class="about-eye"><img src="/wp-content/uploads/2020/10/make-a-spectacle-wordpress-development-1.svg" alt="make a spectacle logo"></div>
-		<!--	<div class="eye about-eye" id="eye2">
-				<div class="pupil" id="pupil2"></div>
-			</div>
-			<div class="eye-background">
-				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
-			</div> -->
 		</div>
-			<h3 class="about-title"><?php echo $blog_title; ?></h3>
-			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
+			<p class="header s"><?php echo $blog_title; ?></p>
+			<p class="kicker"><?php echo $blog_tagline; ?></p>
 			<div class="about-text"><?php echo $description; ?></div>
 			<div class="get-in-touch-about">
-			<h4 class="about-subtitle final"><?php echo $title; ?></h4>
+			<h2 class="kicker"><?php echo $title; ?></h2>
 			<div class="about-arrow"><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/about-arrow.svg"></div>
-			<a class="email-address" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+			<a class="kicker email-address" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		 </div>
 			<?php endwhile; ?>
 		 </div>	
@@ -52,17 +46,11 @@
 		
 	<div class="eye-wrapper">
 	<div class="footer-eye"><img src="/wp-content/uploads/2020/10/make-a-spectacle-wordpress-development-1.svg" alt="make a spectacle logo"></div>
-			<!-- <div class="eye footer-eye" id="eye3">
-				<div class="pupil" id="pupil3"></div>
-			</div>
-			<div class="eye-background">
-				<img alt="" src="/wp-content/themes/makeaspectacle/sass/images/logo-outline-light-w-background.svg">
-			</div> -->
 		</div> 
 		<div class="site-info">
-		<h3 class="about-title"><?php echo $blog_title; ?></h3>
-			<h4 class="about-subtitle"><?php echo $blog_tagline; ?></h4>
-			<div class="get-in-touch"><span>get in touch</span><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a>
+		<p class="header m"><?php echo $blog_title; ?></p>
+			<p class="kicker about-subtitle"><?php echo $blog_tagline; ?></p>
+			<p class="kicker get-in-touch"><span>get in touch</span><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
