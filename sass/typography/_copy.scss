@@ -6,7 +6,7 @@ p {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-size: 15px;
-	line-height: 25px;
+    line-height: 1.66em;
 }
 
 dfn, cite, em, i {
@@ -52,9 +52,7 @@ big {
 }
 
 .kicker {
-	font-family: roc-grotesk, sans-serif;
     letter-spacing: clamp(0.0938rem, 0.0553rem + 0.1923vw, 0.1875rem); // 3px to 1.5px
-    line-height: 1.66em;
     text-transform: uppercase;
 	font-size: clamp(0.8125rem, 0.7612rem + 0.2564vw, 0.9375rem); // 15px at 1100px to 13px at 320px
 }
