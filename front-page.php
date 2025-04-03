@@ -37,7 +37,7 @@ $page_tagline = get_field( 'homepage_tagline');
 
 <div id="work">
 	<div class="projects">
-		<div id="project-area">
+		<ul class="unstyled" id="project-area">
 <?php if( have_rows('projects') ): 
 		while( have_rows('projects') ): the_row(); 
 		if ( get_sub_field( 'project_details' ) ) : 
@@ -56,16 +56,16 @@ $page_tagline = get_field( 'homepage_tagline');
 		endif;
 
 ?>
-<div class="project">
+<li class="project">
 <a class="project-link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-	<h4 class="project-name"><?php echo $name; ?></h4>
+	<h4 class="project-name"><?php echo $link_title; ?></h4>
 	<div class="project-image"><img aria-hidden="true" alt="" class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg">
 	<?php echo wp_get_attachment_image( $image, $size,  "", ["class" => "screenshot"] ); ?>
 </div>
 	</a>
-</div>
+	</li>
 <?php endwhile; else : endif; ?>
-	</div>
+	</ul>
 	</div>
 </div> <!-- work -->
 		</main><!-- #main -->
