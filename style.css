@@ -356,10 +356,8 @@ input,
 select,
 optgroup,
 textarea {
-  color: #0f0f0f;
+  color: light-dark(#0f0f0f, #fff);
   font-family: roc-grotesk, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
   line-height: 1.5;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -400,7 +398,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 1.66em;
 }
 
 dfn, cite, em, i {
@@ -416,7 +414,7 @@ address {
 }
 
 pre {
-  background: #eee;
+  background: light-dark(#fff, #0f0f0f);
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -439,7 +437,7 @@ abbr, acronym {
 }
 
 mark, ins {
-  background: #fff9c0;
+  background: light-dark(#fff, #0f0f0f);
   text-decoration: none;
 }
 
@@ -448,9 +446,7 @@ big {
 }
 
 .kicker {
-  font-family: roc-grotesk, sans-serif;
   letter-spacing: clamp(0.0938rem, 0.0553rem + 0.1923vw, 0.1875rem);
-  line-height: 1.66em;
   text-transform: uppercase;
   font-size: clamp(0.8125rem, 0.7612rem + 0.2564vw, 0.9375rem);
 }
@@ -458,6 +454,10 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+:root {
+  color-scheme: light dark;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -469,11 +469,11 @@ html {
 }
 
 body {
-  background: #fff; /* Fallback for when there is no custom background color defined. */
+  background: light-dark(#fff, #0f0f0f); /* Fallback for when there is no custom background color defined. */
 }
 
 hr {
-  background-color: #ccc;
+  background-color: light-dark(#0f0f0f, #fff);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -619,7 +619,7 @@ input[type=reset]:active,
 input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
-  border-color: #aaa #bbb #bbb;
+  border-color: light-dark(#0f0f0f, #fff);
 }
 
 input[type=text],
@@ -662,7 +662,7 @@ input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 input[type=color]:focus,
 textarea:focus {
-  color: #0f0f0f;
+  color: light-dark(#0f0f0f, #fff);
 }
 
 select {
@@ -680,13 +680,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #0f0f0f;
+  color: light-dark(#0f0f0f, #fff);
 }
 a:visited {
-  color: #0f0f0f;
+  color: light-dark(#0f0f0f, #fff);
 }
 a:hover, a:focus, a:active {
-  color: #0f0f0f;
+  color: light-dark(#0f0f0f, #fff);
 }
 a:focus {
   outline: thin dotted;
@@ -699,23 +699,19 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
-  display: flex;
-  float: none;
   width: 100%;
   position: fixed;
   padding: 35px;
-  background: #fff;
+  background: light-dark(#fff, #0f0f0f);
   z-index: 9;
+}
+.main-navigation ul {
+  justify-content: space-between;
+  display: flex;
 }
 .main-navigation a {
   display: block;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 3px;
-  color: #0f0f0f;
   position: relative;
 }
 .main-navigation a:before, .main-navigation a:after {
@@ -727,7 +723,7 @@ a:hover, a:active {
   margin: 0;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-  background-color: #020202;
+  background-color: light-dark(#0f0f0f, #fff);
 }
 .main-navigation a:before {
   left: 50%;
@@ -738,24 +734,6 @@ a:hover, a:active {
 .main-navigation a:hover:before, .main-navigation a:hover:after {
   width: 50%;
   opacity: 1;
-}
-.main-navigation .menu-link.work {
-  align-self: flex-start;
-  margin: auto;
-  margin-left: 0;
-}
-.main-navigation .menu-link.about {
-  align-self: flex-end;
-  margin: auto;
-  margin-right: 0;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.main-navigation ul {
-  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -776,13 +754,13 @@ a:hover, a:active {
   word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 .screen-reader-text:focus {
-  background-color: #fff;
+  background-color: light-dark(#fff, #0f0f0f);
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   -webkit-clip-path: none;
           clip-path: none;
-  color: #0f0f0f;
+  color: light-dark(#0f0f0f, #fff);
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
@@ -914,7 +892,6 @@ a:hover, a:active {
 /*--eye styling--*/
 .above-fold {
   overflow: hidden;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -999,29 +976,14 @@ a:hover, a:active {
 .pupil {
   width: 18px;
   height: 18px;
-  background-color: black;
+  background-color: light-dark(#0f0f0f, #fff);
   border-radius: 50%;
   margin: auto;
   display: block;
   position: absolute;
 }
 
-/*--
-.lid {
-  left: -7.5px;
-  width: 50px;
-  position: absolute;
-    transform: translateY(-101%);
-}
-
-.lid-inner {
-  width: 50px;
-    height: 35px;
-    display: block;
-}
---*/
 #work {
-  background: #fff;
   text-align: center;
   min-height: 100vh;
   position: relative;
@@ -1046,12 +1008,9 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
   padding: 0 50px;
 }
-#work h4 {
-  font-size: 80px;
-  line-height: 91px;
+#work .project-name {
   margin: 0;
-  text-transform: uppercase;
-  color: rgb(15, 15, 15);
+  color: light-dark(#0f0f0f, #fff);
   transform: skewX(0deg);
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -1116,15 +1075,13 @@ a:hover, a:active {
 }
 
 .top-gradient {
-  top: 93px; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=0 ); /* IE6-9 */
+  top: 93px;
+  background: linear-gradient(to bottom, light-dark(#fff, #0f0f0f) 0%, light-dark(rgba(15, 15, 15, 0), rgba(255, 255, 255, 0)) 100%);
 }
 
 .bottom-gradient {
-  bottom: 0; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=0 ); /* IE6-9 */
+  bottom: 0;
+  background: linear-gradient(to bottom, light-dark(rgba(15, 15, 15, 0), rgba(255, 255, 255, 0)) 0%, light-dark(#fff, #0f0f0f) 100%);
 }
 
 .top-gradient, .bottom-gradient {
@@ -1195,12 +1152,6 @@ a:hover, a:active {
   transform: translateX(0);
   opacity: 1;
   transition: all 0.5s ease;
-}
-
-.about-eye .pupil {
-  background-color: white;
-  right: calc(50% - 9px);
-  bottom: 0;
 }
 
 .about-section {
@@ -1317,11 +1268,6 @@ a:hover, a:active {
   margin-left: 15px;
   margin-right: 15px;
 }
-#colophon .footer-eye .pupil {
-  background: white;
-  top: 2px;
-  left: 7px;
-}
 
 /*--------------------------------------------------------------
 ## About section
@@ -1357,7 +1303,7 @@ a:hover, a:active {
   margin: 0;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-  background-color: #020202;
+  background-color: light-dark(#0f0f0f, #fff);
 }
 .error404 p a:before {
   left: 50%;
@@ -1378,7 +1324,6 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 body {
   cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto;
-  background: #fff;
   overflow-x: hidden;
 }
 body div.cursor {
@@ -1396,8 +1341,8 @@ body.jsloaded div.cursor {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 100px;
-  background: #fff;
-  border: 1px solid #0f0f0f;
+  background: light-dark(#fff, #0f0f0f);
+  border: 1px solid light-dark(#0f0f0f, #fff);
   pointer-events: none;
   mix-blend-mode: difference;
   z-index: 10000;
@@ -1420,9 +1365,6 @@ body.jsloaded div.cursor {
   #work .project-image {
     right: -50px;
     transform: translate(50px, 0);
-  }
-  #work h4 {
-    text-shadow: 0px 0px 5px rgb(255, 255, 255);
   }
 }
 @media (max-width: 767px) {
