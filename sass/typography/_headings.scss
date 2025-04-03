@@ -1,13 +1,28 @@
-h1, h2, h3, h4, h5, h6 {
+
+
+.header, h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-style: normal;
 	font-weight: 300;
 	font-family: $font__header;
 	-moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.14em;
 	&.oblique {
 		font-style: oblique;
 	}
+	&.xl {
+		font-size: clamp(3.125rem, 2.3558rem + 3.8462vw, 5rem); // 80 at 1100px to 50 at 320px
+	}
+	&.l {
+		font-size: clamp(2.5rem, 1.4744rem + 5.1282vw, 5rem); // 80 at 1100px to 40 at 320px
+	}
+	&.m {
+		font-size: clamp(2.5rem, 1.859rem + 3.2051vw, 4.0625rem); // 65px at 1100px to 40 at 320px
+	}
+	&.s {
+		font-size: clamp(1.875rem, 1.6955rem + 0.8974vw, 2.3125rem); // 37px at 1100px to 30px at 320px
+	}
 }
-
