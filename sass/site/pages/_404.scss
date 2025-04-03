@@ -29,7 +29,7 @@
         margin: 0;
         transition: all 0.3s ease-in-out;
         opacity: 0;
-        background-color: darken(#0f0f0f,5%);
+        background-color: $color__lightdark;
       }
        
         &:before {

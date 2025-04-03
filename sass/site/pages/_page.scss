@@ -1,6 +1,5 @@
 body {
    cursor: url(/wp-content/themes/makeaspectacle/sass/images/mouse-icon.svg), auto; // fallback if javascript isn't loaded
-   background: #fff;
    overflow-x: hidden;
    div.cursor {
      display: none;
@@ -16,8 +15,8 @@ body.jsloaded {
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 100px;
-    background: #fff;
-    border: 1px solid #0f0f0f;
+    background: $bg__lightdark;
+    border: 1px solid $color__lightdark;
     pointer-events: none;
   mix-blend-mode: difference;
     z-index: 10000;
@@ -46,7 +45,7 @@ body.jsloaded {
   }
 
   #work h4 {
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+   // text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
   }
 }
 

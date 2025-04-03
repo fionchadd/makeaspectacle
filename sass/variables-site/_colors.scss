@@ -1,24 +1,30 @@
-$color__background-body: #fff;
-$color__background-screen: #fff;
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
+$color__background-body: light-dark(#fff,#0f0f0f);
+$color__background-screen: light-dark(#fff,#0f0f0f);
+$color__background-hr: light-dark(#0f0f0f,#fff);
+$color__background-button: light-dark(#fff,#0f0f0f);
+$color__background-pre: light-dark(#fff,#0f0f0f);
+$color__background-ins: light-dark(#fff,#0f0f0f);
 
-$color__text-screen: #0f0f0f;
-$color__text-input: #0f0f0f;
-$color__text-input-focus: #0f0f0f;
-$color__link: #0f0f0f;
-$color__link-visited: #0f0f0f;
-$color__link-hover: #0f0f0f;
-$color__text-main: #0f0f0f;
+$color__text-screen: light-dark(#0f0f0f, #fff);
+$color__text-input: light-dark(#0f0f0f, #fff);
+$color__text-input-focus: light-dark(#0f0f0f, #fff);
+$color__link: light-dark(#0f0f0f, #fff);
+$color__link-visited: light-dark(#0f0f0f, #fff);
+$color__link-hover: light-dark(#0f0f0f, #fff);
+$color__text-main: light-dark(#0f0f0f, #fff);
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-button: light-dark(#0f0f0f, #fff);
+$color__border-button-hover: light-dark(#0f0f0f, #fff);
+$color__border-button-focus: light-dark(#0f0f0f, #fff);
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
 
 $color__dark: #0f0f0f;
 $color__light: #fff;
+
+$color__lightdark: light-dark(#0f0f0f, #fff);
+$bg__lightdark: light-dark(#fff,#0f0f0f);
+
+$color__lightdarktrans: light-dark(#0f0f0f00, #ffffff00);
+$bg__lightdarktrans: light-dark(#ffffff00, #0f0f0f00);
