@@ -30,8 +30,8 @@ header("X-Clacks-Overhead: GNU Terry Pratchett");
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
-<a class="menu-link work" href="/#work">work</a> 
-<a class="menu-link about" href="#about">about</a>
+<a class="kicker work" href="/#work">work</a> 
+<a class="kicker about" href="#about">about</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 <div class="top-gradient"></div>
