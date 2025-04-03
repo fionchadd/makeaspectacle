@@ -51,6 +51,7 @@
 		<p class="header m"><?php echo $blog_title; ?></p>
 			<p class="kicker about-subtitle"><?php echo $blog_tagline; ?></p>
 			<p class="kicker get-in-touch"><span>get in touch</span><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a></p>
+		<p>This website was designed by <a target="_blank" href="https://anotherkind.co.uk">Another Kind</a> who are wonderful. It is a custom WordPress theme, built by me, and <a href="https://github.com/fionchadd/makeaspectacle" target="_blank"> you can find the code for it here</a> if you're interested in that sort of thing.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
