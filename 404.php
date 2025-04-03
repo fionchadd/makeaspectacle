@@ -26,14 +26,9 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p>We couldn't find that page. Maybe try a search? </p>
+					<p>We couldn't find that page. Sorry about that.</p>
 
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-<p>Or take a look at our work <a title="view our recent work" href="http://new.makeaspectacle.co.uk/#work">here</a></p>
+<p>Why not <a href="https://makeaspectacle.co.uk/#work">take a look at our work</a> instead?</p>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
