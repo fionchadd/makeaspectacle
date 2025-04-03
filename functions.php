@@ -166,13 +166,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /* image sizes */ 
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
-	add_image_size( 'portfolio-screenshot', 300, false); 
+	add_image_size( 'portfolio-screenshot', 500, false); 
 }
 
 // Add image sizes
 function add_image_size_to_media($sizes){
     $custom_sizes = array(
-	'portfolio-screenshot' => '300px wide not cropped',
+	'portfolio-screenshot' => '500px wide not cropped',
 
     );
     return array_merge( $sizes, $custom_sizes );
