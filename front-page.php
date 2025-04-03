@@ -47,22 +47,21 @@ $page_tagline = get_field( 'homepage_tagline');
 				$target = $details['target'];
 		endif;	
 		$image = get_sub_field('image'); 
-		if( $image ):
-
-			// Image variables.
-			$url = $image['url'];
-			$imagetitle = $image['title'];
-			$alt = $image['alt'];
-		
-			// Thumbnail size attributes.
-			$size = 'portfolio-screenshot';
-			$fullimage = $image['sizes'][ $size ];
+		$size = 'portfolio-screenshot';
+		$link = get_sub_field('project_name');
+		if($link):
+			$link_url = $link['url'];
+			$link_title = $link['title'];
+			$link_target = $link['target'] ? $link['target'] : '_self';
 		endif;
+
 ?>
 <div class="project">
-	<a class="project-link" <?php if ( $target ): ?>rel="noreferrer"<?php endif; ?> <?php echo $target; ?> href="<?php echo $link; ?>">
+<a class="project-link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
 	<h4 class="project-name"><?php echo $name; ?></h4>
-	<div class="project-image"><img  alt=""class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg"><img class="screenshot" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+	<div class="project-image"><img aria-hidden="true" alt="" class="browser-top" src="/wp-content/themes/makeaspectacle/sass/images/browser-top.svg">
+	<?php echo wp_get_attachment_image( $image, $size,  "", ["class" => "screenshot"] ); ?>
+</div>
 	</a>
 </div>
 <?php endwhile; else : endif; ?>
