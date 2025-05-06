@@ -22,13 +22,13 @@ get_header();
 			</div>
 		</div>
 				<header class="page-header">
-					<h1 class="page-title">Oh no!</h1>
+					<h1 class="page-title header m">Oh no!</h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p>We couldn't find that page. Sorry about that.</p>
+					<p class="kicker">We couldn't find that page. Sorry about that.</p>
 
-<p>Why not <a href="https://makeaspectacle.co.uk/#work">take a look at our work</a> instead?</p>
+<p class="kicker">Why not <a href="https://makeaspectacle.co.uk/#work">take a look at our work</a> instead?</p>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->

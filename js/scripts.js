@@ -4,64 +4,42 @@ jQuery(document).ready(function ($) {
  
   /* eye */
 
-var DrawEye = function(eye, pupil, speed, interval){
-  var mouseX = 0, mouseY = 0;
-  var pupilX = 0, pupilY = 0;
-  var eyeX = $(eye).width() - $(pupil).width();
-  var eyeY = $(eye).height() - $(pupil).height();
-  var offset = $(eye).offset();
+  var DrawEye = function(eye, pupil, speed, interval){
+    var mouseX = 0, mouseY = 0;
+    var pupilX = 0, pupilY = 0;
+    var eyeX = $(eye).width() - $(pupil).width();
+    var eyeY = $(eye).height() - $(pupil).height();
+    var offset = $(eye).offset();
+
+    
+    $(window).mousemove(function(evt){
+      mouseX = Math.min(evt.pageX - offset.left, eyeX);
+      mouseY = Math.min(evt.pageY - offset.top, eyeY);
+      mouseX = mouseX - 17;
+      mouseY = mouseY - 9;
+      if (mouseX < -18) mouseX = -16;
+      if (mouseX > 18) mouseX = 16;
+      if (mouseY < -13) mouseY = -11;
+      if (mouseY > 13) mouseY = 11;
+
+    });
+    
+    var follower = $(pupil);
+    var loop = setInterval(function(){
+      pupilX += (mouseX - pupilX) / speed;
+      pupilY += (mouseY - pupilY) / speed;
+      follower.css(
+        "transform","translate(" + pupilX + "px," + pupilY + "px)"
+        );
+    }, interval);
+  };
   
-  $(window).mousemove(function(evt){
-    mouseX = Math.min(evt.pageX - offset.left, eyeX);
-    mouseY = Math.min(evt.pageY - offset.top, eyeY);
-    if (mouseX < 0) mouseX = 0;
-    if (mouseX > 50) mouseX = 50;
-    if (mouseY < 0) mouseY = 0;
-    if (mouseY > 50) mouseY = 50;
-  });
-  
-  var follower = $(pupil);
-  var loop = setInterval(function(){
-    pupilX += (mouseX - pupilX) / speed;
-    pupilY += (mouseY - pupilY) / speed;
-    follower.css({left:pupilX, top:pupilY});
-  }, interval);
-};
-
-var eye1 = new DrawEye("#eye1", "#pupil1", 4, 30);
-// var eye3 = new DrawEye("#eye3", "#pupil3", 4, 30); not having eye animation on other eyes
-
-    /* if we want about eye to move, reinitiate this
-            setTimeout(function(){      
+  var eye = new DrawEye("#eye", "#pupil", 4, 30);
 
 
-    var DrawEye = function(eye, pupil, speed, interval){
-        var mouseX = 0, mouseY = 0;
-        var pupilX = 0, pupilY = 0;
-        var eyeX = $(eye).width() - $(pupil).width();
-        var eyeY = $(eye).height() - $(pupil).height();
-        var offset = $(eye).offset();
-        
-        $(window).mousemove(function(evt){
-          mouseX = Math.min(evt.pageX - offset.left, eyeX);
-          mouseY = Math.min(evt.pageY - offset.top, eyeY);
-          if (mouseX < 0) mouseX = 0;
-          if (mouseX > 50) mouseX = 50;
-          if (mouseY < 0) mouseY = 0;
-          if (mouseY > 50) mouseY = 50;
-        });
-        
-        var follower = $(pupil);
-        var loop = setInterval(function(){
-          pupilX += (mouseX - pupilX) / speed;
-          pupilY += (mouseY - pupilY) / speed;
-          follower.css({left:pupilX, top:pupilY});
-        }, interval);
-      };
-      
 
-      var eye2 = new DrawEye("#eye2", "#pupil2", 4, 30);
-    }, 600); */
+
+
 
 // open about section when clicked
           jQuery('#site-navigation .about').on('click', function () {

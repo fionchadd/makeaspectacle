@@ -14,15 +14,24 @@
 		font-style: oblique;
 	}
 	&.xl {
-		font-size: clamp(3.125rem, 2.3558rem + 3.8462vw, 5rem); // 80 at 1100px to 50 at 320px
+		font-size: clamp(2.5rem, 1.9565rem + 3.4783vw, 5rem); // 80 at 1400px to 40 at 250px
 	}
 	&.l {
-		font-size: clamp(2.5rem, 1.4744rem + 5.1282vw, 5rem); // 80 at 1100px to 40 at 320px
+		font-size: clamp(1.875rem, 1.1957rem + 4.3478vw, 5rem); // 80 at 1100px to 30 at 250px
 	}
 	&.m {
-		font-size: clamp(2.5rem, 1.859rem + 3.2051vw, 4.0625rem); // 65px at 1100px to 40 at 320px
+		font-size: clamp(1.875rem, 1.3995rem + 3.0435vw, 4.0625rem); // 65px at 1400px to 30 at 250px
 	}
 	&.s {
-		font-size: clamp(1.875rem, 1.6955rem + 0.8974vw, 2.3125rem); // 37px at 1100px to 30px at 320px
+		font-size: clamp(1.875rem, 1.7799rem + 0.6087vw, 2.3125rem); // 37px at 1400px to 30px at 250px
+	}
+	&.kicker {
+		letter-spacing: clamp(0.0938rem, 0.0553rem + 0.1923vw, 0.1875rem); // 3px to 1.5px
+		text-transform: uppercase;
+		font-size: clamp(0.8125rem, 0.7612rem + 0.2564vw, 0.9375rem); // 15px at 1100px to 13px at 320px
+		font-family: $font__main;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 1.66em;
 	}
 }

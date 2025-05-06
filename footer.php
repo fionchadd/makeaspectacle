@@ -19,7 +19,7 @@
 		 if( have_rows('about_section', 14) ): 
 ?>
 <div class="about-section">
-	<div class="close"><img alt="close about section" src="/wp-content/themes/makeaspectacle/sass/images/about-close.svg"></div>
+	<button class="close unstyled kicker">Close <img aria-hidden="true" src="/wp-content/themes/makeaspectacle/assets/about-close.svg"></button>
 	<div class="about-content">
 	<?php 	while( have_rows('about_section', 14) ): the_row(); 
 
@@ -35,7 +35,7 @@
 			<div class="about-text"><?php echo $description; ?></div>
 			<div class="get-in-touch-about">
 			<h2 class="kicker"><?php echo $title; ?></h2>
-			<div class="about-arrow"><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/about-arrow.svg"></div>
+			<div class="about-arrow"><img alt="arrow" src="/wp-content/themes/makeaspectacle/assets/about-arrow.svg"></div>
 			<a class="kicker email-address" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		 </div>
 			<?php endwhile; ?>
@@ -50,8 +50,10 @@
 		<div class="site-info">
 		<p class="header m"><?php echo $blog_title; ?></p>
 			<p class="kicker about-subtitle"><?php echo $blog_tagline; ?></p>
-			<p class="kicker get-in-touch"><span>get in touch</span><img alt="arrow" src="/wp-content/themes/makeaspectacle/sass/images/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a></p>
-		<p>This website was designed by <a target="_blank" href="https://anotherkind.co.uk">Another Kind</a> who are wonderful. It is a custom WordPress theme, built by me, and <a href="https://github.com/fionchadd/makeaspectacle" target="_blank"> you can find the code for it here</a> if you're interested in that sort of thing.</p>
+			<p class="kicker get-in-touch"><span>get in touch</span><img alt="arrow" src="/wp-content/themes/makeaspectacle/assets/arrow-right.svg"><a class="email-address" href="mailto:hello@makeaspectacle.co.uk">hello@makeaspectacle.co.uk</a></p>
+		 </div>
+			<div class="credits"><p>This website was designed by <a target="_blank" href="https://anotherkind.co.uk">Another Kind</a> who are wonderful.</p>
+		<p>It is a custom WordPress theme, built by me, and <a href="https://github.com/fionchadd/makeaspectacle" target="_blank">the code is here</a> if you're interested in that sort of thing. I also make fun stuff <a href="https://codepen.io/fionchadd" target="_blank">on codepen</a>.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 

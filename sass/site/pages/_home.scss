@@ -13,9 +13,6 @@
     flex-direction: column;
     padding: 40px;
     h1 {
-      font-size: 80px;
-      line-height: 91px;
-      text-transform: uppercase;
       animation: fade-and-rise .9s ease backwards;
       margin-top: 15px;
       margin-bottom: 15px;
@@ -26,13 +23,7 @@
     p {
       animation: fade-and-rise .9s ease backwards .6s;
     }
-    h2, p {
-      font-family: $font__main;
-      font-size: 15px;
-      letter-spacing: 3px;
-      line-height: 25px;
-      text-transform: uppercase;
-    }
+
     p {
       align-self: flex-end;
       margin: auto;
@@ -73,34 +64,13 @@
   margin: 0 auto;
   overflow: hidden;
   display: block;
+  svg path {
+    fill: $color__lightdark;
+  }
 }
 
-.eye-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-    width: 50px;
-  height: 35px;
-}
 
-.eye {
-  position: relative;
-  width: 46px;
-  margin: 1px 2px;
-  height: 33px;
-  border-radius: 55%;
-  overflow: hidden;
-}
 
-.pupil {
-  width: 18px;
-  height: 18px;
-  background-color: $color__lightdark;
-  border-radius: 50%;
-    margin: auto;
-    display: block;
-    position: absolute;
-}
 
   
 
@@ -119,8 +89,8 @@ position: relative;
     margin: auto;
   }
   #project-area {
-    padding: 80px 0;
-    padding-bottom: 120px;
+    padding: $space__l 0; // 80 to 40
+    padding-bottom: $space__xl; // 120 to 80
   }
 
   .project {
@@ -129,12 +99,12 @@ position: relative;
     position: relative;
     transform: translatex(0);
 transition: all 0.3s ease-in-out;
-padding: 0 50px;
+padding: 0 $space__s; // 50px to 20px
 
   }
 
   .project-name {
-
+    z-index: 2;
     margin: 0;
     color:  $color__lightdark; 
     -webkit-transform: skewX(0deg);
@@ -155,13 +125,14 @@ display: block;
     
   
   .project-image {
+    --width: min(25vw, 500px);
     position: absolute;
     pointer-events:none;
-    max-width: 300px;
-    width: 300px;
+    width: var(--width);
     height: auto;
-    top: calc(50% - 96px);
-    right: -320px;
+    top: calc(50% - (var(--width) * 0.32));
+    right: calc((var(--width) + 20px) * -1);
+    left: calc(100% + 20px);
     transform: translate(-15px, 0);
     
     transition: all 0.3s ease-in-out;
@@ -185,7 +156,6 @@ display: block;
 #page.workactive {
   .project.hovered {
     z-index: 2;
-//    transform: translatex(-15px);
     transition: all 0.3s ease-in-out;
     .project-image {
       transform: translate(0, 0);
@@ -196,12 +166,11 @@ display: block;
         transition: opacity 0.3s ease-in-out .1s;
       }
     }
-    h4 {
+   .header {
       -webkit-transform: skewX(-10deg);
       -moz-transform: skewX(-10deg);
       -o-transform: skewX(-10deg);
       transform: skewX(-10deg);
-//      font-style: oblique;
       z-index: 2;
       transition: all 0.3s ease-in-out;
     }

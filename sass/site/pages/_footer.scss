@@ -1,36 +1,51 @@
 #colophon {
   background: #0F0F0F;
-  padding: 80px;
+  padding: 40px;
+  padding-top: $space__l; // 80 to 40
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
+  a {
+    color: #fff;
+  }
 
-  .about-subtitle, a.email-address, .get-in-touch {
-    font-family: roc-grotesk, sans-serif;
-    font-size: 15px;
-    letter-spacing: 3px;
-    line-height: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;  
-  }
-  a.email-address {
-    text-decoration: none;
-  }
-  .about-title {
-    font-size: 65px;
-    line-height: 76px;
-    text-transform: uppercase;
-    text-align: center;
+  .header.m  {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .about-subtitle {
-margin-bottom: 60px;
+margin-bottom: $space__m; // 60 to 40
   }
   .get-in-touch img {
     margin-left: 15px;
     margin-right: 15px;
   }
-
+  .credits a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: all 0.3s ease;
+    &:focus-visible, &:hover {
+      text-underline-offset: 3px;
+    }
+  }
+  .email-address {
+    text-decoration: none;
+  }
+  p {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap-style: pretty;
+    margin-top: 0;
+  }
+  .credits {
+    margin-top: $space__m; // 60px to 40px
+    p {
+      font-size: 13px;
+      font-weight: 300;
+      margin-bottom: 1em;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
